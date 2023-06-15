@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Route, Router, useLocation } from 'wouter';
+import { Route, Router, useLocation, useRoute } from 'wouter';
 import { Container, Tabs, Tab } from '@mui/material';
 
 import JamesPage from './pages/JamesPage';
@@ -7,20 +7,26 @@ import VisitingInfoPage from './pages/VisitingInfoPage';
 import HouseholdStuffPage from './pages/HouseholdStuffPage';
 
 function App() {
-    const [location, setLocation] = useLocation(); // Get the current location and a setter function
+    const [location, setLocation] = useLocation();
+    const [match] = useRoute("/:tab");
 
-    const handleTabChange = (event, newLocation) => {
-        setLocation(newLocation); // Update the location when a tab is clicked
+    const handleTabChange = (event, newTab) => {
+        setLocation(newTab);
+    };
+
+    const getCurrentTab = () => {
+        const tab = match ? match.params.tab : "/"; // Get the current tab from the URL
+        return tab === "/" ? "/" : `/${tab}`; // Add a leading slash to the tab
     };
 
     return (
         <div className="App">
             <Container maxWidth="sm">
                 <header>
-                    <Tabs value={location}>
-                        <Tab label="James" value="/" component={Link} to="/" onClick={handleTabChange} />
-                        <Tab label="Visiting Info" value="/visiting-info" component={Link} to="/visiting-info" onClick={handleTabChange} />
-                        <Tab label="Household Stuff" value="/household-stuff" component={Link} to="/household-stuff" onClick={handleTabChange} />
+                    <Tabs value={getCurrentTab()} onChange={handleTabChange}>
+                        <Tab label="James" value="/" />
+                        <Tab label="Visiting Info" value="/visiting-info" />
+                        <Tab label="Household Stuff" value="/household-stuff" />
                     </Tabs>
                 </header>
                 <Router>

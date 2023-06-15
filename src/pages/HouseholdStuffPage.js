@@ -35,28 +35,7 @@ function HouseholdStuffPage() {
             <p>Our house is amusingly labelled already, but it can be very helpful to document where to find what. If something isn&rsquo;t obvious, feel free to add your own labels. <br />There should be labels in the draw called Narnia.</p>
             <h4>Cleaning supplies</h4>
             <p>Cleaning supplies and vacuum cleaners etc are generally in the kitchen and in the cupboard under the sink or under the stairs. Feel free to make use of them, but potentially check about disturbing sleeping babies first.</p>
-            <h2>What to expect</h2>
-            <p>Babies generally do the same sorts of things:</p>
-            <ul>
-                <li>
-                    <p>Sleep</p>
-                </li>
-                <li>
-                    <p>Feed</p>
-                </li>
-                <li>
-                    <p>Cry</p>
-                </li>
-                <li>
-                    <p>Have their nappy changed</p>
-                </li>
-                <li>
-                    <p>Have a bath</p>
-                </li>
-            </ul>
-            <p>They do many of these things in rapid cycles. Ours is likely to be like this too.</p>
-            <h2>Baby information:</h2>
-            <p>Baby is likely drinking mummy-breast-milk. Breastfeeding Jen gets priority in everything at all times.</p>
+            <h2>Baby Stuff Information</h2>
             <h3>Changing Areas</h3>
             <p>There&rsquo;s a changing station in the living room. Stuff for it lives on the gin-chest behind the sofa.</p>
 
