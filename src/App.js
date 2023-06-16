@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Router, useLocation, useRoute } from 'wouter';
+import { Link, Route, Router, useLocation } from 'wouter';
 import { Container, Tabs, Tab } from '@mui/material';
 
 import JamesPage from './pages/JamesPage';
@@ -8,25 +8,19 @@ import HouseholdStuffPage from './pages/HouseholdStuffPage';
 
 function App() {
     const [location, setLocation] = useLocation();
-    const [match] = useRoute("/:tab");
 
     const handleTabChange = (event, newTab) => {
         setLocation(newTab);
-    };
-
-    const getCurrentTab = () => {
-        const tab = match ? match.params.tab : "/"; // Get the current tab from the URL
-        return tab === "/" ? "/" : `/${tab}`; // Add a leading slash to the tab
     };
 
     return (
         <div className="App">
             <Container maxWidth="sm">
                 <header>
-                    <Tabs value={getCurrentTab()} onChange={handleTabChange}>
-                        <Tab label="James" value="/" />
-                        <Tab label="Visiting Info" value="/visiting-info" />
-                        <Tab label="Household Stuff" value="/household-stuff" />
+                    <Tabs value={location} onChange={handleTabChange}>
+                        <Tab label="James" value="/" component={Link} to="/" />
+                        <Tab label="Visiting Info" value="/visiting-info" component={Link} to="/visiting-info" />
+                        <Tab label="Household Stuff" value="/household-stuff" component={Link} to="/household-stuff" />
                     </Tabs>
                 </header>
                 <Router>
