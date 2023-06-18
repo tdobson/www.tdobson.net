@@ -17,7 +17,7 @@ function GalleryPage() {
 
     return (
         <div>
-            <h1>Image Gallery</h1>
+            <h1>Photos</h1>
             <ImageList cols={3} gap={8}>
                 <ImageListItem onClick={() => handleImageClick('1.jpeg')}>
                     <img src="1.jpeg" alt="Image 1" />
