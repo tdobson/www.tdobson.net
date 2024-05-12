@@ -1,11 +1,10 @@
-# Mantine Next.js template
+# James Day Mantime Single Page App
 
-This is a template for [Next.js](https://nextjs.org/) pages router + [Mantine](https://mantine.dev/).
-If you want to use app router instead, see [next-app-template](https://github.com/mantinedev/next-app-template).
+This is a single page app in [Next.js](https://nextjs.org/) pages router + [Mantine](https://mantine.dev/).
 
 ## Features
 
-This template comes with the following features:
+This app comes with the following features:
 
 - [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
 - [TypeScript](https://www.typescriptlang.org/)

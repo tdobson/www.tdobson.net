@@ -10,7 +10,6 @@ interface LayoutProps {
 const links = [
     { link: '/#details', label: 'Details' },
     { link: '/#faq', label: 'FAQs' },
-    { link: '/#location', label: 'Location' },
     { link: '/#rsvp', label: 'RSVP' },
 ];
 
