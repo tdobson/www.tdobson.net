@@ -2,6 +2,7 @@ import { Container, Text, Title, List, Accordion } from '@mantine/core';
 import { Layout } from '../components/Layout/Layout';
 import { HeroImageRight } from '../components/HeroImageRight/HeroImageRight';
 import { ContactUs } from '../components/ContactUs/ContactUs';
+import { Fragment } from "react";
 
 export default function JamesDayPage() {
     return (
@@ -27,7 +28,7 @@ export default function JamesDayPage() {
                     When: Sunday 21st July, 13:00 - 15:00
                 </Text>
                 <Text>
-                    Where: <a href="https://example.com" target="_blank">Strines pavilion and recreational centre</a>, Pavilion Ln, Strines, Marple, Stockport SK6 7GP
+                    Where: <a href="https://maps.apple.com/?address=53.3773238,-2.041604" target="_blank">Strines pavilion and recreational centre</a>, Pavilion Ln, Strines, Marple, Stockport, SK6 7GP
                 </Text>
 
                 <Title order={3} mt="md">What's the format?</Title>
@@ -46,6 +47,20 @@ export default function JamesDayPage() {
 
                 <Title order={2} mt="xl" id="faq">FAQs</Title>
                 <Accordion>
+                    <Accordion.Item value="food">
+                        <Accordion.Control>Will there be food?</Accordion.Control>
+                        <Accordion.Panel>
+                            Yep. Gluten-free people and vegetarians will be catered for. If you have dietary requirements beyond those, drop us a message and we'll see we have you covered.
+                        </Accordion.Panel>
+                    </Accordion.Item>
+
+                    <Accordion.Item value="drinks">
+                        <Accordion.Control>Will there be drinks?</Accordion.Control>
+                        <Accordion.Panel>
+                            Yep - there should be sparking wine. Drivers, teetotals, children and weird people like Tim will all be sufficiently liquidated with soft drinks.
+                        </Accordion.Panel>
+                    </Accordion.Item>
+
                     <Accordion.Item value="what-to-wear">
                         <Accordion.Control>What shall I wear?</Accordion.Control>
                         <Accordion.Panel>
@@ -61,17 +76,20 @@ export default function JamesDayPage() {
                         </Accordion.Panel>
                     </Accordion.Item>
 
-                    <Accordion.Item value="food">
-                        <Accordion.Control>Will there be food?</Accordion.Control>
+                    <Accordion.Item value="what-gift">
+                        <Accordion.Control>I want to bring James a present but am not sure what to get him?</Accordion.Control>
                         <Accordion.Panel>
-                            Yep. Gluten-free people and vegetarians will be catered for. If you have dietary requirements beyond those, drop us a message and we'll see we have you covered.
+                            We've no clue either. Other than not sweets, loud things or silly-expensive things, we've no clue or preferences.
+                            His current favourite toys are: a spoon, a xylophone stick, a small plastic ball.
+                            He likes this he can hold, and put in his mouth.
+                            We like things that don't hurt him.
                         </Accordion.Panel>
                     </Accordion.Item>
 
-                    <Accordion.Item value="drinks">
-                        <Accordion.Control>Will there be drinks?</Accordion.Control>
+                    <Accordion.Item value="parking">
+                        <Accordion.Control>Is there parking?</Accordion.Control>
                         <Accordion.Panel>
-                            Yep - there should be sparking wine. Drivers, teetotals, children and weird people like Tim will all be sufficiently liquidated with soft drinks.
+                            Yes. There are 30 parking spaces in a fairly cramped carpark here. If you prefer easy parking and a 3 minute walk, there's plenty of on-road parking here on Station Road.
                         </Accordion.Panel>
                     </Accordion.Item>
 
@@ -89,24 +107,24 @@ export default function JamesDayPage() {
                         </Accordion.Panel>
                     </Accordion.Item>
 
-                    <Accordion.Item value="parking">
-                        <Accordion.Control>Is there parking?</Accordion.Control>
-                        <Accordion.Panel>
-                            Yes. There are 30 parking spaces in a fairly cramped carpark here. If you prefer easy parking and a 3 minute walk, there's plenty of on-road parking here on Station Road.
-                        </Accordion.Panel>
-                    </Accordion.Item>
-
                     <Accordion.Item value="kids">
                         <Accordion.Control>I have a child/baby/youth/teenager/man-child, can they bring their football, Space Hopper, remote control aeroplane, diesel scooter, life size toy crane or live wooly mamoth?</Accordion.Control>
                         <Accordion.Panel>
                             If you're comfortable with them bringing it to a babies birthday party (eg, in your eyes, it's not super expensive and fragile), and it'll help them enjoy themselves - please do! There's plenty of field space, a good size football pitch, tennis courts (with basket ball net) and a small play area all in close proximity to the venue.
                         </Accordion.Panel>
                     </Accordion.Item>
-                </Accordion>
 
-                <Title order={2} mt="xl" id="rsvp">RSVP</Title>
-                <ContactUs />
-            </Container>
-        </Layout>
-    );
+                <Accordion.Item value="afterparty">
+                    <Accordion.Control>Will there be an afterparty?</Accordion.Control>
+                    <Accordion.Panel>
+                        Afterwards, everyone is invited over to our house (5 min walk away) for chilling, chilli and super fun tidying up games. The house may be cramped with many people in it - so that's an extra element to enjoy.
+                    </Accordion.Panel>
+                </Accordion.Item>
+            </Accordion>
+
+            <Title order={2} mt="xl" id="rsvp">RSVP</Title>
+            <ContactUs />
+        </Container>
+</Layout>
+);
 }
