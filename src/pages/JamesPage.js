@@ -11,7 +11,7 @@ function JamesPage() {
             <p>His name is <b>James Fox Dobson</b>.</p>
 
             <p>We&rsquo;d prefer you didn&rsquo;t share his middle name on social media for the moment.</p>
-            <p>Please don&rsquo;t turn up unannounced. </p>
+
 
             <h2>Q &amp; A:</h2>
             <h4>Can I tell my close friends or family about him?</h4>
@@ -37,6 +37,7 @@ function JamesPage() {
             <p>You&apos;re welcome to share photos of him, so long as it is a somewhat flattering view. Don&apos;t share anything you wouldn&apos;t be comfortable displaying at an 18yr olds Birthday party.</p>
             <h4>Can we send a card?</h4>
             <p>Sure. We&rsquo;re now home, at 3 Werneth Avenue, M14 7BF</p>
+            <p>Please don&rsquo;t turn up unannounced. </p>
             <h4>How was labour?</h4>
             <p>Mum had a section after James didn&apos;t respond happily to being induced. </p>
 
@@ -50,10 +51,10 @@ function JamesPage() {
             <h4>How&rsquo;re you all doing?</h4>
             <p>Learning to figure out sleep. Making progress, but still some way to go.</p>
             <p>Getting there with breast feeding and expressing.</p>
-            <p>Hoping the weather will get cooler soon.</p>
-            <h4>Is there an inspiion behind his middle name.?</h4>
+            <p>Hoping the weather stays coolish.</p>
+            <h4>Is there an inspiration behind his middle name.?</h4>
             <p>It's just his name.</p>
-            <p>His name is not inspired by the band James, a king, X-files, Liam Fox, Michael Fox, a Jimi Hendrix or Ylvis song. It's just what we chose to call him.</p>
+            <p>His name is not inspired by the band James, a king, X-files, Liam Fox, Michael Fox, the smells or noises he makes, a Jimi Hendrix or Ylvis song. It's just what we chose to call him.</p>
             <h4>Can we send a present?</h4>
             <p>Maybe. We have everything we need for him right now, and our rented house already feels painfully small, and full of baby stuff.</p>
             <p>Is there anything you can do for him that he may appreciate in the future? Is there anything you can do for him that doesn&apos;t require much headspace from the parents right now?</p>
@@ -75,8 +76,9 @@ function JamesPage() {
 
             <p>Whilst we&apos;re not planning that he&apos;ll have godparents, we&apos;re hoping several of our friends will agree to be &quot;guiding lights&quot; in his life, and take a particular focus in guiding and supporting him on his journey.</p>
             <h4>Will he go caving/climbing?</h4>
-            <p>Sure - after it&rsquo;s had its vaccinations at around 3 months we&apos;ll start to think about these things. <br />He&rsquo;s unlikely to do Daren Cilau or solo anything in Yosemite before he can support his own head.</p>
-
+            <p>Sure - after he&rsquo;s had his vaccinations at around 3 months we&apos;ll start to think about these things. <br />He&rsquo;s unlikely to do Daren Cilau or solo anything in Yosemite before he can support his own head.</p>
+            <h4>Did you intend to have him?</h4>
+            <p>How much detail do you want? He wasn't a surprise.</p>
 
         </div>
     );

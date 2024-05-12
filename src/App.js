@@ -21,16 +21,17 @@ function App() {
                 <header>
                     <Tabs value={location} onChange={handleTabChange}>
                         <Tab label="James" value="/" component={Link} to="/" />
+                        <Tab label="Photos" value="/photos" component={Link} to="/photos" />
                         <Tab label="Visiting Info" value="/visiting-info" component={Link} to="/visiting-info" />
                         <Tab label="Household Stuff" value="/household-stuff" component={Link} to="/household-stuff" />
-                        <Tab label="Photos" value="/photos" component={Link} to="/photos" />
                     </Tabs>
                 </header>
                 <Router>
                     <Route path="/" component={JamesPage} />
+                    <Route path="/photos" component={GalleryPage} />
+
                     <Route path="/visiting-info" component={VisitingInfoPage} />
                     <Route path="/household-stuff" component={HouseholdStuffPage} />
-                    <Route path="/photos" component={GalleryPage} />
 
                 </Router>
             </Container>
