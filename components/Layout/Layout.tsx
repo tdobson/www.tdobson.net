@@ -22,13 +22,13 @@ export function Layout({ children }: LayoutProps) {
 
     return (
         <>
-            <HeaderSimple>
+            {/*  <HeaderSimple>
                 <Group>{items}</Group>
-            </HeaderSimple>
+            </HeaderSimple> */ }
             <main>{children}</main>
-            <FooterSimple>
+            { /*   <FooterSimple>
                 <Group>{items}</Group>
-            </FooterSimple>
+            </FooterSimple>*/ }
         </>
     );
 }

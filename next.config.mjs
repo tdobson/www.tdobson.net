@@ -10,3 +10,4 @@ export default withBundleAnalyzer({
     ignoreDuringBuilds: true,
   },
 });
+
