@@ -1,4 +1,4 @@
-# James Day Mantime Single Page App
+# James Day Mantine Single Page App
 
 This is a single page app in [Next.js](https://nextjs.org/) pages router + [Mantine](https://mantine.dev/).
 
