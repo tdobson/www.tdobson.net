@@ -33,8 +33,8 @@ This app comes with the following features:
 - **pages/**: Contains Next.js pages.
   - **_app.tsx**: Custom App component to initialize pages.
   - **_document.tsx**: Custom Document component for SSR.
-  - **index.tsx**: The main landing page of the application.
-  - **JamesDay.tsx**: A specific page for James Day.
+  - **index.tsx**: A specific page for James Day.
+  
 - **public/**: Static assets like images, icons, etc.
   - **favicon.svg**: The favicon for the application.
 - **test-utils/**: Utilities for testing.
@@ -66,28 +66,6 @@ This app comes with the following features:
 - `storybook:build` – build the production Storybook bundle to `storybook-static`
 - `prettier:write` – format all files with Prettier
 
-## Getting Started
-
-To get started with the project, follow these steps:
-
-1. **Clone the repository**:
-   ```sh
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
-   ```
-
-2. **Install dependencies**:
-   ```sh
-   yarn install
-   ```
-
-3. **Run the development server**:
-   ```sh
-   yarn dev
-   ```
-
-4. **Open your browser** and navigate to `http://localhost:3000` to see the application running.
-
 ## Contributing
 
 If you would like to contribute to this project, please follow these steps:
@@ -113,36 +91,6 @@ We appreciate your contributions!
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
-
-## Layout
-
-The project is structured as follows:
-
-- **components/**: Contains reusable React components.
-  - **Layout/**: Contains layout components, such as `Layout.tsx`.
-- **pages/**: Contains Next.js pages.
-  - **_app.tsx**: Custom App component to initialize pages.
-  - **_document.tsx**: Custom Document component for SSR.
-  - **index.tsx**: The main landing page of the application.
-  - **JamesDay.tsx**: A specific page for James Day.
-- **public/**: Static assets like images, icons, etc.
-  - **favicon.svg**: The favicon for the application.
-- **test-utils/**: Utilities for testing.
-  - **index.ts**: Entry point for test utilities.
-  - **render.tsx**: Custom render function for testing.
-- **.idea/**: Configuration files for JetBrains IDEs.
-
-### Root Directory
-
-- **README.md**: This file, providing an overview and documentation for the project.
-- **LICENCE**: The license under which the project is distributed.
-- **package.json**: Contains project metadata and dependencies.
-- **tsconfig.json**: TypeScript configuration file.
-- **next.config.js**: Next.js configuration file.
-- **postcss.config.cjs**: Configuration for PostCSS.
-- **jest.config.cjs**: Configuration for Jest.
-- **jest.setup.cjs**: Setup file for Jest.
-- **yarn.lock**: Lockfile for Yarn package manager.
 
 ### npm scripts
 
