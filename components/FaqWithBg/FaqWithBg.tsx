@@ -66,9 +66,9 @@ export function FaqWithBg() {
             </Accordion.Item>
 
             <Accordion.Item value="rsvp">
-              <Accordion.Control>When do I need to RSVP by?</Accordion.Control>
+              <Accordion.Control>What if I can't come now?</Accordion.Control>
               <Accordion.Panel>
-                As soon as you can would be helpful, but we understand your life is as unpredictable as it is.
+                As soon as you think that might be the case, please drop us a facebook message or email
               </Accordion.Panel>
             </Accordion.Item>
 

@@ -31,7 +31,9 @@ export default function HomePage() {
                             pavilion and recreational centre</a>, Pavilion Ln, Strines, Marple, Stockport, SK6 7GP
                         </Text>
 
-                        <Text size="lg" style={{ fontWeight: 700 }} color={theme.colors.gray[8]} mb={theme.spacing.xl}>Expect:</Text>
+                        <Text size="lg" style={{ fontWeight: 700 }} color={theme.colors.gray[8]} mb={theme.spacing.xl}>
+                            Schedule:
+                        </Text>
                         <List
                             spacing="xs"
                             size="md"
@@ -43,20 +45,28 @@ export default function HomePage() {
                             }
                             mb={theme.spacing.xl}
                         >
-                            <List.Item>Speeches</List.Item>
-                            <List.Item>Toasts</List.Item>
-                            <List.Item>Food</List.Item>
-                            <List.Item>Chat</List.Item>
-                            <List.Item>Readings/songs/poems/raps</List.Item>
+                            <List.Item>13:00 - Event starts, welcome drinks (alcoholic and non-alcoholic)</List.Item>
+                            <List.Item>13:30 - Food will be served (meaty and veggie options available)</List.Item>
+                            <List.Item>14:00 - Welcome Speech from Tim</List.Item>
+                            <List.Item>
+                                Promise Ceremony with Laura, Joe, Ellie, and Craig
+                            </List.Item>
+                            <List.Item>
+                                Speeches by Clare, Joe, Judith, Sarah, Adrian, and Tony
+                            </List.Item>
+                            <List.Item>Toasts with alcoholic and non-alcoholic drinks</List.Item>
+                            <List.Item>Happy Birthday Song with Candles</List.Item>
+                            <List.Item>Cake (made by Clare)</List.Item>
+                            <List.Item>16:00 - Event ends</List.Item>
+                            <List.Item>
+                                Afterparty at 272 Strines Road with meaty and veggie chilli, more drinks, and everyone is welcome
+                            </List.Item>
                         </List>
                         <Text size="md" color={theme.colors.gray[7]} mb={theme.spacing.xl}>
-                            Precisely what order or when is TBC.
-                            There will be an opportunity (if you would like) to give a short speech, give a reading,
-                            perform a song, etc. If this is something that you'd be keen to do, we'd love to know in
-                            advance.
+                            Please don't feel the need to bring gifts, booze, or dinosaurs - but all are welcome if you'd like.
                         </Text>
                         <Text size="md" color={theme.colors.gray[7]}>
-                            Afterwards, there will be a low key afterparty at 272 Strines Road, SK6 7GB.
+                            If you're struggling to find the venue and need to reach someone, please call 01457597007, and this will alert Jen and Tim simultaneously.
                         </Text>
                     </Box>
                 </div>

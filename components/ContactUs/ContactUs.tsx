@@ -33,7 +33,7 @@ export function ContactUs() {
         </div>
         <div className={classes.form}>
           <Title className={classes.title} >
-            We're keen to know you're coming
+            This is where to drive to
           </Title>
 
           <Button
@@ -43,9 +43,9 @@ export function ContactUs() {
               className={classes.control}
               mt={40}
               component="a"
-              href="https://docs.google.com/forms/d/e/1FAIpQLScvqw8tJOMI53Q-Gu-fSNHdN5qefyMosfBuoUEj5R_ZNDp14g/viewform"
+              href="https://maps.apple.com/?address=53.3773238,-2.041604"
           >
-            RSVP Now
+            Tap here to navigate
           </Button>
         </div>
     </div>

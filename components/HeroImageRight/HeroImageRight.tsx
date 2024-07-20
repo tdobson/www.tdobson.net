@@ -8,14 +8,14 @@ export function HeroImageRight() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-              You're invited to{' '}
+              It's almost {' '}
               <Text component="span" inherit variant="gradient" gradient={{ from: 'blue', to: 'green' }}>
                 James Day!
               </Text>
             </Title>
 
             <Text className={classes.description} mt={30}>
-              Join us in celebrating James's first birthday for a special gathering for friends and family.
+            We're looking forward to seeing you for James's first birthday gathering for friends and family.
             </Text>
 
             <Button
@@ -25,9 +25,9 @@ export function HeroImageRight() {
                 className={classes.control}
                 mt={40}
                 component="a"
-                href="https://docs.google.com/forms/d/e/1FAIpQLScvqw8tJOMI53Q-Gu-fSNHdN5qefyMosfBuoUEj5R_ZNDp14g/viewform"
+                href="https://maps.apple.com/?address=53.3773238,-2.041604"
             >
-              RSVP Now
+              Click here for the Parking Pin
             </Button>
           </div>
         </div>
