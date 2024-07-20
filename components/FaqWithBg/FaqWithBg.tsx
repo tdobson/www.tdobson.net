@@ -86,12 +86,6 @@ export function FaqWithBg() {
               </Accordion.Panel>
             </Accordion.Item>
 
-            <Accordion.Item value="tent">
-                <Accordion.Control>Is there anywhere I can stay?</Accordion.Control>
-                <Accordion.Panel>
-                    There's various <a href="https://www.airbnb.co.uk/s/Strines-Road--Strines--Marple--Stockport-SK6-7GB--UK/homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-06-01&monthly_length=3&monthly_end_date=2024-09-01&price_filter_input_type=2&channel=EXPLORE&query=Strines%20Road%2C%20Strines%2C%20Marple%2C%20Stockport%20SK6%207GB&place_id=ChIJS6_t4qrKe0gRYnLMiVwmAHk&date_picker_type=calendar&checkin=2024-07-20&checkout=2024-07-22&adults=1&source=structured_search_input_header&search_type=autocomplete_click">BnB options</a> or <a href="https://uk.hotels.com/Hotel-Search?destination=sk6%207gb&flexibility=0_DAY&d1=2024-07-20&startDate=2024-07-20&d2=2024-07-22&endDate=2024-07-22&adults=1&rooms=1">Hotels options</a>. If you'd like to camp in our garden, there's camping space available. Bring your own tent etc.
-                </Accordion.Panel>
-            </Accordion.Item>
             <Accordion.Item value="dogs">
                 <Accordion.Control>Can I bring my dog?</Accordion.Control>
                 <Accordion.Panel>
