@@ -47,6 +47,7 @@ This app comes with the following features:
 ### Build and dev scripts
 
 - `dev` – start the development server
+- `deploy` - build and deploy to aws
 - `build` – bundle the application for production
 - `export` – export the static website to the `out` folder
 - `analyze` – analyze the application bundle with [@next/bundle-analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
@@ -95,6 +96,7 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 ### npm scripts
 
 - `dev` – start the development server
+  `deploy` - build and deploy to aws
 - `build` – bundle the application for production
 - `export` – export the static website to the `out` folder
 - `analyze` – analyze the application bundle with [@next/bundle-analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
