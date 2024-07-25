@@ -45,7 +45,7 @@ export function ContactUs() {
               component="a"
               href="https://m.me/timdobsonuk"
           >
-            Tap here to navigate
+            Message them here
           </Button>
         </div>
     </div>
