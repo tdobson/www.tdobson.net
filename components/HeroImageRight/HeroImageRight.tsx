@@ -8,14 +8,14 @@ export function HeroImageRight() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-              It's almost {' '}
+              Meet {' '}
               <Text component="span" inherit variant="gradient" gradient={{ from: 'blue', to: 'green' }}>
-                James Day!
+                James!
               </Text>
             </Title>
 
             <Text className={classes.description} mt={30}>
-            We're looking forward to seeing you for James's first birthday gathering for friends and family.
+            James is a small child who lives near Manchester with his mum and dad. His favourite things are spoons!
             </Text>
 
             <Button
@@ -24,10 +24,8 @@ export function HeroImageRight() {
                 size="xl"
                 className={classes.control}
                 mt={40}
-                component="a"
-                href="https://maps.apple.com/?address=53.3773238,-2.041604"
             >
-              Click here for the Parking Pin
+              Learn More
             </Button>
           </div>
         </div>
