@@ -33,7 +33,7 @@ export function ContactUs() {
         </div>
         <div className={classes.form}>
           <Title className={classes.title} >
-            This is where to drive to
+            Contact James's parents
           </Title>
 
           <Button
@@ -43,7 +43,7 @@ export function ContactUs() {
               className={classes.control}
               mt={40}
               component="a"
-              href="https://maps.apple.com/?address=53.3773238,-2.041604"
+              href="https://m.me/timdobsonuk"
           >
             Tap here to navigate
           </Button>
