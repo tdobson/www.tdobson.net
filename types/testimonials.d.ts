@@ -11,5 +11,13 @@ export interface Testimonial {
 export interface TestimonialCardProps {
   name: string;
   image: string;
+  jobTitle: string;
+  testimonial: string;
+  link: string;
+}
+
+export interface TestimonialCardProps {
+  name: string;
+  image: string;
   testimonial: string;
 }
