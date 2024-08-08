@@ -1,10 +1,11 @@
 import {Timeline, Text, Group, ThemeIcon, Avatar, Title, Space} from '@mantine/core';
+import './Timeline.css';
 import { IconGitBranch, IconGitCommit, IconGitPullRequest, IconMessageDots } from '@tabler/icons-react';
 
 export function TimDobsonTimeline() {
   return (
       <>
-          <div style={{ textAlign: 'center' }}>
+          <div style={{ textAlign: 'center' }} className="title-spacing">
               <Title order={2}>My Experience</Title>
               <Space />
           </div>
