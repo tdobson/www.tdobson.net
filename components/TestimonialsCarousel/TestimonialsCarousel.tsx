@@ -9,12 +9,11 @@ function TestimonialCard({ name, image, jobTitle, testimonial, link }: Testimoni
       <Group>
         <Avatar src={image} radius="xl" />
         <div>
-          <Text fw={500}>{name}</Text>
-          <Text size="sm" color="dimmed">{jobTitle}</Text>
+          <Anchor href={link} target="_blank" rel="noopener noreferrer">
+            <Text fw={500}>{name}</Text>
+          </Anchor>
           <Text size="sm" color="dimmed">{jobTitle}</Text>
           <Text size="sm" color="dimmed">{testimonial}</Text>
-          <Anchor href={link} target="_blank" rel="noopener noreferrer">Read more</Anchor>
-          <Anchor href={link} target="_blank" rel="noopener noreferrer">Read more</Anchor>
         </div>
       </Group>
     </Card>
