@@ -14,7 +14,7 @@ export default function Index() {
                 <meta name="description" content="Tim Dobson offers professional services in web, tech, IT and business development. Read testimonials from satisfied clients." />
                 <meta property="og:title" content="Tim Dobson - Professional Services" />
                 <meta property="og:description" content="Tim Dobson offers professional services in web, tech, IT and business development. Read testimonials from satisfied clients." />
-                <meta property="og:image" content="/favicon.png" />
+                <meta property="og:image" content="/tim.jpg" />
                 <meta property="og:url" content="https://www.tdobson.net" />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>

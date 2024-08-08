@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
-        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="shortcut icon" href="/tim.jpg" />
       </Head>
       <Component {...pageProps} />
     </MantineProvider>
