@@ -1,5 +1,5 @@
 import { Card, Group, Text, Title, Space } from '@mantine/core';
-import { IconBrandJavascript, IconBrandPhp, IconBrandHtml5, IconBrandCss3, IconBrandReact, IconBrandMantine, IconBrandNextjs, IconGit, IconBrandWordpress, IconBrandLinux, IconBrandGoogle } from '@tabler/icons-react';
+import { IconBrandJavascript, IconBrandPhp, IconBrandHtml5, IconBrandCss3, IconBrandReact, IconBrandMantine, IconBrandNextjs, IconBrandGithub, IconBrandWordpress, IconBrandUbuntu, IconBrandGoogle } from '@tabler/icons-react';
 import styles from './Skills.module.css';
 
 const skills = [
