@@ -18,6 +18,7 @@ export default function Index() {
             </Head>
             <HeroSection />
             <TimDobsonTimeline />
+            <Space h="xl" />
             <TestimonialsCarousel />
         </Layout>
     );
