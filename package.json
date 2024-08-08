@@ -21,6 +21,7 @@
     "deploy": "next build && npx wrangler pages deploy build/"
   },
   "dependencies": {
+    "embla-carousel-react": "^7.1.0",
     "@mantine/core": "7.8.1",
     "@mantine/hooks": "7.8.1",
     "@mantinex/mantine-logo": "^1.0.1",
