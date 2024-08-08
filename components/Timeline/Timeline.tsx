@@ -4,10 +4,12 @@ import { IconGitBranch, IconGitCommit, IconGitPullRequest, IconMessageDots } fro
 export function TimDobsonTimeline() {
   return (
       <>
-          <Title order={2}>My Experience</Title>
-          <Space />
+          <div style={{ textAlign: 'center' }}>
+              <Title order={2}>My Experience</Title>
+              <Space />
+          </div>
 
-    <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
 
         <Group>
 
