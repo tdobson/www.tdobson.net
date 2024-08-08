@@ -4,6 +4,8 @@ export interface Testimonial {
   testimonial: string;
   jobTitle: string;
   link: string;
+  jobTitle: string;
+  link: string;
 }
 
 export interface TestimonialCardProps {
