@@ -1,8 +1,7 @@
-import { Container, Text, Title, List, ThemeIcon, Box, useMantineTheme } from '@mantine/core';
-import { IconCircleCheck } from '@tabler/icons-react';
+import { Container, Text, Title, Box, useMantineTheme } from '@mantine/core';
 import { Layout } from '../components/Layout/Layout';
 import { HeroSection } from '../components/HeroSection/HeroSection';
-import { Fragment } from "react";
+import { TimDobsonTimeline } from '../components/Timeline/Timeline';
 
 export default function HomePage() {
     const theme = useMantineTheme();
