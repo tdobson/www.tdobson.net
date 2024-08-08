@@ -9,6 +9,7 @@ export default function Index() {
             <HeroSection />
 
             <TimDobsonTimeline />
+            <TestimonialsCarousel />
             </Layout>
     );
 }
