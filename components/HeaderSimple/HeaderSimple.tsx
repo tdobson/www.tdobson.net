@@ -1,18 +1,28 @@
 import { Container, Group, Burger } from '@mantine/core';
-import { MantineLogo } from '@mantinex/mantine-logo';
+import Link from 'next/link';
 import classes from './HeaderSimple.module.css';
 
+const links = [
+    { link: '/#about', label: 'About' },
+    { link: '/#experience', label: 'Experience' },
+    { link: '/#projects', label: 'Projects' },
+    { link: '/#contact', label: 'Contact' },
+];
 
-interface HeaderSimpleProps {
-    children: React.ReactNode;
-}
+export function HeaderSimple() {
+    const items = links.map((link) => (
+        <Link legacyBehavior key={link.label} href={link.link}>
+            <a>{link.label}</a>
+        </Link>
+    ));
 
-export function HeaderSimple({ children }: HeaderSimpleProps) {
     return (
         <header className={classes.header}>
             <Container size="md" className={classes.inner}>
-                <MantineLogo size={28} />
-                {children}
+                <div style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>Tim Dobson</div>
+                <Group spacing={5}>
+                    {items}
+                </Group>
                 <Burger opened={false} size="sm" />
             </Container>
         </header>
