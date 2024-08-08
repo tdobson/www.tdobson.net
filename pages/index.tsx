@@ -1,7 +1,5 @@
-import { Container, Text, Title, Box, useMantineTheme } from '@mantine/core';
 import { Layout } from '../components/Layout/Layout';
-import { HeroSection } from '../components/HeroSection/HeroSection';
-import { TimDobsonTimeline } from '../components/Timeline/Timeline';
+import { HomePage } from '../components/HomePage/HomePage';
 
 export default function HomePage() {
     const theme = useMantineTheme();
