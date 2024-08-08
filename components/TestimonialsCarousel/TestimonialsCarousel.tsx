@@ -9,7 +9,7 @@ function TestimonialCard({ name, image, testimonial }: TestimonialCardProps) {
       <Group>
         <Avatar src={image} radius="xl" />
         <div>
-          <Text weight={500 as any}>{name}</Text>
+          <Text fw={500}>{name}</Text>
           <Text size="sm" color="dimmed">{testimonial}</Text>
         </div>
       </Group>
