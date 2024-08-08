@@ -13,10 +13,10 @@ const skills = [
     { icon: IconBrandGithub, title: 'Git', description: 'Proficient' },
     { icon: IconBrandWordpress, title: 'WordPress', description: 'Proficient' },
     { icon: IconBrandUbuntu, title: 'Linux', description: 'Proficient' },
-    { icon: IconBrandGoogle, title: 'Google Apps Script', description: 'Proficient' },
+    { icon: IconBrandGoogle, title: 'Apps Script', description: 'Proficient' },
     { icon: IconBrandGoogle, title: 'English', description: 'Native' },
-    { icon: IconBrandGoogle, title: 'Russian', description: 'GSCE/not conversational' },
-    { icon: IconBrandGoogle, title: 'French', description: 'A Level/clumsy conversational' },
+    { icon: IconBrandGoogle, title: 'Russian', description: 'Fuzzy' },
+    { icon: IconBrandGoogle, title: 'French', description: 'Clumsy' },
 ];
 
 export function Skills() {
