@@ -20,7 +20,7 @@ export function HeaderSimple() {
         <header className={classes.header}>
             <Container size="md" className={classes.inner}>
                 <div style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>Tim Dobson</div>
-                <Group spacing={5}>
+                <Group gap={5}>
                     {items}
                 </Group>
                 <Burger opened={false} size="sm" />
