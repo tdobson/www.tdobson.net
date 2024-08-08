@@ -12,8 +12,6 @@ function TestimonialCard({ name, image, jobTitle, testimonial, link }: Testimoni
           <Anchor href={link} target="_blank" rel="noopener noreferrer">
             <Text fw={500}>{name}</Text>
           </Anchor>
-          <Text size="sm" color="dimmed">{jobTitle}</Text>
-          <Text size="sm" color="dimmed">{testimonial}</Text>
         </div>
       </Group>
     </Card>
