@@ -26,7 +26,7 @@ export function Skills() {
         <div className={styles.skillsSection}>
             <Title order={2}>Skills and Technologies</Title>
             <Space h="md" />
-            <Group >
+            <Group align="center" justify="center" gap="md">
                 {skills.map((skill, index) => (
                     <Card key={index} shadow="sm" padding="lg" className={styles.skillCard}>
                         <skill.icon size={40} />
