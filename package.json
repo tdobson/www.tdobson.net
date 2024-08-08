@@ -1,6 +1,6 @@
 {
-  "name": "james.tdobson.net",
-  "version": "2.0.0",
+  "name": "www.tdobson.net",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -18,7 +18,7 @@
     "test": "npm run prettier:check && npm run lint && npm run typecheck && npm run jest",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build",
-    "deploy": "next build && aws s3 sync build/ s3://james.tdobson.net/"
+    "deploy": "next build && aws s3 sync build/ s3://www.tdobson.net/"
   },
   "dependencies": {
     "@mantine/core": "7.8.1",

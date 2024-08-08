@@ -1,4 +1,4 @@
-# James Day Mantine Single Page App
+# Tim's personal website
 
 This is a single page app built with [Next.js](https://nextjs.org/) using the pages router and [Mantine](https://mantine.dev/).
 
@@ -116,8 +116,8 @@ To get started with the project, follow these steps:
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/tdobson/james.tdobson.net.git
-   cd james.tdobson.net
+   git clone https://github.com/tdobson/www.tdobson.net.git
+   cd www.tdobson.net
    ```
 
 2. **Install dependencies**:
