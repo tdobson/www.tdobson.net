@@ -1,24 +1,10 @@
 import { Layout } from '../components/Layout/Layout';
 import { HomePage } from '../components/HomePage/HomePage';
 
-export default function HomePage() {
-    const theme = useMantineTheme();
+export default function Index() {
     return (
         <Layout>
-            <HeroSection />
-
-            <Container>
-                <div id="about" style={{ backgroundColor: theme.colors.gray[0], padding: theme.spacing.xl }}>
-                    <Box>
-                        <Title order={2} mb={theme.spacing.xl}>About Me</Title>
-                        <Text size="lg" mb={theme.spacing.xl}>
-                            Tim Dobson, developer, and founder of The Climbing Clan and The Caving Crew.
-                        </Text>
-                        <List
-                            spacing="sm"
-                            size="lg"
-                            center
-                            icon={
+            <HomePage />
                                 <ThemeIcon color="blue" size={24} radius="xl">
                                     <IconCircleCheck size={16} />
                                 </ThemeIcon>
