@@ -1,15 +1,22 @@
-import { Timeline, Text, ThemeIcon, Avatar } from '@mantine/core';
+import {Timeline, Text, Group, ThemeIcon, Avatar, Title, Space} from '@mantine/core';
 import { IconGitBranch, IconGitCommit, IconGitPullRequest, IconMessageDots } from '@tabler/icons-react';
 
 export function TimDobsonTimeline() {
   return (
+      <>
+          <Title order={2}>My Experience</Title>
+          <Space />
+
     <div style={{ display: 'flex', justifyContent: 'center' }}>
-      <Timeline active={2} lineWidth={6} bulletSize={40}>
+
+        <Group>
+
+      <Timeline active={1} lineWidth={6} bulletSize={60}>
         <Timeline.Item
           title="Junior Javascript Developer at XEBIT LIMITED (March 2022 - Present)"
           bullet={
             <Avatar
-              size={22}
+              size={44}
               radius="xl"
               src="https://avatars0.githubusercontent.com/u/10353856?s=460&u=88394dfd67727327c1f7670a1764dc38a8a24831&v=4"
             />
@@ -18,24 +25,13 @@ export function TimDobsonTimeline() {
           <Text c="dimmed" size="sm">I write Javascript integrating with Google Sheets and WordPress to help businesses automate their processes.</Text>
         </Timeline.Item>
 
-        <Timeline.Item
-          title="Chair of The Climbing Clan (November 2017 - Present)"
-          bullet={
-            <Avatar
-              size={22}
-              radius="xl"
-              src="https://avatars0.githubusercontent.com/u/10353856?s=460&u=88394dfd67727327c1f7670a1764dc38a8a24831&v=4"
-            />
-          }
-        >
-          <Text c="dimmed" size="sm">Founded a climbing group and developed software products to support club operations.</Text>
-        </Timeline.Item>
+
 
         <Timeline.Item
           title="Chair of The Caving Crew (January 2020 - Present)"
           bullet={
             <Avatar
-              size={22}
+              size={44}
               radius="xl"
               src="https://avatars0.githubusercontent.com/u/10353856?s=460&u=88394dfd67727327c1f7670a1764dc38a8a24831&v=4"
             />
@@ -44,11 +40,24 @@ export function TimDobsonTimeline() {
           <Text c="dimmed" size="sm">Founded a caving group with a very similar setup and structure to the Climbing Clan.</Text>
         </Timeline.Item>
 
+          <Timeline.Item
+              title="Chair of The Climbing Clan (November 2017 - September 2024)"
+              bullet={
+                  <Avatar
+                      size={44}
+                      radius="xl"
+                      src="https://avatars0.githubusercontent.com/u/10353856?s=460&u=88394dfd67727327c1f7670a1764dc38a8a24831&v=4"
+                  />
+              }
+          >
+              <Text c="dimmed" size="sm">Founded a climbing group, developed software products to support club operations and grew it to 200+ members.</Text>
+          </Timeline.Item>
+
         <Timeline.Item
           title="Technical Sales Consultant at Migrating Dragons (April 2018 - March 2022)"
           bullet={
             <Avatar
-              size={22}
+              size={44}
               radius="xl"
               src="https://avatars0.githubusercontent.com/u/10353856?s=460&u=88394dfd67727327c1f7670a1764dc38a8a24831&v=4"
             />
@@ -61,7 +70,7 @@ export function TimDobsonTimeline() {
           title="Customer Success Manager at Brightbox (October 2018 - October 2019)"
           bullet={
             <Avatar
-              size={22}
+              size={44}
               radius="xl"
               src="https://avatars0.githubusercontent.com/u/10353856?s=460&u=88394dfd67727327c1f7670a1764dc38a8a24831&v=4"
             />
@@ -74,7 +83,7 @@ export function TimDobsonTimeline() {
           title="User Research Specialist at Guardian Angel (February 2019 - July 2019)"
           bullet={
             <Avatar
-              size={22}
+              size={44}
               radius="xl"
               src="https://avatars0.githubusercontent.com/u/10353856?s=460&u=88394dfd67727327c1f7670a1764dc38a8a24831&v=4"
             />
@@ -87,7 +96,7 @@ export function TimDobsonTimeline() {
           title="Senior Account Manager at Formisimo (July 2017 - April 2018)"
           bullet={
             <Avatar
-              size={22}
+              size={44}
               radius="xl"
               src="https://avatars0.githubusercontent.com/u/10353856?s=460&u=88394dfd67727327c1f7670a1764dc38a8a24831&v=4"
             />
@@ -100,7 +109,7 @@ export function TimDobsonTimeline() {
           title="Head of Sales & Account Management at Bytemark Hosting (November 2010 - September 2016)"
           bullet={
             <Avatar
-              size={22}
+              size={44}
               radius="xl"
               src="https://avatars0.githubusercontent.com/u/10353856?s=460&u=88394dfd67727327c1f7670a1764dc38a8a24831&v=4"
             />
@@ -109,6 +118,8 @@ export function TimDobsonTimeline() {
           <Text c="dimmed" size="sm">Managed customer relationships and sales, leading to significant revenue growth.</Text>
         </Timeline.Item>
       </Timeline>
+        </Group>
     </div>
+      </>
   );
 }

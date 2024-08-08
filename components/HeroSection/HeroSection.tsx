@@ -6,7 +6,7 @@ export function HeroSection() {
     <div className={classes.hero}>
       <Container size="lg">
         <Title className={classes.title}>
-          Hi there 👋 I'm Tim Dobson
+          Hi there 👋 I'm Tim
         </Title>
         <Text className={classes.description} mt={30}>
           Self-taught developer and lifelong learner passionate about new technologies and building useful products.
