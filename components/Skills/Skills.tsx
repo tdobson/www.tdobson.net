@@ -1,5 +1,5 @@
 import { Card, Group, Text, Title, Space } from '@mantine/core';
-import { IconBrandJavascript, IconBrandPhp, IconBrandHtml5, IconBrandCss3, IconBrandReact, IconBrandMantine, IconBrandNextjs, IconBrandGithub, IconBrandWordpress, IconBrandUbuntu, IconBrandGoogle } from '@tabler/icons-react';
+import { IconBrandJavascript, IconBrandPhp, IconBrandHtml5, IconBrandCss3, IconBrandReact, IconBrandMantine, IconBrandNextjs, IconBrandGithub, IconBrandWordpress, IconBrandUbuntu, IconBrandGoogle, IconBrandTypescript, IconBrandDebian, IconTerminal2 } from '@tabler/icons-react';
 import styles from './Skills.module.css';
 
 const skills = [
@@ -13,6 +13,9 @@ const skills = [
     { icon: IconBrandGithub, title: 'Git', description: 'Proficient' },
     { icon: IconBrandWordpress, title: 'WordPress', description: 'Proficient' },
     { icon: IconBrandUbuntu, title: 'Linux', description: 'Proficient' },
+    { icon: IconBrandTypescript, title: 'TypeScript', description: 'Proficient' },
+    { icon: IconBrandDebian, title: 'Debian Linux', description: 'Proficient' },
+    { icon: IconTerminal2, title: 'Bash', description: 'Proficient' },
     { icon: IconBrandGoogle, title: 'Apps Script', description: 'Proficient' },
     { icon: IconBrandGoogle, title: 'English', description: 'Native' },
     { icon: IconBrandGoogle, title: 'Russian', description: 'Fuzzy' },
