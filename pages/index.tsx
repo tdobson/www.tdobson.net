@@ -5,10 +5,7 @@ export default function Index() {
     return (
         <Layout>
             <HomePage />
-                        </List>
-                    </Box>
-                </div>
-            </Container>
+            <HomePage />
         </Layout>
     );
 }
