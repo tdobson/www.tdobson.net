@@ -18,10 +18,10 @@ export default function Document() {
               "url": "https://www.tdobson.net",
               "address": {
                 "@type": "PostalAddress",
-                "addressLocality": "London",
+                "addressLocality": "Manchester",
                 "addressCountry": "UK"
               },
-              "telephone": "+44 1234 567890"
+              "telephone": "+44 1457 597007"
             })
           }}
         />
