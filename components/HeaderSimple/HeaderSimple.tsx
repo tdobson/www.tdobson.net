@@ -4,13 +4,14 @@ import Link from 'next/link';
 import classes from './HeaderSimple.module.css';
 import sections from '../../config/sections.json';
 import * as Icons from '@tabler/icons-react';
+import React from 'react';
 
 
 export function HeaderSimple() {
     const items = sections.sections.map((section) => (
         <Link legacyBehavior key={section.name} href={section.link}>
             <a className={classes.link}>
-                {React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType)}
+                {React.createElement(Icons[section.icon as keyof typeof Icons])}
                 {section.name}
             </a>
         </Link>
