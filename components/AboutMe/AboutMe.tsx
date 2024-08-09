@@ -1,4 +1,5 @@
-import { Container, Title, Text, Button } from '@mantine/core';
+import { Container, Title, Text, Button, Paper, List, ThemeIcon } from '@mantine/core';
+import { IconCheck } from '@tabler/icons';
 import classes from './AboutMe.module.css';
 
 export function AboutMe() {
@@ -10,9 +11,27 @@ export function AboutMe() {
             <Title className={classes.title}>
               Hi there 👋 I'm Tim
             </Title>
-            <Text className={classes.description} mt={30}>
-              Self-taught developer and lifelong learner passionate about new technologies and building useful products.
-            </Text>
+            <Paper shadow="md" p="md" className={classes.descriptionBox}>
+              <Text className={classes.description} mt={30}>
+                Self-taught developer and lifelong learner passionate about new technologies and building useful products.
+              </Text>
+              <List
+                spacing="xs"
+                size="sm"
+                center
+                icon={
+                  <ThemeIcon color="teal" size={24} radius="xl">
+                    <IconCheck size={16} />
+                  </ThemeIcon>
+                }
+                mt={20}
+              >
+                <List.Item>Experienced in full-stack development</List.Item>
+                <List.Item>Proficient in JavaScript, React, and Node.js</List.Item>
+                <List.Item>Strong background in UI/UX design</List.Item>
+                <List.Item>Passionate about open-source contributions</List.Item>
+              </List>
+            </Paper>
             <Button
               variant="gradient"
               gradient={{ from: 'blue', to: 'green' }}
