@@ -22,14 +22,14 @@ const CanIHelpYou = () => {
             <li><IconProject size={20} /> Project Management</li>
             <li><IconBusinessplan size={20} /> Business Development</li>
           </ul>
-        </div>
+        </Group>
         <Text className={styles.description} mt="sm" mb={30}>
           My usual rate is £300/day for remote work, and £400/day for onsite work within 20 miles of Stockport.
         </Text>
         <Text className={styles.description} mt="sm" mb={30}>
           My usual working hours are 10-6pm, Mon-Fri, UK time.
         </Text>
-      </div>
+      </Group>
       </Group>
       <Group position="center" spacing="xl" mt="xl">
         <div className={styles.form}>
@@ -53,7 +53,7 @@ const CanIHelpYou = () => {
         >
           Message me here
         </Button>
-      </div>
+      </Group>
       </Group>
     </div>
   );

@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @media (max-width: var(--mantine-breakpoint-sm)) {
     padding: calc(var(--mantine-spacing-xl) * 1.5);
   }
 }
