@@ -8,27 +8,27 @@
     {
       "name": "Experience",
       "icon": "IconBriefcase",
-      "link": "#experience",
+      "link": "#experience"
     },
     {
       "name": "Skills and Technologies",
       "icon": "IconTools",
-      "link": "#skills",
+      "link": "#skills"
     },
     {
       "name": "Projects",
       "icon": "IconProject",
-      "link": "#projects",
+      "link": "#projects"
     },
     {
       "name": "Testimonials",
       "icon": "IconMessageCircle",
-      "link": "#testimonials",
+      "link": "#testimonials"
     },
     {
       "name": "Contact Form",
       "icon": "IconMail",
-      "link": "#contact",
+      "link": "#contact"
     }
   ]
 }
