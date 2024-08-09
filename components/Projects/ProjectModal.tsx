@@ -10,8 +10,12 @@ export const ProjectModal = ({ opened, onClose, project }) => {
       <Text size="sm" mb="md"><strong>Problem:</strong> {project.problem}</Text>
       <Text size="sm" mb="md"><strong>Approach:</strong> {project.approach}</Text>
       <Text size="sm" mb="md"><strong>Solution:</strong> {project.solution}</Text>
+      <Text size="sm" mb="md"><strong>Problem:</strong> {project.problem}</Text>
+      <Text size="sm" mb="md"><strong>Approach:</strong> {project.approach}</Text>
+      <Text size="sm" mb="md"><strong>Solution:</strong> {project.solution}</Text>
       <Text size="sm" mb="md"><a href={project.projectLink} target="_blank" rel="noopener noreferrer">View Project</a></Text>
-      <Text size="sm"><a href={project.githubLink} target="_blank" rel="noopener noreferrer">View on GitHub</a></Text>
+      <Text size="sm" mb="md"><a href={project.githubLink} target="_blank" rel="noopener noreferrer">View on GitHub</a></Text>
+      <Text size="sm" mb="md"><a href={project.shortScreencast} target="_blank" rel="noopener noreferrer">Watch Screencast</a></Text>
     </Modal>
   );
 };
