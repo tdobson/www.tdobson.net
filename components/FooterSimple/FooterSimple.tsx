@@ -31,22 +31,22 @@ export function FooterSimple() {
         console.log(to);
     };
 
-    const items = sections.sections.map((section) => (
-        <ScrollLink
-            activeClass="active"
-            to={section.link.substring(1)}
-            key={section.name}
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className={classes.link}
-            onSetActive={handleSetActive}
-        >
-            {Icons[section.icon as keyof typeof Icons] ? React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType) : null}
-            {section.name}
-        </ScrollLink>
-    ));
+const items = sections.sections.map((section) => (
+    <ScrollLink
+        activeClass="active"
+        to={section.link}
+        key={section.name}
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        className={classes.link}
+        onSetActive={handleSetActive}
+    >
+        {Icons[section.icon as keyof typeof Icons] ? React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType) : null}
+        {section.name}
+    </ScrollLink>
+));
 
     const socialItems = socialMedia.socialMedia.map((media) => (
         <a key={media.name} href={media.url} className={classes.link} target="_blank" rel="noopener noreferrer">
