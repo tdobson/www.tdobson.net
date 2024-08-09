@@ -36,6 +36,10 @@
   display: none;
 }
 
+.burger {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .link {
     display: block;
@@ -45,5 +49,19 @@
   .inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .links.opened {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }

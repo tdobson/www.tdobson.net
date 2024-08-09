@@ -21,10 +21,10 @@ export function HeaderSimple() {
         <header className={classes.header}>
             <Container size="md" className={classes.inner}>
                 <div style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>Tim Dobson</div>
-                <Group gap={5} className={opened ? classes.hidden : ''}>
+                <Group gap={5} className={`${classes.links} ${opened ? 'opened' : ''}`}>
                     {items}
                 </Group>
-                <Burger opened={opened} onClick={() => setOpened((o) => !o)} size="sm" />
+                <Burger opened={opened} onClick={() => setOpened((o) => !o)} size="sm" className={classes.burger} />
             </Container>
         </header>
     );
