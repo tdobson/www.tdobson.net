@@ -20,14 +20,24 @@ export default function Index() {
                 <meta property="og:url" content="https://www.tdobson.net" />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-            <AboutMe id="about-me" />
-            <HeroSection id="hero-section" />
+            <div id="about-me">
+                <AboutMe />
+            </div>
+            <div id="hero-section">
+                <HeroSection />
+            </div>
             <Space h="xl" />
-            <TimDobsonTimeline id="timeline" />
+            <div id="timeline">
+                <TimDobsonTimeline />
+            </div>
             <Space h="xl" />
-            <Skills id="skills" />
+            <div id="skills">
+                <Skills />
+            </div>
             <Space h="xl" />
-            <TestimonialsCarousel id="testimonials" />
+            <div id="testimonials">
+                <TestimonialsCarousel />
+            </div>
             <Space h="xl" />
             <div id="contact">
                 {/* Contact form component goes here */}
