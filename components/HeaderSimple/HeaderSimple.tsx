@@ -25,7 +25,7 @@ export function HeaderSimple() {
         };
     }, []);
 
-    const handleSetActive = (to) => {
+    const handleSetActive = (to: string) => {
         console.log(to);
     };
 
