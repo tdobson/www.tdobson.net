@@ -10,6 +10,7 @@ export function HeaderSimple() {
     const [opened, setOpened] = useState(false);
     const items = sections.sections.map((section) => (
         <ScrollLink
+            href={`#${section.link.substring(1)}`}
             key={section.name}
             to={section.link.substring(1)}
             spy={true}
