@@ -6,6 +6,7 @@ import { TestimonialsCarousel } from '../components/TestimonialsCarousel/Testimo
 import { Skills } from '../components/Skills/Skills';
 import { AboutMe } from '../components/AboutMe/AboutMe';
 import { Space } from '@mantine/core';
+import { Projects } from '../components/Projects/Projects';
 import { FooterSimple } from '../components/FooterSimple/FooterSimple';
 
 export default function Index() {
@@ -27,6 +28,10 @@ export default function Index() {
             <Space h="xl" />
             <div id="timeline">
                 <TimDobsonTimeline />
+            </div>
+            <Space h="xl" />
+            <div id="projects">
+                <Projects />
             </div>
             <Space h="xl" />
             <div id="skills">
