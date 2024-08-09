@@ -13,7 +13,8 @@
 }
 
 .link {
-  display: block;
+  display: flex;
+  align-items: center;
   line-height: 1;
   padding: rem(8px) rem(12px);
   border-radius: var(--mantine-radius-sm);

@@ -18,7 +18,7 @@ export function FooterSimple() {
     return (
         <div className={classes.footer}>
             <Container className={classes.inner}>
-                <MantineLogo size={28} />
+                <div style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>Tim Dobson</div>
                 <Group className={classes.links}>{items}</Group>
             </Container>
         </div>
