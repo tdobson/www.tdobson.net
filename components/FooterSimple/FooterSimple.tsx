@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Group } from '@mantine/core';
 import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './FooterSimple.module.css';
