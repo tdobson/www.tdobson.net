@@ -26,6 +26,11 @@
       "url": "https://www.twitter.com/tdobson"
     },
     {
+      "name": "Messenger",
+      "icon": "IconBrandMessenger",
+      "url": "https://m.me/TimDobsonUK"
+    },
+    {
       "name": "Work",
       "icon": "IconBriefcase",
       "url": "https://www.migratingdragons.com"
