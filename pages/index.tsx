@@ -8,6 +8,7 @@ import { AboutMe } from '../components/AboutMe/AboutMe';
 import { Space } from '@mantine/core';
 import { Projects } from '../components/Projects/Projects';
 import { FooterSimple } from '../components/FooterSimple/FooterSimple';
+import { ContactMe } from '../components/ContactMe/ContactMe';
 
 export default function Index() {
     return (
@@ -43,7 +44,7 @@ export default function Index() {
             </div>
             <Space h="xl" />
             <div id="contact">
-                {/* Contact form component goes here */}
+                <ContactMe />
             </div>
 
         </Layout>
