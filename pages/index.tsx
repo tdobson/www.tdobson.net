@@ -30,12 +30,12 @@ export default function Index() {
                 <TimDobsonTimeline />
             </div>
             <Space h="xl" />
-            <div id="projects">
-                <Projects />
-            </div>
-            <Space h="xl" />
             <div id="skills">
                 <Skills />
+            </div>
+            <Space h="xl" />
+            <div id="projects">
+                <Projects />
             </div>
             <Space h="xl" />
             <div id="testimonials">
