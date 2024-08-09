@@ -30,7 +30,7 @@ const CanIHelpYou = () => {
           My usual working hours are 10-6pm, Mon-Fri, UK time.
         </Text>
 
-      <Group position="center" spacing="xl" mt="xl">
+      <Group spacing="xl" mt="xl" style={{ display: 'flex', justifyContent: 'center' }}>
         <div className={styles.form}>
           <Text align="left" size="md" mb="md">
             Email me at <Anchor href="mailto:work@tdobson.net">work@tdobson.net</Anchor>
