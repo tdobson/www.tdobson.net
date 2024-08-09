@@ -1,7 +1,22 @@
 import React from 'react';
 import { Modal, Text, Image } from '@mantine/core';
 
-export const ProjectModal = ({ opened, onClose, project }) => {
+interface ProjectModalProps {
+  opened: boolean;
+  onClose: () => void;
+  project: {
+    title: string;
+    shortScreencast: string;
+    problem: string;
+    approach: string;
+    solution: string;
+    longDescription: string;
+    projectLink: string;
+    githubLink: string;
+  };
+}
+
+export const ProjectModal: React.FC<ProjectModalProps> = ({ opened, onClose, project }) => {
   return (
     <Modal opened={opened} onClose={onClose} title={project.title}>
         <Image src={project.shortScreencast} alt={`${project.title} Screencast`} mb="md" />
