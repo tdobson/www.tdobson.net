@@ -86,5 +86,6 @@ const items = sections.sections.map((section) => (
                     © Tim Dobson {new Date().getFullYear()}
                 </div>
             </Container>
+            </div>
     );
 }
