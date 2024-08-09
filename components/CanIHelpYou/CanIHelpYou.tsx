@@ -8,7 +8,7 @@ const CanIHelpYou = () => {
   const messenger = socialMedia.socialMedia.find((item) => item.name === 'Messenger');
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <div>
         <Title className={styles.title}>Can I help you?</Title>
         <Text className={styles.description} mt="sm" mb={30}>
