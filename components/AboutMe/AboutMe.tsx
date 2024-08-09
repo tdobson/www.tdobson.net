@@ -1,5 +1,5 @@
 import { Container, Title, Text, Button, Paper, List, ThemeIcon } from '@mantine/core';
-import { IconCheck } from '@tabler/icons';
+import { IconCheck } from '@tabler/icons-react';
 import classes from './AboutMe.module.css';
 
 export function AboutMe() {
