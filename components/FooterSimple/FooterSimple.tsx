@@ -36,7 +36,6 @@ export function FooterSimple() {
             activeClass="active"
             to={section.link.substring(1)}
             key={section.name}
-            to={section.link.substring(1)}
             spy={true}
             smooth={true}
             offset={-70}
@@ -59,6 +58,8 @@ export function FooterSimple() {
     const scrollToTop = () => {
         scroll.scrollToTop();
     };
+
+    console.log(items)
 
     return (
         <div className={classes.footer}>
