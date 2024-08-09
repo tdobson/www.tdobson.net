@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, Container, Anchor, Title, Button, Group } from '@mantine/core';
-import { IconCode, IconBriefcase, IconProject, IconBusinessplan } from '@tabler/icons-react';
+import { IconCode, IconBriefcase, IconTools, IconBusinessplan } from '@tabler/icons-react';
 import socialMedia from '../../config/socialmedia.json';
 import styles from './CanIHelpYou.module.css';
 
@@ -20,7 +20,7 @@ const CanIHelpYou = () => {
           <ul className={styles.list}>
             <li><IconCode size={20} /> Web Development</li>
             <li><IconBriefcase size={20} /> Technical Consulting</li>
-            <li><IconProject size={20} /> Project Management</li>
+            <li><IconTools size={20} /> Project Management</li>
             <li><IconBusinessplan size={20} /> Business Development</li>
           </ul>
         </div>
