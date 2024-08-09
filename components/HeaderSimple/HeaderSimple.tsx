@@ -10,7 +10,7 @@ export function HeaderSimple() {
     const items = sections.sections.map((section) => (
         <Link legacyBehavior key={section.name} href={section.link}>
             <a className={classes.link}>
-                {React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType)}
+                {Icons[section.icon as keyof typeof Icons] ? React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType) : null}
                 {section.name}
             </a>
         </Link>

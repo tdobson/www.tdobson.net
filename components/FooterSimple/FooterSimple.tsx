@@ -10,7 +10,7 @@ import React from 'react';
 export function FooterSimple() {
     const items = sections.sections.map((section) => (
         <a key={section.name} href={section.link} className={classes.link}>
-            {React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType)}
+            {Icons[section.icon as keyof typeof Icons] ? React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType) : null}
             {section.name}
         </a>
     ));
