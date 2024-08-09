@@ -1,21 +1,27 @@
+
 import { Container, Group, Burger } from '@mantine/core';
-import { MantineLogo } from '@mantinex/mantine-logo';
+import { Link as ScrollLink } from 'react-scroll';
 import classes from './FooterSimple.module.css';
 import sections from '../../config/sections.json';
 import socialMedia from '../../config/socialmedia.json';
 import * as Icons from '@tabler/icons-react';
 import React, { useState } from 'react';
 
-
-
 export function FooterSimple() {
     const [opened, setOpened] = useState(false);
 
     const items = sections.sections.map((section) => (
-        <a key={section.name} href={section.link} className={classes.link}>
+        <ScrollLink
+            key={section.name}
+            to={section.link.substring(1)}
+            smooth={true}
+            duration={500}
+            className={classes.link}
+            onClick={() => setOpened(false)}
+        >
             {Icons[section.icon as keyof typeof Icons] ? React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType) : null}
             {section.name}
-        </a>
+        </ScrollLink>
     ));
 
     const socialItems = socialMedia.socialMedia.map((media) => (

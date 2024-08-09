@@ -1,20 +1,25 @@
+
 import React, { useState } from 'react';
 import { Container, Group, Burger } from '@mantine/core';
-import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
 import classes from './HeaderSimple.module.css';
 import sections from '../../config/sections.json';
 import * as Icons from '@tabler/icons-react';
 
-
 export function HeaderSimple() {
     const [opened, setOpened] = useState(false);
     const items = sections.sections.map((section) => (
-        <Link legacyBehavior key={section.name} href={section.link}>
-            <a className={classes.link}>
-                {Icons[section.icon as keyof typeof Icons] ? React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType) : null}
-                {section.name}
-            </a>
-        </Link>
+        <ScrollLink
+            key={section.name}
+            to={section.link.substring(1)}
+            smooth={true}
+            duration={500}
+            className={classes.link}
+            onClick={() => setOpened(false)}
+        >
+            {Icons[section.icon as keyof typeof Icons] ? React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType) : null}
+            {section.name}
+        </ScrollLink>
     ));
 
     return (

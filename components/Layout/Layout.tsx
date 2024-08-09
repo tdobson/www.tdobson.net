@@ -8,9 +8,9 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
     return (
         <>
-            <HeaderSimple>{children}</HeaderSimple>
+            <HeaderSimple />
             <main>{children}</main>
-            <FooterSimple>{children}</FooterSimple>
+            <FooterSimple />
         </>
     );
 }

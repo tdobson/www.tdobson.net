@@ -29,7 +29,7 @@ export default function Index() {
             <Space h="xl" />
             <TestimonialsCarousel />
             <Space h="xl" />
-            <FooterSimple />
+
         </Layout>
     );
 }

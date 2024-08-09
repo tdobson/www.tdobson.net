@@ -31,7 +31,7 @@ export function Skills() {
                     <Card key={index} shadow="sm" padding="lg" className={styles.skillCard}>
                         <skill.icon size={40} />
                         <Text fw={500} mt="md">{skill.title}</Text>
-                        <Text size="sm" color="dimmed">{skill.description}</Text>
+
                     </Card>
                 ))}
             </Group>
