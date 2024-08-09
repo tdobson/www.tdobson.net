@@ -9,19 +9,24 @@ export const ContactMe = () => {
 
   return (
     <Container className={styles.contactMeContainer}>
-      <Text align="center" size="xl" weight={700} mb="md">Contact Me</Text>
-      <Text align="center" size="md" mb="md">
-        Email me at <Anchor href="mailto:work@tdobson.net">work@tdobson.net</Anchor>
-      </Text>
-      <Text align="center" size="md" mb="md">
-        My usual rate is £300/day for remote work, and £400/day for onsite work within 20 miles of Stockport.
-      </Text>
-      <Text align="center" size="md" mb="md">
-        Phone: 01457 597007
-      </Text>
-      <Text align="center" size="md" mb="md">
-        Message me on <Anchor href={linkedin.url} target="_blank" rel="noopener noreferrer">LinkedIn</Anchor> or <Anchor href={messenger.url} target="_blank" rel="noopener noreferrer">Messenger</Anchor>
-      </Text>
+      <div className={styles.contactBox}>
+        <Text align="left" size="xl" weight={700} mb="md">Contact Me</Text>
+        <Text align="left" size="md" mb="md">
+          Email me at <Anchor href="mailto:work@tdobson.net">work@tdobson.net</Anchor>
+        </Text>
+        <Text align="left" size="md" mb="md">
+          My usual rate is £300/day for remote work, and £400/day for onsite work within 20 miles of Stockport.
+        </Text>
+        <Text align="left" size="md" mb="md">
+          Phone: 01457 597007
+        </Text>
+        <Text align="left" size="md" mb="md">
+          Message me on <Anchor href={linkedin.url} target="_blank" rel="noopener noreferrer">LinkedIn</Anchor> or <Anchor href={messenger.url} target="_blank" rel="noopener noreferrer">Messenger</Anchor>
+        </Text>
+        <Text align="left" size="md" mb="md">
+          My usual working hours are 10-6pm, Mon-Fri, UK time.
+        </Text>
+      </div>
     </Container>
   );
 };

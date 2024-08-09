@@ -3,3 +3,10 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.contactBox {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
