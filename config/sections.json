@@ -4,37 +4,31 @@
       "name": "About Me",
       "icon": "@tabler/icons-react",
       "link": "#about",
-      "description": "Profile Picture: Displayed next to the text. Clean, Concise Text: With bullet points for easy reading. Link to a Detailed Resume or CV: Optional."
     },
     {
       "name": "Experience",
       "icon": "@tabler/icons-react",
       "link": "#experience",
-      "description": "Timeline Format: For visual appeal. Company Logos: Next to each job title for recognition."
     },
     {
       "name": "Skills and Technologies",
       "icon": "@tabler/icons-react",
       "link": "#skills",
-      "description": "Icon-based Representation: For each skill. Brief Descriptions or Proficiency Levels: Optional."
     },
     {
       "name": "Projects",
       "icon": "@tabler/icons-react",
       "link": "#projects",
-      "description": "Grid Layout: With project thumbnails. Clickable Cards: Leading to detailed project pages or GitHub repositories."
     },
     {
       "name": "Testimonials",
       "icon": "@tabler/icons-react",
       "link": "#testimonials",
-      "description": "Carousel or Grid Format: For multiple quotes. Pictures of the People Giving Testimonials: For authenticity."
     },
     {
       "name": "Contact Form",
       "icon": "@tabler/icons-react",
       "link": "#contact",
-      "description": "Simple, Straightforward Form: With clear instructions. Direct Email Link: For those who prefer email communication."
     }
   ]
 }

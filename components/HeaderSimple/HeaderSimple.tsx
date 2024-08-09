@@ -1,18 +1,17 @@
 import { Container, Group, Burger } from '@mantine/core';
 import Link from 'next/link';
 import classes from './HeaderSimple.module.css';
+import sections from '../../config/sections.json';
+import { Icon } from '@tabler/icons-react';
 
-const links = [
-    { link: '/#about', label: 'About' },
-    { link: '/#experience', label: 'Experience' },
-    { link: '/#projects', label: 'Projects' },
-    { link: '/#contact', label: 'Contact' },
-];
 
 export function HeaderSimple() {
-    const items = links.map((link) => (
-        <Link legacyBehavior key={link.label} href={link.link}>
-            <a>{link.label}</a>
+    const items = sections.sections.map((section) => (
+        <Link legacyBehavior key={section.name} href={section.link}>
+            <a>
+                <Icon icon={section.icon} />
+                {section.name}
+            </a>
         </Link>
     ));
 
