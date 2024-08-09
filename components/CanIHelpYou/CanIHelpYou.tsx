@@ -22,7 +22,6 @@ const CanIHelpYou = () => {
             <li><IconProject size={20} /> Project Management</li>
             <li><IconBusinessplan size={20} /> Business Development</li>
           </ul>
-        </Group>
         <Text className={styles.description} mt="sm" mb={30}>
           My usual rate is £300/day for remote work, and £400/day for onsite work within 20 miles of Stockport.
         </Text>
@@ -30,30 +29,29 @@ const CanIHelpYou = () => {
           My usual working hours are 10-6pm, Mon-Fri, UK time.
         </Text>
       </Group>
-      </Group>
       <Group position="center" spacing="xl" mt="xl">
         <div className={styles.form}>
-        <Text align="left" size="md" mb="md">
-          Email me at <Anchor href="mailto:work@tdobson.net">work@tdobson.net</Anchor>
-        </Text>
-        <Text align="left" size="md" mb="md">
-          Phone: 01457 597007
-        </Text>
-        <Text align="left" size="md" mb="md">
-          Message me on <Anchor href={linkedin.url} target="_blank" rel="noopener noreferrer">LinkedIn</Anchor> or <Anchor href={messenger.url} target="_blank" rel="noopener noreferrer">Messenger</Anchor>
-        </Text>
-        <Button
-          variant="gradient"
-          gradient={{ from: 'blue', to: 'green' }}
-          size="xl"
-          className={styles.control}
-          mt={40}
-          component="a"
-          href="https://m.me/timdobsonuk"
-        >
-          Message me here
-        </Button>
-      </Group>
+          <Text align="left" size="md" mb="md">
+            Email me at <Anchor href="mailto:work@tdobson.net">work@tdobson.net</Anchor>
+          </Text>
+          <Text align="left" size="md" mb="md">
+            Phone: 01457 597007
+          </Text>
+          <Text align="left" size="md" mb="md">
+            Message me on <Anchor href={linkedin.url} target="_blank" rel="noopener noreferrer">LinkedIn</Anchor> or <Anchor href={messenger.url} target="_blank" rel="noopener noreferrer">Messenger</Anchor>
+          </Text>
+          <Button
+            variant="gradient"
+            gradient={{ from: 'blue', to: 'green' }}
+            size="xl"
+            className={styles.control}
+            mt={40}
+            component="a"
+            href="https://m.me/timdobsonuk"
+          >
+            Message me here
+          </Button>
+        </div>
       </Group>
     </div>
   );
