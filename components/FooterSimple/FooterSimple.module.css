@@ -10,7 +10,7 @@
   padding-top: var(--mantine-spacing-xl);
   padding-bottom: var(--mantine-spacing-xl);
 
-  @media (max-width: $mantine-breakpoint-xs) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
 }
@@ -35,6 +35,41 @@
     color: var(--mantine-color-white);
   }
 }
+
+.hidden {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .link {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .links.opened {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 .socialLinks {
   margin-top: var(--mantine-spacing-md);
   display: flex;
