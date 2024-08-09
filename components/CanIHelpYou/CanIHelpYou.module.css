@@ -19,7 +19,7 @@
 
 .title {
   font-family: Greycliff CF, var(--mantine-font-family);
-  color: var(--mantine-color-black);
+  color: var(--mantine-color-white);
   line-height: 1;
   text-align: center;
 }
@@ -64,4 +64,11 @@
     transform: scale(1.05);
     background-color: var(--mantine-color-green-6);
   }
+}
+.box {
+  background-color: var(--mantine-color-white);
+  padding: var(--mantine-spacing-md);
+  border-radius: var(--mantine-radius-sm);
+  box-shadow: var(--mantine-shadow-sm);
+  margin-bottom: var(--mantine-spacing-md);
 }
