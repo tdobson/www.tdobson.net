@@ -1,8 +1,9 @@
 import React from 'react';
 import { Text, Container, Anchor, Title, Button, Group } from '@mantine/core';
-import { IconCode, IconBriefcase, IconProject, IconBusinessplan } from '@tabler/icons';
+import { IconCode, IconBriefcase, IconProject, IconBusinessplan } from '@tabler/icons-react';
 import socialMedia from '../../config/socialmedia.json';
 import styles from './CanIHelpYou.module.css';
+
 
 const CanIHelpYou = () => {
   const linkedin = socialMedia.socialMedia.find((item) => item.name === 'LinkedIn');
