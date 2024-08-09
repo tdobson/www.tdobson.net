@@ -3,8 +3,8 @@ import { Layout } from '../components/Layout/Layout';
 import { HeroSection } from '../components/HeroSection/HeroSection';
 import { TimDobsonTimeline } from '../components/Timeline/Timeline';
 import { TestimonialsCarousel } from '../components/TestimonialsCarousel/TestimonialsCarousel';
-import { Space} from '@mantine/core';
-
+import { Skills } from '../components/Skills/Skills';
+import { Space } from '@mantine/core';
 
 export default function Index() {
     return (
@@ -21,6 +21,7 @@ export default function Index() {
             <HeroSection />
             <TimDobsonTimeline />
             <Space h="xl" />
+            <Skills />
             <Space h="xl" />
             <TestimonialsCarousel />
         </Layout>
