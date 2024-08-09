@@ -64,7 +64,6 @@ const items = sections.sections.map((section) => (
     return (
         <div className={classes.footer}>
             <Container className={classes.inner}>
-                <div style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>Tim Dobson</div>
                 <Group gap={5} className={`${classes.links} ${opened ? 'opened' : ''}`}>
                     {items}
                 </Group>
@@ -76,6 +75,16 @@ const items = sections.sections.map((section) => (
                     {socialItems}
                 </Group>
             </Container>
-        </div>
+            <Container className={classes.inner}>
+                <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>My Social Links</div>
+                <Group className={classes.socialLinks}>
+                    {socialItems}
+                </Group>
+            </Container>
+            <Container className={classes.inner}>
+                <div className={classes.copyright}>
+                    © Tim Dobson {new Date().getFullYear()}
+                </div>
+            </Container>
     );
 }

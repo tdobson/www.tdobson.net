@@ -3,6 +3,12 @@
   border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
 }
 
+.copyright {
+  text-align: center;
+  font-size: var(--mantine-font-size-xs);
+  margin-top: var(--mantine-spacing-md);
+}
+
 .inner {
   display: flex;
   justify-content: space-between;
