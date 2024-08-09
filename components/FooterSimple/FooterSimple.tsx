@@ -5,11 +5,9 @@ import sections from '../../config/sections.json';
 import * as Icons from '@tabler/icons-react';
 import React from 'react';
 
-interface FooterSimpleProps {
-    children: React.ReactNode;
-}
 
-export function FooterSimple({ children }: FooterSimpleProps) {
+
+export function FooterSimple() {
     const items = sections.sections.map((section) => (
         <a key={section.name} href={section.link} className={classes.link}>
             {React.createElement(Icons[section.icon as keyof typeof Icons])}
