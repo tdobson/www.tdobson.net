@@ -16,3 +16,15 @@
 .control {
   margin-top: 40px;
 }
+
+.descriptionBox {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--mantine-color-gray-0);
+  border-radius: var(--mantine-radius-md);
+}
+
+.listItem {
+  text-align: left;
+  margin-bottom: 10px;
+}
