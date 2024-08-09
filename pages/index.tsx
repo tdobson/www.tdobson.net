@@ -4,6 +4,7 @@ import { HeroSection } from '../components/HeroSection/HeroSection';
 import { TimDobsonTimeline } from '../components/Timeline/Timeline';
 import { TestimonialsCarousel } from '../components/TestimonialsCarousel/TestimonialsCarousel';
 import { Skills } from '../components/Skills/Skills';
+import { AboutMe } from '../components/AboutMe/AboutMe';
 import { Space } from '@mantine/core';
 
 export default function Index() {
@@ -19,7 +20,8 @@ export default function Index() {
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
             <HeroSection />
-            <TimDobsonTimeline />
+            <HeroSection />
+            <AboutMe />
             <Space h="xl" />
             <Skills />
             <Space h="xl" />
