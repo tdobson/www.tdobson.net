@@ -2,32 +2,32 @@
   "sections": [
     {
       "name": "About Me",
-      "icon": "@tabler/icons-react",
+      "icon": "IconUser",
       "link": "#about",
     },
     {
       "name": "Experience",
-      "icon": "@tabler/icons-react",
+      "icon": "IconBriefcase",
       "link": "#experience",
     },
     {
       "name": "Skills and Technologies",
-      "icon": "@tabler/icons-react",
+      "icon": "IconTools",
       "link": "#skills",
     },
     {
       "name": "Projects",
-      "icon": "@tabler/icons-react",
+      "icon": "IconProject",
       "link": "#projects",
     },
     {
       "name": "Testimonials",
-      "icon": "@tabler/icons-react",
+      "icon": "IconMessageCircle",
       "link": "#testimonials",
     },
     {
       "name": "Contact Form",
-      "icon": "@tabler/icons-react",
+      "icon": "IconMail",
       "link": "#contact",
     }
   ]
