@@ -22,5 +22,6 @@ export function FooterSimple({ children }: FooterSimpleProps) {
                 <MantineLogo size={28} />
                 <Group className={classes.links}>{items}</Group>
             </Container>
+        </div>
     );
 }
