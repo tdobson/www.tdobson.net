@@ -3,6 +3,12 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.contactMeContainer {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .contactBox {
   border: 1px solid #ccc;
   padding: 1rem;

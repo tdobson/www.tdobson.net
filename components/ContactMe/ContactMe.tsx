@@ -10,7 +10,11 @@ export const ContactMe = () => {
   return (
     <Container className={styles.contactMeContainer}>
       <div className={styles.contactBox}>
-        <Text align="left" size="xl" weight={700} mb="md">Contact Me</Text>
+        <Text align="center" size="xl" weight={700} mb="md">Contact Me</Text>
+      <div className={styles.contactBox}>
+        <Text align="left" size="md" mb="md">
+          Keen to chat? I offer a FREE 1 hour consultation call to see if we can help each other.
+        </Text>
         <Text align="left" size="md" mb="md">
           Email me at <Anchor href="mailto:work@tdobson.net">work@tdobson.net</Anchor>
         </Text>
@@ -26,6 +30,7 @@ export const ContactMe = () => {
         <Text align="left" size="md" mb="md">
           My usual working hours are 10-6pm, Mon-Fri, UK time.
         </Text>
+      </div>
       </div>
     </Container>
   );
