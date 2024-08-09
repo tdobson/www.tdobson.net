@@ -9,7 +9,7 @@ import * as Icons from '@tabler/icons-react';
 export function HeaderSimple() {
     const items = sections.sections.map((section) => (
         <Link legacyBehavior key={section.name} href={section.link}>
-            <a>
+            <a className={classes.link}>
                 {React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType)}
                 {section.name}
             </a>

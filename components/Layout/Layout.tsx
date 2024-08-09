@@ -1,5 +1,5 @@
-import { HeaderSimple } from '../HeaderSimple/HeaderSimple'
-import { FooterSimple } from "../FooterSimple/FooterSimple";
+import { HeaderSimple } from '../HeaderSimple/HeaderSimple';
+import { FooterSimple } from '../FooterSimple/FooterSimple';
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -8,9 +8,9 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
     return (
         <>
-            <HeaderSimple />
+            <HeaderSimple>{children}</HeaderSimple>
             <main>{children}</main>
-            <FooterSimple />
+            <FooterSimple>{children}</FooterSimple>
         </>
     );
 }
