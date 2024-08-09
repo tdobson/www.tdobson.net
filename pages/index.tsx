@@ -20,10 +20,8 @@ export default function Index() {
                 <meta property="og:url" content="https://www.tdobson.net" />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-            <div id="about-me">
                 <AboutMe />
-            </div>
-            <div id="hero-section">
+            <div id="about-me">
                 <HeroSection />
             </div>
             <Space h="xl" />
