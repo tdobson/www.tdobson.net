@@ -7,6 +7,8 @@
   text-align: center;
   font-size: var(--mantine-font-size-xs);
   margin-top: var(--mantine-spacing-md);
+  display: flex;
+  justify-content: center;
 }
 
 .inner {
