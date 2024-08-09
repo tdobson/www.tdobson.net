@@ -12,7 +12,7 @@ interface FooterSimpleProps {
 export function FooterSimple({ children }: FooterSimpleProps) {
     const items = sections.sections.map((section) => (
         <a key={section.name} href={section.link} className={classes.link}>
-            {React.createElement(Icons[section.icon as keyof typeof Icons])}
+            {React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType)}
             {section.name}
         </a>
     ));
