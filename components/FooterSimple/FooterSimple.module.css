@@ -35,3 +35,9 @@
     color: var(--mantine-color-white);
   }
 }
+.socialLinks {
+  margin-top: var(--mantine-spacing-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -28,7 +28,9 @@ export function FooterSimple() {
             <Container className={classes.inner}>
                 <div style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>Tim Dobson</div>
                 <Group className={classes.links}>{items}</Group>
-                <Group className={classes.links}>{socialItems}</Group>
+            </Container>
+            <Container className={classes.inner}>
+                <Group className={classes.socialLinks}>{socialItems}</Group>
             </Container>
         </div>
     );
