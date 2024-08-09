@@ -29,6 +29,9 @@ export default function Index() {
             <Space h="xl" />
             <TestimonialsCarousel id="testimonials" />
             <Space h="xl" />
+            <div id="contact">
+                {/* Contact form component goes here */}
+            </div>
 
         </Layout>
     );
