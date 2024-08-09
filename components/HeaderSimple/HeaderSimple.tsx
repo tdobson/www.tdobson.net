@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Container, Group, Burger } from '@mantine/core';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import classes from './HeaderSimple.module.css';
 import sections from '../../config/sections.json';
 import * as Icons from '@tabler/icons-react';
@@ -16,8 +16,6 @@ export function HeaderSimple() {
             smooth={true}
             offset={-70}
             duration={500}
-            smooth={true}
-            duration={500}
             className={classes.link}
             onClick={() => setOpened(false)}
         >
@@ -25,6 +23,10 @@ export function HeaderSimple() {
             {section.name}
         </ScrollLink>
     ));
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
 
     return (
         <header className={classes.header}>
