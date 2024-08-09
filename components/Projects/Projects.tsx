@@ -8,7 +8,13 @@ interface Project {
   title: string;
   shortDescription: string;
   screenshot: string;
-  // Add other properties as needed
+  shortScreencast: string;
+  problem: string;
+  approach: string;
+  solution: string;
+  longDescription: string;
+  projectLink: string;
+  githubLink: string;
 }
 
 export const Projects = () => {
