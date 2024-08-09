@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Container, Anchor } from '@mantine/core';
+import { Text, Container, Anchor, Title, Button } from '@mantine/core';
 import socialMedia from '../../config/socialmedia.json';
 import styles from './ContactMe.module.css';
 
@@ -8,13 +8,14 @@ export const ContactMe = () => {
   const messenger = socialMedia.socialMedia.find((item) => item.name === 'Messenger');
 
   return (
-    <Container className={styles.contactMeContainer}>
-      <div className={styles.contactBox}>
-        <Text align="center" size="xl" weight={700} mb="md">Contact Me</Text>
-      <div className={styles.contactBox}>
-        <Text align="left" size="md" mb="md">
+    <div className={styles.wrapper}>
+      <div>
+        <Title className={styles.title}>Contact Me</Title>
+        <Text className={styles.description} mt="sm" mb={30}>
           Keen to chat? I offer a FREE 1 hour consultation call to see if we can help each other.
         </Text>
+      </div>
+      <div className={styles.form}>
         <Text align="left" size="md" mb="md">
           Email me at <Anchor href="mailto:work@tdobson.net">work@tdobson.net</Anchor>
         </Text>
@@ -30,8 +31,18 @@ export const ContactMe = () => {
         <Text align="left" size="md" mb="md">
           My usual working hours are 10-6pm, Mon-Fri, UK time.
         </Text>
+        <Button
+          variant="gradient"
+          gradient={{ from: 'blue', to: 'green' }}
+          size="xl"
+          className={styles.control}
+          mt={40}
+          component="a"
+          href="https://m.me/timdobsonuk"
+        >
+          Message me here
+        </Button>
       </div>
-      </div>
-    </Container>
+    </div>
   );
 };
