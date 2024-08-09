@@ -22,6 +22,7 @@ const CanIHelpYou = () => {
             <li><IconProject size={20} /> Project Management</li>
             <li><IconBusinessplan size={20} /> Business Development</li>
           </ul>
+        </div>
         <Text className={styles.description} mt="sm" mb={30}>
           My usual rate is £300/day for remote work, and £400/day for onsite work within 20 miles of Stockport.
         </Text>
