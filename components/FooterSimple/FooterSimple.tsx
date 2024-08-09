@@ -71,7 +71,10 @@ const items = sections.sections.map((section) => (
                 <Burger opened={opened} onClick={() => setOpened((o) => !o)} size="sm" className={classes.burger} />
             </Container>
             <Container className={classes.inner}>
-                <Group className={classes.socialLinks}>{socialItems}</Group>
+                <div style={{ fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>My Social Links</div>
+                <Group className={classes.socialLinks}>
+                    {socialItems}
+                </Group>
             </Container>
         </div>
     );

@@ -24,6 +24,11 @@
       "name": "Twitter",
       "icon": "IconBrandTwitter",
       "url": "https://www.twitter.com/tdobson"
+    },
+    {
+      "name": "Work",
+      "icon": "IconBriefcase",
+      "url": "https://www.migratingdragons.com"
     }
   ]
 }
