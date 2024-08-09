@@ -43,7 +43,6 @@ const CanIHelpYou = () => {
               Message me on <Anchor href={linkedin.url} target="_blank" rel="noopener noreferrer">LinkedIn</Anchor> or <Anchor href={messenger.url} target="_blank" rel="noopener noreferrer">Messenger</Anchor>
             </Text>
           )}
-          </Text>
           <Button
             variant="gradient"
             gradient={{ from: 'blue', to: 'green' }}
