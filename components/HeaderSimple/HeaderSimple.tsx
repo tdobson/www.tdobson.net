@@ -2,14 +2,14 @@ import { Container, Group, Burger } from '@mantine/core';
 import Link from 'next/link';
 import classes from './HeaderSimple.module.css';
 import sections from '../../config/sections.json';
-import { Icon } from '@tabler/icons-react';
+import * as Icons from '@tabler/icons-react';
 
 
 export function HeaderSimple() {
     const items = sections.sections.map((section) => (
         <Link legacyBehavior key={section.name} href={section.link}>
             <a>
-                <Icon icon={section.icon} />
+                {React.createElement(Icons[section.icon])}
                 {section.name}
             </a>
         </Link>
