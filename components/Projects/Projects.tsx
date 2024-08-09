@@ -4,11 +4,18 @@ import styles from './Projects.module.css';
 import projectsData from '../../config/projects.json';
 import { ProjectModal } from './ProjectModal';
 
+interface Project {
+  title: string;
+  shortDescription: string;
+  screenshot: string;
+  // Add other properties as needed
+}
+
 export const Projects = () => {
   const [opened, setOpened] = useState(false);
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  const openModal = (project) => {
+  const openModal = (project: Project) => {
     setSelectedProject(project);
     setOpened(true);
   };
