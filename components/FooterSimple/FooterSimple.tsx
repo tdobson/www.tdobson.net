@@ -1,14 +1,35 @@
 
 import { Container, Group, Burger } from '@mantine/core';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link as ScrollLink, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 import classes from './FooterSimple.module.css';
 import sections from '../../config/sections.json';
 import socialMedia from '../../config/socialmedia.json';
 import * as Icons from '@tabler/icons-react';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export function FooterSimple() {
     const [opened, setOpened] = useState(false);
+
+    useEffect(() => {
+        Events.scrollEvent.register('begin', (to, element) => {
+            console.log('begin', to, element);
+        });
+
+        Events.scrollEvent.register('end', (to, element) => {
+            console.log('end', to, element);
+        });
+
+        scrollSpy.update();
+
+        return () => {
+            Events.scrollEvent.remove('begin');
+            Events.scrollEvent.remove('end');
+        };
+    }, []);
+
+    const handleSetActive = (to) => {
+        console.log(to);
+    };
 
     const items = sections.sections.map((section) => (
         <ScrollLink
@@ -21,7 +42,7 @@ export function FooterSimple() {
             offset={-70}
             duration={500}
             className={classes.link}
-            onClick={() => setOpened(false)}
+            onSetActive={handleSetActive}
         >
             {Icons[section.icon as keyof typeof Icons] ? React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType) : null}
             {section.name}
