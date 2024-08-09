@@ -12,7 +12,8 @@ export function FooterSimple() {
 
     const items = sections.sections.map((section) => (
         <ScrollLink
-            href={`#${section.link.substring(1)}`}
+            activeClass="active"
+            to={section.link.substring(1)}
             key={section.name}
             to={section.link.substring(1)}
             spy={true}
