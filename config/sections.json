@@ -3,7 +3,7 @@
     {
       "name": "About Me",
       "icon": "IconUser",
-      "link": "#about",
+      "link": "#about"
     },
     {
       "name": "Experience",
