@@ -4,7 +4,6 @@ import Link from 'next/link';
 import classes from './HeaderSimple.module.css';
 import sections from '../../config/sections.json';
 import * as Icons from '@tabler/icons-react';
-import React from 'react';
 
 
 export function HeaderSimple() {
