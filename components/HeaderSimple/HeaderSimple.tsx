@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Group, Burger } from '@mantine/core';
 import Link from 'next/link';
 import classes from './HeaderSimple.module.css';
@@ -9,7 +10,7 @@ export function HeaderSimple() {
     const items = sections.sections.map((section) => (
         <Link legacyBehavior key={section.name} href={section.link}>
             <a>
-                {React.createElement(Icons[section.icon])}
+                {React.createElement(Icons[section.icon as keyof typeof Icons])}
                 {section.name}
             </a>
         </Link>

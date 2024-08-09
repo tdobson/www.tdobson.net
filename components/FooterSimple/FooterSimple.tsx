@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container, Group } from '@mantine/core';
 import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './FooterSimple.module.css';
@@ -11,7 +12,7 @@ interface FooterSimpleProps {
 export function FooterSimple({ children }: FooterSimpleProps) {
     const items = sections.sections.map((section) => (
         <a key={section.name} href={section.link} className={classes.link}>
-            {React.createElement(Icons[section.icon])}
+            {React.createElement(Icons[section.icon as keyof typeof Icons])}
             {section.name}
         </a>
     ));
