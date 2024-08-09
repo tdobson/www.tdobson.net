@@ -14,6 +14,10 @@ export function FooterSimple() {
         <ScrollLink
             key={section.name}
             to={section.link.substring(1)}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
             smooth={true}
             duration={500}
             className={classes.link}
