@@ -22,7 +22,7 @@ export const Projects = () => {
 
   return (
     <div className={styles.projectsContainer}>
-      <Text align="center" size="xl" weight={700} mb="md">Projects</Text>
+      <Text ta="center" size="xl" weight={700} mb="md">Projects</Text>
       <Grid>
         {projectsData.map((project, index) => (
           <Grid.Col key={index} span={4}>
