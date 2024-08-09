@@ -3,12 +3,12 @@
     {
       "name": "About Me",
       "icon": "IconUser",
-      "link": "#about"
+      "link": "#about-me"
     },
     {
       "name": "Experience",
       "icon": "IconBriefcase",
-      "link": "#experience"
+      "link": "#timeline"
     },
     {
       "name": "Skills and Technologies",
@@ -18,7 +18,7 @@
     {
       "name": "Projects",
       "icon": "IconFolder",
-      "link": "#projects"
+      "link": "#hero-section"
     },
     {
       "name": "Testimonials",
