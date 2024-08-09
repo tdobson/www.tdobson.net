@@ -4,7 +4,7 @@ import { Modal, Text, Image } from '@mantine/core';
 export const ProjectModal = ({ opened, onClose, project }) => {
   return (
     <Modal opened={opened} onClose={onClose} title={project.title}>
-        <Text size="sm" mb="md"><a href={project.shortScreencast} target="_blank" rel="noopener noreferrer">Watch Screencast</a></Text>
+        <Image src={project.shortScreencast} alt={`${project.title} Screencast`} mb="md" />
       <Text size="sm" mb="md"><strong>Problem:</strong> {project.problem}</Text>
       <Text size="sm" mb="md"><strong>Approach:</strong> {project.approach}</Text>
       <Text size="sm" mb="md"><strong>Solution:</strong> {project.solution}</Text>
