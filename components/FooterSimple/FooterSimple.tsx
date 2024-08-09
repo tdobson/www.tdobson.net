@@ -27,7 +27,7 @@ export function FooterSimple() {
         };
     }, []);
 
-    const handleSetActive = (to) => {
+    const handleSetActive = (to: string) => {
         console.log(to);
     };
 
