@@ -11,7 +11,6 @@ const CanIHelpYou = () => {
 
   return (
     <div className={styles.wrapper} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <Group position="center" spacing="xl">
         <Title className={styles.title}>Can I help you?</Title>
         <Text className={styles.description} mt="sm" mb={30}>
           Here are some of the things I might be able to help with:
@@ -30,7 +29,7 @@ const CanIHelpYou = () => {
         <Text className={styles.description} mt="sm" mb={30}>
           My usual working hours are 10-6pm, Mon-Fri, UK time.
         </Text>
-      </Group>
+
       <Group position="center" spacing="xl" mt="xl">
         <div className={styles.form}>
           <Text align="left" size="md" mb="md">
