@@ -34,7 +34,7 @@
 }
 
 .title {
-  color: var(--mantine-color-dark-9);
+  color: white;
   font-family:
           Greycliff CF,
           var(--mantine-font-family);
@@ -50,16 +50,9 @@
   }
 }
 
-.descriptionBox {
-  margin-top: 20px;
-  padding: 20px;
-  background-color: var(--mantine-color-gray-0);
-  border-radius: var(--mantine-radius-md);
-}
-
 .description {
   margin-bottom: 20px;
-  color: var(--mantine-color-dark-7);
+  color: white;
   opacity: 0.75;
   max-width: rem(500px);
 
