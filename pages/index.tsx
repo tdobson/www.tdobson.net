@@ -19,9 +19,10 @@ export default function Index() {
                 <meta property="og:url" content="https://www.tdobson.net" />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-            <HeroSection />
-            <HeroSection />
             <AboutMe />
+            <HeroSection />
+            <Space h="xl" />
+            <TimDobsonTimeline />
             <Space h="xl" />
             <Skills />
             <Space h="xl" />
