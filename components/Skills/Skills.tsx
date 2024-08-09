@@ -29,8 +29,11 @@ export function Skills() {
             <Group align="center" justify="center" gap="md">
                 {skills.map((skill, index) => (
                     <Card key={index} shadow="sm" padding="lg" className={styles.skillCard}>
-                        <skill.icon size={40} />
-                        <Text fw={500} mt="md">{skill.title}</Text>
+                        <div className={styles.skillContent}>
+                            <skill.icon size={40} />
+                            <Text fw={500} mt="md">{skill.title}</Text>
+                            <Text size="sm" color="dimmed">{skill.description}</Text>
+                        </div>
 
                     </Card>
                 ))}
