@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Modal, Grid, Card, Image, Text, Button } from '@mantine/core';
+import styles from './Projects.module.css';
 import projectsData from '../../config/projects.json';
 import { ProjectModal } from './ProjectModal';
 
@@ -13,17 +14,17 @@ export const Projects = () => {
   };
 
   return (
-    <div>
+    <div className={styles.projectsContainer}>
       <Text align="center" size="xl" weight={700} mb="md">Projects</Text>
       <Grid>
         {projectsData.map((project, index) => (
           <Grid.Col key={index} span={4}>
-            <Card shadow="sm" p="lg" onClick={() => openModal(project)}>
+            <Card shadow="sm" p="lg" onClick={() => openModal(project)} className={styles.projectCard}>
               <Card.Section>
-                <Image src={project.screenshot} height={160} alt={project.title} />
+                <Image src={project.screenshot} alt={project.title} className={styles.projectImage} />
               </Card.Section>
-              <Text weight={500} size="lg" mt="md">{project.title}</Text>
-              <Text size="sm" color="dimmed">{project.shortDescription}</Text>
+              <Text className={styles.projectTitle}>{project.title}</Text>
+              <Text className={styles.projectDescription}>{project.shortDescription}</Text>
             </Card>
           </Grid.Col>
         ))}
