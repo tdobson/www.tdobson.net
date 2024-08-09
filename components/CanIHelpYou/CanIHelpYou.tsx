@@ -38,8 +38,11 @@ const CanIHelpYou = () => {
           <Text size="md" mb="md">
             Phone: 01457 597007
           </Text>
-          <Text  size="md" mb="md">
-            Message me on <Anchor href={linkedin.url} target="_blank" rel="noopener noreferrer">LinkedIn</Anchor> or <Anchor href={messenger.url} target="_blank" rel="noopener noreferrer">Messenger</Anchor>
+          {linkedin && messenger && (
+            <Text size="md" mb="md">
+              Message me on <Anchor href={linkedin.url} target="_blank" rel="noopener noreferrer">LinkedIn</Anchor> or <Anchor href={messenger.url} target="_blank" rel="noopener noreferrer">Messenger</Anchor>
+            </Text>
+          )}
           </Text>
           <Button
             variant="gradient"
