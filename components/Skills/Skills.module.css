@@ -9,6 +9,13 @@
 }
 
 .skillCard {
+    width: 100%;
     max-width: 150px;
     text-align: center;
+}
+
+@media (max-width: 48em) {
+    .skillCard {
+        max-width: 100%;
+    }
 }

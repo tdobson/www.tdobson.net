@@ -1,4 +1,4 @@
-import { Card, Group, Text, Title, Space } from '@mantine/core';
+import { Card, SimpleGrid, Text, Title, Space } from '@mantine/core';
 import { IconBrandJavascript, IconBrandPhp, IconBrandHtml5, IconBrandCss3, IconBrandReact, IconBrandMantine, IconBrandNextjs, IconBrandGithub, IconBrandWordpress, IconBrandUbuntu, IconBrandGoogle, IconBrandTypescript, IconBrandDebian, IconTerminal2 } from '@tabler/icons-react';
 import styles from './Skills.module.css';
 
@@ -26,17 +26,20 @@ export function Skills() {
         <div className={styles.skillsSection}>
             <Title order={2}>Skills and Technologies</Title>
             <Space h="md" />
-            <Group align="center" justify="center" gap="md">
+            <SimpleGrid
+                cols={{ base: 2, sm: 3, md: 4, lg: 6 }}
+                spacing={{ base: 'sm', sm: 'md' }}
+                verticalSpacing={{ base: 'sm', sm: 'md' }}
+            >
                 {skills.map((skill, index) => (
-                    <Card key={index} shadow="sm" padding="lg" className={styles.skillCard}>
+                    <Card key={index} shadow="sm" padding="sm" radius="md" withBorder className={styles.skillCard}>
                         <div className={styles.skillContent}>
-                            <skill.icon size={40} />
-                            <Text fw={500} mt="md">{skill.title}</Text>
+                            <skill.icon size={30} />
+                            <Text size="sm" fw={500} mt="xs">{skill.title}</Text>
                         </div>
-
                     </Card>
                 ))}
-            </Group>
+            </SimpleGrid>
         </div>
     );
 }
