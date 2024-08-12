@@ -24,9 +24,12 @@
   max-width: 400px;
 }
 
-.ratesBox Text {
-  text-align: left;
-  margin-bottom: var(--mantine-spacing-xs);
+.footnote {
+  text-align: center;
+  color: var(--mantine-color-gray-6);
+  font-size: var(--mantine-font-size-sm);
+  font-style: italic;
+  margin-top: var(--mantine-spacing-md);
 }
 
 .footnote {
