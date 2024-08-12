@@ -23,7 +23,7 @@ export default function Index() {
                 <meta property="og:url" content="https://www.tdobson.net" />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-                <AboutMe />
+            <AboutMe />
             <div id="about-me">
                 <HeroSection />
             </div>
@@ -51,7 +51,6 @@ export default function Index() {
             <div id="contact">
                 <ContactUs />
             </div>
-
         </Layout>
     );
 }
