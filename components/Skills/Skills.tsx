@@ -8,6 +8,8 @@ const skills = [
     { icon: IconBrandReact, title: 'React.js' },
     { icon: IconBrandWordpress, title: 'WordPress' },
     { icon: IconBrandGoogle, title: 'Apps Script' },
+
+];
 /*    { icon: IconBrandMantine, title: 'Mantine' },
     { icon: IconBrandPhp, title: 'PHP' },
     { icon: IconBrandHtml5, title: 'HTML' },
@@ -20,7 +22,6 @@ const skills = [
     { icon: IconBrandGoogle, title: 'English' },
     { icon: IconBrandGoogle, title: 'Russian' },
     { icon: IconBrandGoogle, title: 'French' }, */
-];
 
 export function Skills() {
     const [skillsToShow, setSkillsToShow] = useState(skills.length);
