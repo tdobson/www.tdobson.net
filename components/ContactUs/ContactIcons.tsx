@@ -36,7 +36,7 @@ function ContactIcon({ icon: Icon, title, description, link, ...others }: Contac
 
   if (link) {
     return (
-      <a href={link} target="_blank" rel="noopener noreferrer" className={classes.wrapper} {...others}>
+      <a href={link} target="_blank" rel="noopener noreferrer" className={classes.wrapper} {...(others as React.AnchorHTMLAttributes<HTMLAnchorElement>)}>
         {content}
       </a>
     );
