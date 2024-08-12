@@ -43,8 +43,12 @@ export default function Index() {
                 <TestimonialsCarousel />
             </div>
             <Space h="xl" />
-            <div id="contact">
+            <div id="can-i-help">
                 <CanIHelpYou />
+            </div>
+            <Space h="xl" />
+            <div id="contact">
+                <ContactUs />
             </div>
 
         </Layout>
