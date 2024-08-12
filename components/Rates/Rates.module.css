@@ -16,6 +16,19 @@
   color: var(--mantine-color-black);
 }
 
+.ratesBox {
+  border: 1px solid var(--mantine-color-gray-3);
+  border-radius: var(--mantine-radius-md);
+  padding: var(--mantine-spacing-md);
+  margin: var(--mantine-spacing-md) auto;
+  max-width: 400px;
+}
+
+.ratesBox Text {
+  text-align: left;
+  margin-bottom: var(--mantine-spacing-xs);
+}
+
 .footnote {
   text-align: center;
   color: var(--mantine-color-gray-6);
