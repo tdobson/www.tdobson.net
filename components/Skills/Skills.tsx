@@ -5,21 +5,21 @@ import { useState, useEffect } from 'react';
 
 const skills = [
     { icon: IconBrandJavascript, title: 'JavaScript' },
+    { icon: IconBrandReact, title: 'React.js' },
+    { icon: IconBrandWordpress, title: 'WordPress' },
+    { icon: IconBrandGoogle, title: 'Apps Script' },
+/*    { icon: IconBrandMantine, title: 'Mantine' },
     { icon: IconBrandPhp, title: 'PHP' },
     { icon: IconBrandHtml5, title: 'HTML' },
     { icon: IconBrandCss3, title: 'CSS' },
-    { icon: IconBrandReact, title: 'React.js' },
-    { icon: IconBrandMantine, title: 'Mantine' },
     { icon: IconBrandNextjs, title: 'Next.js' },
     { icon: IconBrandGithub, title: 'Git' },
-    { icon: IconBrandWordpress, title: 'WordPress' },
     { icon: IconBrandTypescript, title: 'TypeScript' },
     { icon: IconBrandDebian, title: 'GNU/Linux' },
     { icon: IconTerminal2, title: 'Bash' },
-    { icon: IconBrandGoogle, title: 'Apps Script' },
     { icon: IconBrandGoogle, title: 'English' },
     { icon: IconBrandGoogle, title: 'Russian' },
-    { icon: IconBrandGoogle, title: 'French' },
+    { icon: IconBrandGoogle, title: 'French' }, */
 ];
 
 export function Skills() {
@@ -44,7 +44,7 @@ export function Skills() {
 
     return (
         <div className={styles.skillsSection}>
-            <Title order={2}>Skills and Technologies</Title>
+            <Title order={2}>Technologies</Title>
             <Space h="md" />
             <SimpleGrid
                 cols={{ base: 2, sm: 3, md: 4, lg: 6 }}
