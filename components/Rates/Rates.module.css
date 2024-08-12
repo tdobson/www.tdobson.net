@@ -15,3 +15,10 @@
   text-align: center;
   color: var(--mantine-color-black);
 }
+
+.footnote {
+  text-align: center;
+  color: var(--mantine-color-gray-6);
+  font-size: var(--mantine-font-size-sm);
+  font-style: italic;
+}
