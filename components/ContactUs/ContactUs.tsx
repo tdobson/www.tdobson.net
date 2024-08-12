@@ -11,7 +11,7 @@ export function ContactUs() {
           Feel free to reach out to me through any of the following methods:
         </Text>
 
-        <SimpleGrid cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
+        <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="md">
           <div>
             <ContactIconsList />
           </div>
