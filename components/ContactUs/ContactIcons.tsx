@@ -2,11 +2,14 @@ import { Text, Box, Stack, rem } from '@mantine/core';
 import { IconSun, IconPhone, IconMapPin,IconBrandLinkedin,IconBrandMessenger, IconAt } from '@tabler/icons-react';
 import classes from './ContactIcons.module.css';
 
-interface ContactIconProps extends Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
-  icon: typeof IconSun;
-  title: React.ReactNode;
-  description: React.ReactNode;
-}
+const CONTACT_INFO = [
+  { title: 'Email', description: 'work@tdobson.net', icon: IconAt, link: 'mailto:work@tdobson.net' },
+  { title: 'Phone', description: '01457 597007', icon: IconPhone },
+  { title: 'LinkedIn', description: 'Connect on LinkedIn', icon: IconBrandLinkedin, link: 'https://www.linkedin.com/in/timdobson/' },
+  { title: 'Facebook', description: 'Message on Facebook', icon: IconBrandMessenger, link: 'https://m.me/timdobsonuk' },
+  { title: 'Contact Hours', description: '10 a.m. – 6 p.m.', icon: IconSun },
+  { title: 'Location', description: 'Stockport, Greater Manchester', icon: IconMapPin }
+];
 
 interface ContactIconProps extends Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   icon: typeof IconSun;
@@ -46,17 +49,7 @@ function ContactIcon({ icon: Icon, title, description, link, ...others }: Contac
   );
 }
 
-const MOCKDATA = [
-  { title: 'Email', description: 'work@tdobson.net', icon: IconAt, link: 'mailto:work@tdobson.net' },
-  { title: 'Phone', description: '01457 597007', icon: IconPhone },
-  { title: 'LinkedIn', description: 'Connect on LinkedIn', icon: IconBrandLinkedin, link: 'https://www.linkedin.com/in/timdobson/' },
-  { title: 'Facebook', description: 'Message on Facebook', icon: IconBrandMessenger, link: 'https://m.me/timdobsonuk' },
-  { title: 'Contact Hours', description: '10 a.m. – 6 p.m.', icon: IconSun },
-  { title: 'Location', description: 'Stockport, Greater Manchester', icon: IconMapPin }
-
-];
-
 export function ContactIconsList() {
-  const items = MOCKDATA.map((item, index) => <ContactIcon key={index} {...item} />);
+  const items = CONTACT_INFO.map((item, index) => <ContactIcon key={index} {...item} />);
   return <Stack>{items}</Stack>;
 }
