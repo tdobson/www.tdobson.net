@@ -10,6 +10,7 @@ import { Projects } from '../components/Projects/Projects';
 import { FooterSimple } from '../components/FooterSimple/FooterSimple';
 import { CanIHelpYou } from '../components/CanIHelpYou/CanIHelpYou';
 import { ContactUs } from '../components/ContactUs/ContactUs';
+import { Rates } from '../components/Rates/Rates';
 
 export default function Index() {
     return (
@@ -46,6 +47,10 @@ export default function Index() {
             <Space h="xl" />
             <div id="can-i-help">
                 <CanIHelpYou />
+            </div>
+            <Space h="xl" />
+            <div id="rates">
+                <Rates />
             </div>
             <Space h="xl" />
             <div id="contact">

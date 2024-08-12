@@ -39,14 +39,6 @@ export function ContactUs() {
                 Message on Facebook
               </Button>
             </Group>
-            
-            <Text size="sm" mt="md" align="center">
-              My usual working hours are 10am-6pm, Mon-Fri, UK time.
-            </Text>
-            
-            <Text size="sm" mt="xs" align="center">
-              Rates: £300/day for remote work, £400/day for onsite work within 20 miles of Stockport.
-            </Text>
           </div>
         </SimpleGrid>
       </Container>
