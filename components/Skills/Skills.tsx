@@ -50,6 +50,8 @@ export function Skills() {
                 cols={{ base: 2, sm: 3, md: 4, lg: 6 }}
                 spacing={{ base: 'sm', sm: 'md' }}
                 verticalSpacing={{ base: 'sm', sm: 'md' }}
+                mx="auto"
+                maw={1200}
             >
                 {skills.slice(0, skillsToShow).map((skill, index) => (
                     <Card key={index} shadow="sm" padding="sm" radius="md" withBorder className={styles.skillCard}>
