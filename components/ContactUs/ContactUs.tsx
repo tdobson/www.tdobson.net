@@ -15,10 +15,10 @@ export function ContactUs() {
           <div>
             <ContactIconsList />
           </div>
-          
+
           <div className={classes.imageContainer}>
             <Image
-              src="/tim.jpg"
+              src="logo.png"
               alt="Tim Dobson"
               radius="md"
               className={classes.image}
