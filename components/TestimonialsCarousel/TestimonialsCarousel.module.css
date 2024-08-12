@@ -1,12 +1,9 @@
-/* Responsive styles for TestimonialsCarousel */
-@media (max-width: 500px) {
-    .mantine-Carousel-slide {
-        width: 70% !important;
-    }
+.carouselContainer {
+    padding: 0 20px;
 }
 
-@media (min-width: 501px) and (max-width: 768px) {
-    .mantine-Carousel-slide {
-        width: 25% !important;
+@media (min-width: 768px) {
+    .carouselContainer {
+        padding: 0 40px;
     }
 }

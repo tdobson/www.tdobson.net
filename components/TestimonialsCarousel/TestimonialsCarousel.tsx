@@ -5,7 +5,7 @@ import { TestimonialCardProps, Testimonial } from '../../types/testimonials';
 
 function TestimonialCard({ name, image, jobTitle, testimonial, link }: TestimonialCardProps) {
   return (
-  <Card shadow="sm" padding="lg" style={{maxWidth: 400, margin: 'auto'}}>
+  <Card shadow="sm" padding="lg" style={{maxWidth: '100%', margin: 'auto'}}>
     <Group>
       <Avatar src={image} radius="xl"/>
       <div>
@@ -21,13 +21,27 @@ function TestimonialCard({ name, image, jobTitle, testimonial, link }: Testimoni
   ;
 }
 
+import styles from './TestimonialsCarousel.module.css';
+
 export function TestimonialsCarousel() {
   return (<div>
       <div style={{textAlign: 'center'}} className="title-spacing">
         <Title order={2}>What people say about me</Title>
         <Space/>
-      </div><div>
-  <Carousel withIndicators height={400} slideSize="33.333333%" slideGap="md" loop align="start">
+      </div>
+      <div className={styles.carouselContainer}>
+  <Carousel 
+    withIndicators 
+    height={400} 
+    slideSize={{ base: '100%', sm: '50%', md: '33.333333%' }}
+    slideGap={{ base: 'xs', sm: 'md' }}
+    loop 
+    align="start"
+    breakpoints={[
+      { maxWidth: 'sm', slideSize: '100%' },
+      { maxWidth: 'md', slideSize: '50%' },
+    ]}
+  >
     {testimonials.map((testimonial: Testimonial, index: number) => (
         <Carousel.Slide key={index}>
           <TestimonialCard
