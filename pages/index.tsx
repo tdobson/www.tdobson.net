@@ -8,7 +8,7 @@ import { AboutMe } from '../components/AboutMe/AboutMe';
 import { Space } from '@mantine/core';
 import { Projects } from '../components/Projects/Projects';
 import { FooterSimple } from '../components/FooterSimple/FooterSimple';
-import { CanIHelpYou } from '../components/CanIHelpYou/CanIHelpYou';
+import CanIHelpYou from '../components/CanIHelpYou/CanIHelpYou';
 
 export default function Index() {
     return (
