@@ -1,5 +1,4 @@
-import { Text, Title, SimpleGrid, Button, Group, Container } from '@mantine/core';
-import { IconBrandLinkedin, IconBrandFacebookMessenger } from '@tabler/icons-react';
+import { Text, Title, SimpleGrid, Container, Image } from '@mantine/core';
 import { ContactIconsList } from './ContactIcons';
 import classes from './ContactUs.module.css';
 
@@ -17,28 +16,13 @@ export function ContactUs() {
             <ContactIconsList />
           </div>
           
-          <div className={classes.form}>
-            <Group grow>
-              <Button
-                leftIcon={<IconBrandLinkedin size={16} />}
-                variant="filled"
-                component="a"
-                href="https://www.linkedin.com/in/timdobson/"
-                target="_blank"
-              >
-                Connect on LinkedIn
-              </Button>
-              
-              <Button
-                leftIcon={<IconBrandFacebookMessenger size={16} />}
-                variant="filled"
-                component="a"
-                href="https://m.me/timdobsonuk"
-                target="_blank"
-              >
-                Message on Facebook
-              </Button>
-            </Group>
+          <div className={classes.imageContainer}>
+            <Image
+              src="/tim.jpg"
+              alt="Tim Dobson"
+              radius="md"
+              className={classes.image}
+            />
           </div>
         </SimpleGrid>
       </Container>

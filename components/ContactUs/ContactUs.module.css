@@ -34,49 +34,15 @@
   }
 }
 
-.form {
-  background-color: var(--mantine-color-white);
-  padding: var(--mantine-spacing-xl);
-  border-radius: var(--mantine-radius-md);
-  box-shadow: var(--mantine-shadow-lg);
+.imageContainer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.text {
-  text-align: center;
-}
-
-.social {
-  color: var(--mantine-color-white);
-
-  @mixin hover {
-    color: var(--mantine-color-blue-1);
-  }
-}
-
-.input {
-  background-color: var(--mantine-color-white);
-  border-color: var(--mantine-color-gray-4);
-  color: var(--mantine-color-black);
-
-  &::placeholder {
-    color: var(--mantine-color-gray-5);
-  }
-}
-
-.inputLabel {
-  color: var(--mantine-color-black);
-}
-
-.control {
-  background-color: var(--mantine-color-blue-6);
-  margin-top: 40px;
-  transition: transform 0.2s, background-color 0.2s;
-
-  &:hover {
-    transform: scale(1.05);
-    background-color: var(--mantine-color-green-6);
-  }
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--mantine-radius-md);
+  box-shadow: var(--mantine-shadow-md);
 }
