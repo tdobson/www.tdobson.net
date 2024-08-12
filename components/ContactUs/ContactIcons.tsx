@@ -26,10 +26,10 @@ function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconP
 }
 
 const MOCKDATA = [
-  { title: 'Email', description: 'jamesday@tdobson.net', icon: IconAt },
-  { title: 'Phone', description: '014570597007', icon: IconPhone },
-  { title: 'Our Home Address', description: '272 Strines Road, Sk6 7GB', icon: IconMapPin },
-  { title: 'Call Between', description: '10 a.m. – 10 p.m.', icon: IconSun },
+  { title: 'Email', description: 'work@tdobson.net', icon: IconAt },
+  { title: 'Phone', description: '01457 597007', icon: IconPhone },
+  { title: 'Location', description: 'Stockport, Greater Manchester', icon: IconMapPin },
+  { title: 'Contact Hours', description: '10 a.m. – 6 p.m.', icon: IconSun },
 ];
 
 export function ContactIconsList() {
