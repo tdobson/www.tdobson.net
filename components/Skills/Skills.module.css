@@ -2,16 +2,27 @@
     text-align: center;
 }
 
+.skillsGrid {
+    display: flex;
+    justify-content: center;
+}
+
+.skillCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
 .skillContent {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.skillCard {
+    justify-content: center;
     width: 100%;
-    max-width: 150px;
-    text-align: center;
+    height: 100%;
 }
 
 @media (max-width: 48em) {

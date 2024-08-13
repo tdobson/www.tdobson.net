@@ -11,18 +11,24 @@ const skills = [
 
 export function Skills() {
     return (
-        <Container size="lg" className={styles.skillsSection} ta="center">
-            <Title order={2}>Technologies</Title>
+        <Container size="lg" className={styles.skillsSection}>
+            <Title order={2} ta="center">Technologies</Title>
             <Space h="md" />
             <SimpleGrid
-                cols={{ base: 2, md: 4, }}
-                spacing={{ base: 'sm',  }}
-            ta="center"
-
-                verticalSpacing={{ base: 'sm'  }}
+                cols={{ base: 2, md: 4 }}
+                spacing={{ base: 'sm' }}
+                verticalSpacing={{ base: 'sm' }}
+                className={styles.skillsGrid}
             >
                 {skills.map((skill, index) => (
-                    <Card key={index} shadow="sm" padding="sm" radius="md" withBorder className={styles.skillCard} ta="center">
+                    <Card 
+                        key={index} 
+                        shadow="sm" 
+                        padding="sm" 
+                        radius="md" 
+                        withBorder 
+                        className={styles.skillCard}
+                    >
                         <div className={styles.skillContent}>
                             <skill.icon size={30} />
                             <Text size="sm" fw={500} mt="xs">{skill.title}</Text>
