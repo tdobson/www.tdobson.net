@@ -6,10 +6,9 @@ export function Rates() {
   return (
     <div className={classes.wrapper}>
       <Container size="lg">
-        <Title className={classes.title}>Rates</Title>
+        <Title className={classes.title}>My usual* rates are:</Title>
 
         <Space h="md" />
-        <Text className={classes.description}>My usual* rates are:</Text>
         <Box className={classes.ratesBox}>
           <Stack gap="xs">
             <Text>Remote work: £300/day</Text>

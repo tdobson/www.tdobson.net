@@ -41,7 +41,6 @@ export function TestimonialsCarousel() {
       </div>
       <div className={styles.carouselContainer}>
         <Carousel
-          withIndicators
           height={400}
           slideSize={{ base: "100%", sm: "50%", md: "33.333333%" }}
           slideGap={{ base: "xs", sm: "md" }}

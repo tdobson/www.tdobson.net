@@ -11,7 +11,7 @@ export function AboutMe() {
           <div className={classes.content}>
             <Title className={classes.title}>Hi 👋 I'm Tim</Title>
             <Text className={classes.description} mt={30}>
-              I help you make technology work for your business.
+              I help make technology work for your business.
             </Text>
             <List
               spacing="xs"

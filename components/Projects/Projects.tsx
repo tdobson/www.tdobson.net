@@ -68,10 +68,7 @@ export const Projects = () => {
             </Text>
             {isMobile && (
               <Group justify="center" mt="md">
-                <Button
-                  variant="light"
-                  color="blue"
-                >
+                <Button variant="light" color="blue">
                   View Project
                 </Button>
               </Group>

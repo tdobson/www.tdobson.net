@@ -92,7 +92,7 @@ export function CanIHelpYou() {
             The first step is always a no pressure, no jargon chat, to help me
             understand more about what you're working with.
           </Text>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div style={{ display: "flex", justifyContent: "center" }}>
             <Link to="contact" smooth={true} duration={500}>
               <Button
                 variant="gradient"

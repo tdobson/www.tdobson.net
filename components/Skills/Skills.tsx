@@ -1,6 +1,11 @@
 import { Card, Text, Title, Space, Container, Grid } from "@mantine/core";
-import { IconBrandGoogle, IconBrandWordpress, IconBrandJavascript, IconBrandReact } from "@tabler/icons-react";
-import { useMediaQuery } from '@mantine/hooks';
+import {
+  IconBrandGoogle,
+  IconBrandWordpress,
+  IconBrandJavascript,
+  IconBrandReact,
+} from "@tabler/icons-react";
+import { useMediaQuery } from "@mantine/hooks";
 import styles from "./Skills.module.css";
 
 const skills = [
@@ -11,10 +16,11 @@ const skills = [
 ];
 
 export function Skills() {
-  const isMobile = useMediaQuery('(max-width: 48em)');
+  const isMobile = useMediaQuery("(max-width: 48em)");
 
   return (
     <Container size="lg" className={styles.skillsSection}>
+      <Space h="md" />
       <Title order={2} ta="center">
         I often work with
       </Title>
