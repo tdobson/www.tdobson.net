@@ -21,7 +21,7 @@ export function CanIHelpYou() {
   return (
     <div className={styles.wrapper}>
       <Container size="lg">
-        <Stack spacing="xl">
+        <Stack gap="xl">
           <Title className={styles.title} order={2}>
             How Can I Help You?
           </Title>
