@@ -6,9 +6,9 @@
       "link": "about-me"
     },
     {
-      "name": "Experience",
-      "icon": "IconBriefcase",
-      "link": "timeline"
+      "name": "Can I Help?",
+      "icon": "IconHelp",
+      "link": "can-i-help"
     },
     {
       "name": "Projects",
