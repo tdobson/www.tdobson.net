@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Title, Container, List, ThemeIcon, Stack } from '@mantine/core';
+import { Text, Title, Container, List, ThemeIcon, Stack, Button } from '@mantine/core';
 import { IconCode, IconBriefcase, IconTools, IconBusinessplan } from '@tabler/icons-react';
 import styles from './CanIHelpYou.module.css';
 
@@ -74,8 +74,19 @@ export function CanIHelpYou() {
           <Text className={styles.description} mt="xl">
             The first step is always a no pressure, no jargon chat, to help me understand more about what you're up against.
           </Text>
-          <Text className={styles.description} mt="xl">
-          I'll try to tell you quickly, and point you in the direction of people who can.
+          <Button
+            component="a"
+            href="#contact"
+            size="lg"
+            variant="filled"
+            color="blue"
+            className={styles.ctaButton}
+            mt="xl"
+          >
+            Contact Me
+          </Button>
+          <Text size="sm" color="dimmed" mt="md" className={styles.footnote}>
+            I'll try to tell you quickly, and point you in the direction of people who can.
           </Text>
         </Stack>
       </Container>
