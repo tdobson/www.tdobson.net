@@ -1,64 +1,56 @@
 
-import React, { useState, useEffect } from 'react';
-import { Container, Group, Burger } from '@mantine/core';
-import { Link as ScrollLink, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
+import React from 'react';
+import { AppShell, Burger, Group, UnstyledButton } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
+import { Link as ScrollLink } from 'react-scroll';
 import classes from './HeaderSimple.module.css';
 import sections from '../../config/sections.json';
 import * as Icons from '@tabler/icons-react';
 
 export function HeaderSimple() {
-    const [opened, setOpened] = useState(false);
-    useEffect(() => {
-        Events.scrollEvent.register('begin', (to, element) => {
-            console.log('begin', to, element);
-        });
+    const [opened, { toggle }] = useDisclosure();
 
-        Events.scrollEvent.register('end', (to, element) => {
-            console.log('end', to, element);
-        });
-
-        scrollSpy.update();
-
-        return () => {
-            Events.scrollEvent.remove('begin');
-            Events.scrollEvent.remove('end');
-        };
-    }, []);
-
-    const handleSetActive = (to: string) => {
-        console.log(to);
-    };
-
-const items = sections.sections.map((section) => (
-    <ScrollLink
-        activeClass="active"
-        to={section.link}
-        key={section.name}
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        className={classes.link}
-        onSetActive={handleSetActive}
-    >
-        {Icons[section.icon as keyof typeof Icons] ? React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType) : null}
-        {section.name}
-    </ScrollLink>
-));
-
-    const scrollToTop = () => {
-        scroll.scrollToTop();
-    };
+    const items = sections.sections.map((section) => (
+        <ScrollLink
+            activeClass="active"
+            to={section.link}
+            key={section.name}
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className={classes.control}
+        >
+            {Icons[section.icon as keyof typeof Icons] ? React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType) : null}
+            {section.name}
+        </ScrollLink>
+    ));
 
     return (
-        <header className={classes.header}>
-            <Container size="md" className={classes.inner}>
-                <div style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>Tim Dobson</div>
-                <Group gap={5} className={`${classes.links} ${opened ? 'opened' : ''}`}>
-                    {items}
+        <AppShell
+            header={{ height: 60 }}
+            navbar={{ width: 300, breakpoint: 'sm', collapsed: { desktop: true, mobile: !opened } }}
+            padding="md"
+        >
+            <AppShell.Header>
+                <Group h="100%" px="md">
+                    <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
+                    <Group justify="space-between" style={{ flex: 1 }}>
+                        <div style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>Tim Dobson</div>
+                        <Group ml="xl" gap={0} visibleFrom="sm">
+                            {items}
+                        </Group>
+                    </Group>
                 </Group>
-                <Burger opened={opened} onClick={() => setOpened((o) => !o)} size="sm" className={classes.burger} />
-            </Container>
-        </header>
+            </AppShell.Header>
+
+            <AppShell.Navbar py="md" px={4}>
+                {items}
+            </AppShell.Navbar>
+
+            <AppShell.Main>
+                {/* Your main content goes here */}
+            </AppShell.Main>
+        </AppShell>
     );
 }
