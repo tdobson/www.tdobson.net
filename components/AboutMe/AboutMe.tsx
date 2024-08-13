@@ -10,7 +10,7 @@ export function AboutMe() {
           <div className={classes.content}>
             <Title className={classes.title}>Hi 👋 I'm Tim</Title>
             <Text className={classes.description} mt={30}>
-              I help
+              I help you make technology work for your business.
             </Text>
             <List
               spacing="xs"
@@ -23,18 +23,17 @@ export function AboutMe() {
               }
               mt={20}
             >
+
               <List.Item className={classes.listItem}>
-                Experienced in full-stack development
+              I love reviving old, abandoned apps and spreadsheets
+            </List.Item>
+              <List.Item className={classes.listItem}>
+                Keen to help you get things done.
               </List.Item>
               <List.Item className={classes.listItem}>
-                Proficient in JavaScript, React, and Node.js
+                Focused, no jargon, no bullshit approach
               </List.Item>
-              <List.Item className={classes.listItem}>
-                Strong background in Linux and open source technology
-              </List.Item>
-              <List.Item className={classes.listItem}>
-                Passionate about open-source contributions
-              </List.Item>
+
             </List>
             <Button
               variant="gradient"
