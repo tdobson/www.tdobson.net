@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Modal, SimpleGrid, Card, Image, Text, Button } from "@mantine/core";
+import {Modal, SimpleGrid, Card, Image, Text, Button, Title, Space} from "@mantine/core";
 import styles from "./Projects.module.css";
 import projectsData from "../../config/projects.json";
 import { ProjectModal } from "./ProjectModal";
@@ -28,10 +28,11 @@ export const Projects = () => {
 
   return (
     <div className={styles.projectsContainer}>
-      <Text ta="center" size="xl" fw={700} mb="md">
+        <Title order={2}>
         Projects
-      </Text>
-      <SimpleGrid
+      </Title>
+      <Space h="md" />
+        <SimpleGrid
         cols={{ base: 1, sm: 2, lg: 3 }}
         spacing={{ base: "sm", sm: "lg" }}
         verticalSpacing={{ base: "sm", sm: "lg" }}
