@@ -1,17 +1,16 @@
-import { Container, Title, Text, List, ThemeIcon, Paper } from '@mantine/core';
-import { IconCheck } from '@tabler/icons-react';
-import classes from './HeroSection.module.css';
+import { Container, Title, Text, List, ThemeIcon, Paper } from "@mantine/core";
+import { IconCheck } from "@tabler/icons-react";
+import classes from "./HeroSection.module.css";
 
 export function HeroSection() {
   return (
     <div className={classes.hero}>
       <Container size="lg">
-        <Title className={classes.title}>
-          About Me
-        </Title>
+        <Title className={classes.title}>About Me</Title>
 
         <Text className={classes.description} mt={30}>
-          Tim Dobson, developer, and founder of The Climbing Clan and The Caving Crew.
+          Tim Dobson, developer, and founder of The Climbing Clan and The Caving
+          Crew.
         </Text>
 
         <Paper className={classes.descriptionBox}>
@@ -27,17 +26,25 @@ export function HeroSection() {
           >
             <List.Item className={classes.listItem}>
               <Text>
-                🔭 I’m currently the chair of The Climbing Clan and The Caving Crew, BMC and BCA affiliated climbing and caving clubs that I founded. Through my work with these clubs, I've developed several software products to assist with club operations. Most notably, I've created neoClan, a second-generation membership check-in system.
+                🔭 I’m currently the chair of The Climbing Clan and The Caving
+                Crew, BMC and BCA affiliated climbing and caving clubs that I
+                founded. Through my work with these clubs, I've developed
+                several software products to assist with club operations. Most
+                notably, I've created neoClan, a second-generation membership
+                check-in system.
               </Text>
             </List.Item>
             <List.Item className={classes.listItem}>
               <Text>
-                🌱 I’m currently teaching myself React with the Mantine framework and Next.js, as well as exploring react-query and advanced git workflows.
+                🌱 I’m currently teaching myself React with the Mantine
+                framework and Next.js, as well as exploring react-query and
+                advanced git workflows.
               </Text>
             </List.Item>
             <List.Item className={classes.listItem}>
               <Text>
-                👯 I’m keen on opportunities for freelance work and development. If you have an exciting project, I'd love to collaborate!
+                👯 I’m keen on opportunities for freelance work and development.
+                If you have an exciting project, I'd love to collaborate!
               </Text>
             </List.Item>
             <List.Item className={classes.listItem}>
@@ -46,9 +53,7 @@ export function HeroSection() {
               </Text>
             </List.Item>
             <List.Item className={classes.listItem}>
-              <Text>
-                ⚡ Fun fact: I have a wonderful son named James.
-              </Text>
+              <Text>⚡ Fun fact: I have a wonderful son named James.</Text>
             </List.Item>
           </List>
         </Paper>

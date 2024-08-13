@@ -1,6 +1,6 @@
-import { Container, Title, Text, Button, List, ThemeIcon } from '@mantine/core';
-import { IconCheck } from '@tabler/icons-react';
-import classes from './AboutMe.module.css';
+import { Container, Title, Text, Button, List, ThemeIcon } from "@mantine/core";
+import { IconCheck } from "@tabler/icons-react";
+import classes from "./AboutMe.module.css";
 
 export function AboutMe() {
   return (
@@ -8,11 +8,9 @@ export function AboutMe() {
       <Container size="lg">
         <div className={classes.inner}>
           <div className={classes.content}>
-            <Title className={classes.title}>
-              Hi 👋 I'm Tim
-            </Title>
+            <Title className={classes.title}>Hi 👋 I'm Tim</Title>
             <Text className={classes.description} mt={30}>
-              Self-taught developer and lifelong learner passionate about new technologies and building useful products.
+              I help
             </Text>
             <List
               spacing="xs"
@@ -25,14 +23,22 @@ export function AboutMe() {
               }
               mt={20}
             >
-              <List.Item className={classes.listItem}>Experienced in full-stack development</List.Item>
-              <List.Item className={classes.listItem}>Proficient in JavaScript, React, and Node.js</List.Item>
-              <List.Item className={classes.listItem}>Strong background in Linux and open source technology</List.Item>
-              <List.Item className={classes.listItem}>Passionate about open-source contributions</List.Item>
+              <List.Item className={classes.listItem}>
+                Experienced in full-stack development
+              </List.Item>
+              <List.Item className={classes.listItem}>
+                Proficient in JavaScript, React, and Node.js
+              </List.Item>
+              <List.Item className={classes.listItem}>
+                Strong background in Linux and open source technology
+              </List.Item>
+              <List.Item className={classes.listItem}>
+                Passionate about open-source contributions
+              </List.Item>
             </List>
             <Button
               variant="gradient"
-              gradient={{ from: 'blue', to: 'green' }}
+              gradient={{ from: "blue", to: "green" }}
               size="xl"
               className={classes.control}
               mt={40}

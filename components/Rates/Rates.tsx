@@ -1,6 +1,6 @@
-import React from 'react';
-import { Text, Container, Title, Space, Box, Stack } from '@mantine/core';
-import classes from './Rates.module.css';
+import React from "react";
+import { Text, Container, Title, Space, Box, Stack } from "@mantine/core";
+import classes from "./Rates.module.css";
 
 export function Rates() {
   return (
@@ -9,9 +9,7 @@ export function Rates() {
         <Title className={classes.title}>Rates</Title>
 
         <Space h="md" />
-        <Text className={classes.description}>
-          My usual* rates are:
-        </Text>
+        <Text className={classes.description}>My usual* rates are:</Text>
         <Box className={classes.ratesBox}>
           <Stack gap="xs">
             <Text>Remote work: £300/day</Text>
@@ -20,7 +18,8 @@ export function Rates() {
         </Box>
 
         <Text className={classes.footnote}>
-          * Discounts may be available for reduced payment terms, upfront payment and longer commitments.
+          * Discounts may be available for reduced payment terms, upfront
+          payment and longer commitments.
         </Text>
       </Container>
     </div>

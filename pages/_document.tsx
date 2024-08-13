@@ -1,5 +1,5 @@
-import { Html, Head, Main, NextScript } from 'next/document';
-import { ColorSchemeScript } from '@mantine/core';
+import { Html, Head, Main, NextScript } from "next/document";
+import { ColorSchemeScript } from "@mantine/core";
 
 export default function Document() {
   return (
@@ -12,17 +12,18 @@ export default function Document() {
             __html: JSON.stringify({
               "@context": "http://schema.org",
               "@type": "ProfessionalService",
-              "name": "Tim Dobson",
-              "description": "Tim Dobson offers professional services in IT and business development.",
-              "image": "/favicon.png",
-              "url": "https://www.tdobson.net",
-              "address": {
+              name: "Tim Dobson",
+              description:
+                "Tim Dobson offers professional services in IT and business development.",
+              image: "/favicon.png",
+              url: "https://www.tdobson.net",
+              address: {
                 "@type": "PostalAddress",
-                "addressLocality": "Manchester",
-                "addressCountry": "UK"
+                addressLocality: "Manchester",
+                addressCountry: "UK",
               },
-              "telephone": "+44 1457 597007"
-            })
+              telephone: "+44 1457 597007",
+            }),
           }}
         />
       </Head>

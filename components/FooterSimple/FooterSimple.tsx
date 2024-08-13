@@ -1,85 +1,106 @@
-
-import { Container, Group, Burger } from '@mantine/core';
-import { Link as ScrollLink, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
-import classes from './FooterSimple.module.css';
-import sections from '../../config/sections.json';
-import socialMedia from '../../config/socialmedia.json';
-import * as Icons from '@tabler/icons-react';
-import React, { useEffect } from 'react';
+import { Container, Group, Burger } from "@mantine/core";
+import {
+  Link as ScrollLink,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+} from "react-scroll";
+import classes from "./FooterSimple.module.css";
+import sections from "../../config/sections.json";
+import socialMedia from "../../config/socialmedia.json";
+import * as Icons from "@tabler/icons-react";
+import React, { useEffect } from "react";
 
 interface FooterSimpleProps {
-    opened: boolean;
-    toggle: () => void;
+  opened: boolean;
+  toggle: () => void;
 }
 
 export function FooterSimple({ opened, toggle }: FooterSimpleProps) {
-    useEffect(() => {
-        Events.scrollEvent.register('begin', (to, element) => {
-            console.log('begin', to, element);
-        });
+  useEffect(() => {
+    Events.scrollEvent.register("begin", (to, element) => {
+      console.log("begin", to, element);
+    });
 
-        Events.scrollEvent.register('end', (to, element) => {
-            console.log('end', to, element);
-        });
+    Events.scrollEvent.register("end", (to, element) => {
+      console.log("end", to, element);
+    });
 
-        scrollSpy.update();
+    scrollSpy.update();
 
-        return () => {
-            Events.scrollEvent.remove('begin');
-            Events.scrollEvent.remove('end');
-        };
-    }, []);
-
-    const handleSetActive = (to: string) => {
-        console.log(to);
+    return () => {
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
     };
+  }, []);
 
-    const items = sections.sections.map((section) => (
-        <ScrollLink
-            activeClass="active"
-            to={section.link}
-            key={section.name}
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            className={classes.link}
-            onSetActive={handleSetActive}
-        >
-            {Icons[section.icon as keyof typeof Icons] ? React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType) : null}
-            {section.name}
-        </ScrollLink>
-    ));
+  const handleSetActive = (to: string) => {
+    console.log(to);
+  };
 
-    const socialItems = socialMedia.socialMedia.map((media) => (
-        <a key={media.name} href={media.url} className={classes.link} target="_blank" rel="noopener noreferrer">
-            {Icons[media.icon as keyof typeof Icons] ? React.createElement(Icons[media.icon as keyof typeof Icons] as React.ElementType) : null}
-            {media.name}
-        </a>
-    ));
+  const items = sections.sections.map((section) => (
+    <ScrollLink
+      activeClass="active"
+      to={section.link}
+      key={section.name}
+      spy={true}
+      smooth={true}
+      offset={-70}
+      duration={500}
+      className={classes.link}
+      onSetActive={handleSetActive}
+    >
+      {Icons[section.icon as keyof typeof Icons]
+        ? React.createElement(
+            Icons[section.icon as keyof typeof Icons] as React.ElementType,
+          )
+        : null}
+      {section.name}
+    </ScrollLink>
+  ));
 
-    const scrollToTop = () => {
-        scroll.scrollToTop();
-    };
+  const socialItems = socialMedia.socialMedia.map((media) => (
+    <a
+      key={media.name}
+      href={media.url}
+      className={classes.link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {Icons[media.icon as keyof typeof Icons]
+        ? React.createElement(
+            Icons[media.icon as keyof typeof Icons] as React.ElementType,
+          )
+        : null}
+      {media.name}
+    </a>
+  ));
 
-    return (
-        <div className={classes.footer}>
-            <Container className={classes.inner}>
-                <Group gap={5} className={`${classes.links} ${opened ? 'opened' : ''}`}>
-                    {items}
-                </Group>
-                <Burger opened={opened} onClick={toggle} size="sm" className={classes.burger} />
-            </Container>
-            <Container className={classes.inner}>
-                <Group className={classes.socialLinks}>
-                    {socialItems}
-                </Group>
-            </Container>
-            <Container className={classes.inner}>
-                <div className={classes.copyright}>
-                    © Tim Dobson {new Date().getFullYear()}
-                </div>
-            </Container>
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
+  return (
+    <div className={classes.footer}>
+      <Container className={classes.inner}>
+        <Group gap={5} className={`${classes.links} ${opened ? "opened" : ""}`}>
+          {items}
+        </Group>
+        <Burger
+          opened={opened}
+          onClick={toggle}
+          size="sm"
+          className={classes.burger}
+        />
+      </Container>
+      <Container className={classes.inner}>
+        <Group className={classes.socialLinks}>{socialItems}</Group>
+      </Container>
+      <Container className={classes.inner}>
+        <div className={classes.copyright}>
+          © Tim Dobson {new Date().getFullYear()}
         </div>
-    );
+      </Container>
+    </div>
+  );
 }

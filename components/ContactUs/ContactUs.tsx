@@ -1,6 +1,6 @@
-import { Text, Title, SimpleGrid, Container, Image } from '@mantine/core';
-import { ContactIconsList } from './ContactIcons';
-import classes from './ContactUs.module.css';
+import { Text, Title, SimpleGrid, Container, Image } from "@mantine/core";
+import { ContactIconsList } from "./ContactIcons";
+import classes from "./ContactUs.module.css";
 
 export function ContactUs() {
   return (
