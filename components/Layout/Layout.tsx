@@ -12,6 +12,7 @@ export function Layout({ children }: LayoutProps) {
     const [opened, { toggle }] = useDisclosure();
 
     return (
+        <div>
         <AppShell
             header={{ height: 60 }}
             navbar={{ width: 300, breakpoint: 'sm', collapsed: { desktop: true, mobile: !opened } }}
@@ -32,9 +33,8 @@ export function Layout({ children }: LayoutProps) {
                 {children}
             </AppShell.Main>
 
-            <AppShell.Footer>
-                <FooterSimple />
-            </AppShell.Footer>
         </AppShell>
-    );
+    <FooterSimple />
+        </div>
+);
 }
