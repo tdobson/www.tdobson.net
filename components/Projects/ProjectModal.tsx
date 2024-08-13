@@ -28,6 +28,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
               alt={`${project.title} Screencast`}
               mb="md"
           />
+          <Space h="md" />
           <div style={{display: 'flex', justifyContent: 'center', gap: '1rem', marginTop: '1rem'}}>
               {project.projectLink && (
                   <Button
