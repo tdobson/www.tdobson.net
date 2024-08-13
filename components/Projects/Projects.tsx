@@ -67,7 +67,7 @@ export const Projects = () => {
               {project.shortDescription}
             </Text>
             {isMobile && (
-              <Group position="center" mt="md">
+              <Group justify="center" mt="md">
                 <Button
                   onClick={() => openModal(project)}
                   variant="light"
