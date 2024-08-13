@@ -7,7 +7,7 @@ export function ContactUs() {
     <div className={classes.wrapper}>
       <Container size="lg">
         <Title className={classes.title}>Arrange a call?</Title>
-        <Text className={classes.description} mt="sm" mb={30}>
+        <Text className={classes.description} mt="sm" mb={30} ta="center">
           Let's have a chat and see if we can help each other
         </Text>
 
