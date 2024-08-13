@@ -21,6 +21,11 @@
       "link": "testimonials"
     },
     {
+      "name": "Rates",
+      "icon": "IconCurrencyPound",
+      "link": "rates"
+    },
+    {
       "name": "Email",
       "icon": "IconMail",
       "link": "contact"
