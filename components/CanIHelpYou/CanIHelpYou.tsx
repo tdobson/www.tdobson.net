@@ -16,6 +16,7 @@ import {
 } from "@tabler/icons-react";
 import { Link } from "react-scroll";
 import styles from "./CanIHelpYou.module.css";
+import classes from "../ContactUs/ContactUs.module.css";
 
 export function CanIHelpYou() {
   return (
@@ -93,10 +94,11 @@ export function CanIHelpYou() {
           </Text>
           <Link to="contact" smooth={true} duration={500}>
             <Button
-              size="lg"
-              variant="filled"
-              className={styles.ctaButton}
-              mt="xl"
+              variant="gradient"
+              gradient={{ from: "blue", to: "green" }}
+              size="xl"
+              className={classes.control}
+              mt={40}
             >
               Arrange a Call?
             </Button>
