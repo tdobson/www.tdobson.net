@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, Title, Container, List, ThemeIcon, Stack, Button } from '@mantine/core';
 import { IconCode, IconBriefcase, IconTools, IconBusinessplan } from '@tabler/icons-react';
+import { Link } from 'react-scroll';
 import styles from './CanIHelpYou.module.css';
 
 export function CanIHelpYou() {
@@ -74,17 +75,17 @@ export function CanIHelpYou() {
           <Text className={styles.description} mt="xl">
             The first step is always a no pressure, no jargon chat, to help me understand more about what you're up against.
           </Text>
-          <Button
-            component="a"
-            href="#contact"
-            size="lg"
-            variant="filled"
-            color="gray"
-            className={styles.ctaButton}
-            mt="xl"
-          >
-            Contact Me
-          </Button>
+          <Link to="contact" smooth={true} duration={500}>
+            <Button
+              size="lg"
+              variant="filled"
+              color="orange"
+              className={styles.ctaButton}
+              mt="xl"
+            >
+              Contact Me
+            </Button>
+          </Link>
           <Text size="sm" color="dimmed" mt="md" className={styles.footnote}>
             I'll try to tell you quickly, and point you in the direction of people who can.
           </Text>
