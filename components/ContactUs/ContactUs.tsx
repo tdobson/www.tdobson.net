@@ -1,4 +1,4 @@
-import { Text, Title, SimpleGrid, Container, Image, Button } from "@mantine/core";
+import { Text, Title, SimpleGrid, Container, Image, Button, Paper } from "@mantine/core";
 import { ContactIconsList } from "./ContactIcons";
 import classes from "./ContactUs.module.css";
 
@@ -17,14 +17,13 @@ export function ContactUs() {
           </div>
 
           <div className={classes.imageContainer}>
-            <Image
-              src="tim.jpg"
-              alt="Tim Dobson"
-              radius="md"
-              className={classes.image}
-              width={300}
-              height={300}
-            />
+            <Paper shadow="md" radius="md" className={classes.imagePaper}>
+              <Image
+                src="tim.jpg"
+                alt="Tim Dobson"
+                className={classes.image}
+              />
+            </Paper>
           </div>
         </SimpleGrid>
 
