@@ -52,6 +52,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
         src={project.shortScreencast}
         alt={`${project.title} Screencast`}
         mb="md"
+        style={{ maxWidth: '900px', margin: '0 auto' }}
       />
 
       <Space />
