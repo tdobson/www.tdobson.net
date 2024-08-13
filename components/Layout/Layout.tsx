@@ -28,7 +28,7 @@ export function Layout({ children }: LayoutProps) {
 
                 <AppShell.Navbar py="md" px={4}>
                     <Stack>
-                        <NavItems />
+                        <NavItems onItemClick={toggle} />
                     </Stack>
                 </AppShell.Navbar>
 

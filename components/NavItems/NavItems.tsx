@@ -4,7 +4,11 @@ import classes from '../HeaderSimple/HeaderSimple.module.css';
 import sections from '../../config/sections.json';
 import * as Icons from '@tabler/icons-react';
 
-export function NavItems() {
+interface NavItemsProps {
+    onItemClick?: () => void;
+}
+
+export function NavItems({ onItemClick }: NavItemsProps) {
     return sections.sections.map((section) => (
         <ScrollLink
             activeClass="active"
@@ -15,6 +19,7 @@ export function NavItems() {
             offset={-70}
             duration={500}
             className={classes.control}
+            onClick={onItemClick}
         >
             {Icons[section.icon as keyof typeof Icons] ? React.createElement(Icons[section.icon as keyof typeof Icons] as React.ElementType) : null}
             {section.name}
