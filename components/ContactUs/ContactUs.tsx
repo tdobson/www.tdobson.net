@@ -12,7 +12,7 @@ export function ContactUs() {
         </Text>
 
         <SimpleGrid cols={{ base: 1, md: 2 }} spacing="md">
-          <div>
+          <div style={{ height: '100%' }}>
             <ContactIconsList />
           </div>
 
