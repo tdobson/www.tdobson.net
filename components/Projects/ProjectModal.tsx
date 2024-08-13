@@ -69,7 +69,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
       </Text>
       <Space h="md" />
       {isMobile ? (
-        <Stack spacing="md" align="flex-start" w="100%">
+        <Stack spacing="md" align="flex-start" style={{ width: '100%' }}>
           {project.projectLink && (
             <Button
               component="a"
