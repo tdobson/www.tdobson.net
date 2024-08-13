@@ -1,6 +1,5 @@
 .wrapper {
   padding: calc(var(--mantine-spacing-xl) * 2);
-  background-color: var(--mantine-color-gray-0);
 }
 
 .title {

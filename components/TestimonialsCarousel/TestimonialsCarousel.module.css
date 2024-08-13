@@ -1,9 +1,14 @@
+.wrapper {
+  background-color: var(--mantine-color-gray-0);
+  padding: calc(var(--mantine-spacing-xl) * 2) 0;
+}
+
 .carouselContainer {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 @media (min-width: 768px) {
-    .carouselContainer {
-        padding: 0 40px;
-    }
+  .carouselContainer {
+    padding: 0 40px;
+  }
 }

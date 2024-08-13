@@ -34,7 +34,7 @@ import styles from "./TestimonialsCarousel.module.css";
 
 export function TestimonialsCarousel() {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <div style={{ textAlign: "center" }} className="title-spacing">
         <Title order={2}>What people say about me</Title>
         <Space />
