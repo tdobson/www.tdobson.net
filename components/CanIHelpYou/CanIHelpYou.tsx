@@ -13,6 +13,7 @@ import {
   IconBriefcase,
   IconTools,
   IconBusinessplan,
+  IconRocket,
 } from "@tabler/icons-react";
 import { Link } from "react-scroll";
 import styles from "./CanIHelpYou.module.css";
@@ -30,8 +31,8 @@ export function CanIHelpYou() {
           <List spacing="xl" size="md" center className={styles.list}>
             <List.Item
               icon={
-                <ThemeIcon color="violet" size={24} radius="xl">
-                  <IconBriefcase size="1rem" />
+                <ThemeIcon color="violet" size={32} radius="xl">
+                  <IconBriefcase size="1.5rem" />
                 </ThemeIcon>
               }
             >
@@ -45,8 +46,8 @@ export function CanIHelpYou() {
 
             <List.Item
               icon={
-                <ThemeIcon color="violet" size={24} radius="xl">
-                  <IconBriefcase size="1rem" />
+                <ThemeIcon color="violet" size={32} radius="xl">
+                  <IconRocket size="1.5rem" />
                 </ThemeIcon>
               }
             >
@@ -59,8 +60,8 @@ export function CanIHelpYou() {
 
             <List.Item
               icon={
-                <ThemeIcon color="violet" size={24} radius="xl">
-                  <IconTools size="1rem" />
+                <ThemeIcon color="violet" size={32} radius="xl">
+                  <IconTools size="1.5rem" />
                 </ThemeIcon>
               }
             >
@@ -74,8 +75,8 @@ export function CanIHelpYou() {
 
             <List.Item
               icon={
-                <ThemeIcon color="violet" size={24} radius="xl">
-                  <IconBusinessplan size="1rem" />
+                <ThemeIcon color="violet" size={32} radius="xl">
+                  <IconBusinessplan size="1.5rem" />
                 </ThemeIcon>
               }
             >
