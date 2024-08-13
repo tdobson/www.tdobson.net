@@ -35,6 +35,8 @@ export function ContactUs() {
           mt={40}
           component="a"
           href="mailto:work@tdobson.net?subject=About%20for%20a%20chat%3F&body=Hi%20Tim%2C%20I'm%20keen%20for%20a%20chat%20about%20XXX%20-%20are%20you%20free%20for%20a%20chat%20on%20X%20at%20Y%3F"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Send me an email
         </Button>
