@@ -19,9 +19,11 @@ export function ContactUs() {
           <div className={classes.imageContainer}>
             <Paper shadow="md" radius="md" className={classes.imagePaper}>
               <Image
-                src="/logo.png"
-                alt="Tim Dobson"
-
+                src="https://via.placeholder.com/300x300.png?text=Placeholder"
+                alt="Placeholder"
+                className={classes.image}
+                width={300}
+                height={300}
               />
             </Paper>
           </div>
