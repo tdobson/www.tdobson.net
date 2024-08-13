@@ -13,7 +13,7 @@ export function Rates() {
           My usual* rates are:
         </Text>
         <Box className={classes.ratesBox}>
-          <Stack spacing="xs">
+          <Stack gap="xs">
             <Text>Remote work: £300/day</Text>
             <Text>Onsite work within 20 miles of Stockport: £400/day</Text>
           </Stack>
