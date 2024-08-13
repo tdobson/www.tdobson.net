@@ -19,9 +19,14 @@
 
 .title {
   font-family: Greycliff CF, var(--mantine-font-family);
-  color: var(--mantine-color-black);
+  color: var(--mantine-color-white);
   line-height: 1;
   text-align: center;
+}
+
+.control {
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .description {

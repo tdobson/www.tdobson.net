@@ -1,4 +1,4 @@
-import { Text, Title, SimpleGrid, Container, Image } from "@mantine/core";
+import { Text, Title, SimpleGrid, Container, Image, Button } from "@mantine/core";
 import { ContactIconsList } from "./ContactIcons";
 import classes from "./ContactUs.module.css";
 
@@ -11,7 +11,7 @@ export function ContactUs() {
           Let's have a chat and see if we can help each other?
         </Text>
 
-        <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="md">
+        <SimpleGrid cols={{ base: 1, md: 2 }} spacing="md">
           <div>
             <ContactIconsList />
           </div>
@@ -25,6 +25,18 @@ export function ContactUs() {
             />
           </div>
         </SimpleGrid>
+
+        <Button
+          variant="gradient"
+          gradient={{ from: "blue", to: "green" }}
+          size="xl"
+          className={classes.control}
+          mt={40}
+          component="a"
+          href="mailto:work@tdobson.net"
+        >
+          Send me a message
+        </Button>
       </Container>
     </div>
   );
