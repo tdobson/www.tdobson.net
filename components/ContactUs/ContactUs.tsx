@@ -19,9 +19,9 @@ export function ContactUs() {
           <div className={classes.imageContainer}>
             <Paper shadow="md" radius="md" className={classes.imagePaper}>
               <Image
-                src="tim.jpg"
+                src="/logo.png"
                 alt="Tim Dobson"
-                className={classes.image}
+
               />
             </Paper>
           </div>
