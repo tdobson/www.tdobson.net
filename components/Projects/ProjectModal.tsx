@@ -1,5 +1,13 @@
 import React from "react";
-import { Button, Modal, Text, Image, Space, MantineTheme, Stack } from "@mantine/core";
+import {
+  Button,
+  Modal,
+  Text,
+  Image,
+  Space,
+  MantineTheme,
+  Stack,
+} from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 
 interface ProjectModalProps {
