@@ -37,10 +37,6 @@ export function TestimonialsCarousel() {
     slideGap={{ base: 'xs', sm: 'md' }}
     loop 
     align="start"
-    breakpoints={[
-      { maxWidth: 'sm', slideSize: '100%' },
-      { maxWidth: 'md', slideSize: '50%' },
-    ]}
   >
     {testimonials.map((testimonial: Testimonial, index: number) => (
         <Carousel.Slide key={index}>
