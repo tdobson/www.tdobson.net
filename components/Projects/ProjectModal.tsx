@@ -40,16 +40,32 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
       <Text size="sm" mb="md">
         {project.longDescription}
       </Text>
-      <Text size="sm" mb="md">
-        <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
-          View Project
-        </a>
-      </Text>
-      <Text size="sm" mb="md">
-        <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-          View on GitHub
-        </a>
-      </Text>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginTop: '1rem' }}>
+        {project.projectLink && (
+          <Button
+            component="a"
+            href={project.projectLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="gradient"
+            gradient={{ from: 'blue', to: 'cyan' }}
+          >
+            See this in action
+          </Button>
+        )}
+        {project.githubLink && (
+          <Button
+            component="a"
+            href={project.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="gradient"
+            gradient={{ from: 'indigo', to: 'grape' }}
+          >
+            Show me the GitHub
+          </Button>
+        )}
+      </div>
     </Modal>
   );
 };
