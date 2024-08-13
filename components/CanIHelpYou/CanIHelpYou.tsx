@@ -92,17 +92,19 @@ export function CanIHelpYou() {
             The first step is always a no pressure, no jargon chat, to help me
             understand more about what you're working with.
           </Text>
-          <Link to="contact" smooth={true} duration={500}>
-            <Button
-              variant="gradient"
-              gradient={{ from: "blue", to: "green" }}
-              size="xl"
-              className={classes.control}
-              mt={40}
-            >
-              Arrange a Call?
-            </Button>
-          </Link>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <Link to="contact" smooth={true} duration={500}>
+              <Button
+                variant="gradient"
+                gradient={{ from: "blue", to: "green" }}
+                size="xl"
+                className={classes.control}
+                mt={40}
+              >
+                Arrange a Call?
+              </Button>
+            </Link>
+          </div>
         </Stack>
       </Container>
     </div>
