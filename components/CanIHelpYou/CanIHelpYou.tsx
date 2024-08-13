@@ -1,63 +1,78 @@
 import React from 'react';
-import { Text, Container, Anchor, Title, Button, Group } from '@mantine/core';
+import { Text, Title, Container, List, ThemeIcon } from '@mantine/core';
 import { IconCode, IconBriefcase, IconTools, IconBusinessplan } from '@tabler/icons-react';
-import socialMedia from '../../config/socialmedia.json';
 import styles from './CanIHelpYou.module.css';
 
-
-const CanIHelpYou = () => {
-  const linkedin = socialMedia.socialMedia.find((item) => item.name === 'LinkedIn');
-  const messenger = socialMedia.socialMedia.find((item) => item.name === 'Messenger');
-
+export function CanIHelpYou() {
   return (
-    <div className={styles.wrapper} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <Title className={styles.title}>Can I help you?</Title>
-        <Text className={styles.description} mt="sm" mb={30}>
-          Here are some of the things I might be able to help with:
-        </Text>
-        <div className={styles.box}>
-          <ul className={styles.list}>
-            <li><IconCode size={20} /> Web Development</li>
-            <li><IconBriefcase size={20} /> Technical Consulting</li>
-            <li><IconTools size={20} /> Project Management</li>
-            <li><IconBusinessplan size={20} /> Business Development</li>
-          </ul>
-        </div>
-        <Text className={styles.description} mt="sm" mb={30}>
-          My usual rate is £300/day for remote work, and £400/day for onsite work within 20 miles of Stockport.
-        </Text>
-        <Text className={styles.description} mt="sm" mb={30}>
-          My usual working hours are 10-6pm, Mon-Fri, UK time.
+    <div className={styles.wrapper}>
+      <Container size="lg">
+        <Title className={styles.title}>How Can I Help You?</Title>
+        <Text className={styles.description} mt="xl" mb="xl">
+          If
         </Text>
 
-      <Group mt="xl" style={{ display: 'flex', justifyContent: 'center', gap: 'var(--mantine-spacing-xl)' }}>
-        <div className={styles.form}>
-          <Text size="md" mb="md">
-            Email me at <Anchor href="mailto:work@tdobson.net">work@tdobson.net</Anchor>
-          </Text>
-          <Text size="md" mb="md">
-            Phone: 01457 597007
-          </Text>
-          {linkedin && messenger && (
-            <Text size="md" mb="md">
-              Message me on <Anchor href={linkedin.url} target="_blank" rel="noopener noreferrer">LinkedIn</Anchor> or <Anchor href={messenger.url} target="_blank" rel="noopener noreferrer">Messenger</Anchor>
+        <List
+          spacing="xl"
+          size="md"
+          center
+          icon={
+            <ThemeIcon color="teal" size={24} radius="xl">
+              <IconCode size="1rem" />
+            </ThemeIcon>
+          }
+        >
+          <List.Item>
+            <Text fw={700}>Make Spreadsheets work for you</Text>
+            <Text>
+              If you have a complex Spreadsheets doing important, business critical things for your organisation and perhaps it feels like there's more going on than you can keep track of - then I can help.
             </Text>
-          )}
-          <Button
-            variant="gradient"
-            gradient={{ from: 'blue', to: 'green' }}
-            size="xl"
-            className={styles.control}
-            mt={40}
-            component="a"
-            href="https://m.me/timdobsonuk"
+          </List.Item>
+
+          <List.Item
+            icon={
+              <ThemeIcon color="blue" size={24} radius="xl">
+                <IconBriefcase size="1rem" />
+              </ThemeIcon>
+            }
           >
-            Message me here
-          </Button>
-        </div>
-      </Group>
+            <Text fw={700}>Technical Consulting</Text>
+            <Text>
+              Need expert advice on your tech stack or architecture? I can provide insights and recommendations to optimize your technical solutions.
+            </Text>
+          </List.Item>
+
+          <List.Item
+            icon={
+              <ThemeIcon color="violet" size={24} radius="xl">
+                <IconTools size="1rem" />
+              </ThemeIcon>
+            }
+          >
+            <Text fw={700}>Project Management</Text>
+            <Text>
+              I can help streamline your development process, manage teams, and ensure your projects are delivered on time and within budget.
+            </Text>
+          </List.Item>
+
+          <List.Item
+            icon={
+              <ThemeIcon color="orange" size={24} radius="xl">
+                <IconBusinessplan size="1rem" />
+              </ThemeIcon>
+            }
+          >
+            <Text fw={700}>Business Development</Text>
+            <Text>
+              From market analysis to growth strategies, I can help you identify opportunities and develop plans to scale your business effectively.
+            </Text>
+          </List.Item>
+        </List>
+
+        <Text className={styles.description} mt="xl">
+          My approach is tailored to your specific needs, ensuring that you get the most value out of our collaboration. Whether you're a startup looking to establish your online presence or an established company aiming to optimize your digital strategy, I'm here to help you succeed.
+        </Text>
+      </Container>
     </div>
   );
-};
-
-export default CanIHelpYou;
+}

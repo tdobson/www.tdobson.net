@@ -6,9 +6,9 @@ export function ContactUs() {
   return (
     <div className={classes.wrapper}>
       <Container size="lg">
-        <Title className={classes.title}>Contact Me</Title>
+        <Title className={classes.title}>Arrange a call?</Title>
         <Text className={classes.description} mt="sm" mb={30}>
-          Feel free to reach out to me through any of the following methods:
+          Let's have a chat and see if we can help each other?
         </Text>
 
         <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="md">
@@ -18,7 +18,7 @@ export function ContactUs() {
 
           <div className={classes.imageContainer}>
             <Image
-              src="logo.png"
+              src="tim.jpg"
               alt="Tim Dobson"
               radius="md"
               className={classes.image}

@@ -3,32 +3,27 @@
     {
       "name": "About Me",
       "icon": "IconUser",
-      "link": "#about-me"
+      "link": "about-me"
     },
     {
       "name": "Experience",
       "icon": "IconBriefcase",
-      "link": "#timeline"
-    },
-    {
-      "name": "Skills and Technologies",
-      "icon": "IconTools",
-      "link": "#skills"
+      "link": "timeline"
     },
     {
       "name": "Projects",
       "icon": "IconFolder",
-      "link": "#hero-section"
+      "link": "projects"
     },
     {
       "name": "Testimonials",
       "icon": "IconMessageCircle",
-      "link": "#testimonials"
+      "link": "testimonials"
     },
     {
-      "name": "Contact Form",
+      "name": "Email",
       "icon": "IconMail",
-      "link": "#contact"
+      "link": "contact"
     }
   ]
 }

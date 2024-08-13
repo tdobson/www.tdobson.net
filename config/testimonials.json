@@ -1,30 +1,30 @@
 [
-  {
-    "name": "Gez O'Brien",
-    "image": "testimonials/gez.jpg",
-    "jobTitle": "Chief Exec at Stardotstar",
-    "testimonial": "I was having a server problem, the kind of problem you don't want. Enter Tim — firstly he was; quick getting straight onto the server and diagnosing beyond the hardware and checking the logs and sure enough, he finds the software problem. Beyond that, as that issue was beyond my people, he was able to recommend someone to fix that small issue and within the hour the service was back up. Problem solved. In short, Tim was fast, professional, analytical and problem focussed. He looked beyond his 'job' (hardware) to find the problem (software) and suggest a pragmatic solution to get it fixed (Software freelancer). Initiative squared. Highly recommended.",
-    "link": "https://www.linkedin.com/in/gezo1/"
-  },
-  {
+    {
     "name": "Steph Gray",
     "image": "testimonials/steph.jpeg",
     "jobTitle": "Managing Director at Helpful Digital",
-    "testimonial": "I've been a customer of Bytemark and have known Tim through his work there and events I've organised that he's supported over five years or more. He's the friendly, approachable face of what can be quite a daunting world to folks like me from outside the natural world of Linux hosting and sysadminry. I've always felt Tim was happy to chat to me and he's always been full of good ideas both technically in terms of wider business/marketing. I wish him well with his next move.",
+    "testimonial": "I've have known Tim through events I've organised that he's supported over five years or more. He's the friendly, approachable face of what can be quite a daunting world to folks like me from outside the natural world of Linux hosting and sysadminry. I've always felt Tim was happy to chat to me and he's always been full of good ideas both technically in terms of wider business/marketing.",
     "link": "https://stephgray.com/"
   },
   {
     "name": "Mark Taylor",
     "image": "testimonials/mark.jpeg",
     "jobTitle": "Chief Executive Officer at Sirius Open Source Inc.",
-    "testimonial": "I've known Tim for years as he has progressed in the Open Source community and was delighted when he joined Bytemark. Tim is always available, always helpful, and has made doing great business with Bytemark a pleasure.",
+    "testimonial": "I've known Tim for years as he has progressed in the Open Source community ... Tim is always available, always helpful, and has made doing great business ... a pleasure.",
     "link": "https://www.siriusopensource.com/en-uk/about/meet-the-team"
+  },
+  {
+    "name": "Gez O'Brien",
+    "image": "testimonials/gez.jpg",
+    "jobTitle": "Chief Exec at Stardotstar",
+    "testimonial": "Initiative squared. Highly recommended.",
+    "link": "https://www.linkedin.com/in/gezo1/"
   },
   {
     "name": "Colin Cuthbertson",
     "image": "testimonials/colin.jpeg",
     "jobTitle": "Director, Data Messaging & Communications",
-    "testimonial": "Tim is a DMC legend and one of the most well-rounded people I know. He joined the company back in 2008 and became the first full time member of our SysAdmin Team. He quickly built a great rapport with our clients and was the go to guy for help with VoIP and Linux problems. Tim is an adventurer and one of the greatest proponents of open source communities and social enterprise. We are lucky that he continues to help provide a first class service to our company in his role at Bytemark.",
+    "testimonial": "Tim is a DMC legend ... He joined the company back in 2008 and became the first full time member of our SysAdmin Team. He quickly built a great rapport with our clients and was the go to guy for help with VoIP and Linux problems. ",
     "link": "https://www.servicesforasterisk.co.uk/"
   },
   {
@@ -66,7 +66,7 @@
     "name": "James Lawrie",
     "image": "testimonials/james.jpeg",
     "jobTitle": "Linux Solutions Architect",
-    "testimonial": "Tim listens, and understands. He can listen to customer needs and understands the technical side enough to implement it himself if needed. This makes him a perfect fit anywhere along the spectrum from sales to engineering. This made Tim great to work with. He could manage customer expectations and changing needs allowing me to focus on what needed to be done. Don't trust him to play fair at Bzflag though.",
+    "testimonial": "Tim listens, and understands. He can listen to customer needs and understands the technical side enough to implement it himself if needed. This makes him a perfect fit anywhere along the spectrum from sales to engineering. This made Tim great to work with. He could manage customer expectations and changing needs allowing me to focus on what needed to be done. ",
     "link": "https://www.linkedin.com/in/jameslawrie/"
   },
   {
@@ -80,7 +80,7 @@
     "name": "Mark Keating",
     "image": "testimonials/markshadowcat.jpeg",
     "jobTitle": "Managing Director at Shadowcat Systems",
-    "testimonial": "I have had the pleasure of knowing Tim for a few years, through the sponsorship of the London Perl Workshop, and have found him to be a fun, intelligent and helpful guy. It is an important step to marry businesses and communities together in the technical world and Tim is one of the people who does it with ease. However, my staff at Shadowcat Systems have also worked with Tim on a professional level and know that Tim is a seriously-clued system administrator. Tim works at Bytemark who have always been a Geek's service provider of choice, part of the reason for this is the quality of the staff they employ and Tim is a fine example of those staff.",
+    "testimonial": "I have had the pleasure of knowing Tim for a few years, through the sponsorship of the London Perl Workshop, and have found him to be a fun, intelligent and helpful guy. It is an important step to marry businesses and communities together in the technical world and Tim is one of the people who does it with ease. However, my staff at Shadowcat Systems have also worked with Tim on a professional level and know that Tim is a seriously-clued system administrator. ",
     "link": "https://www.markkeating.me.uk/"
   },
   {
@@ -101,22 +101,15 @@
     "name": "Dan Lynch",
     "image": "testimonials/danlynch.jpeg",
     "jobTitle": "Host at Linux Outlaws Podcast",
-    "testimonial": "Tim has helped us to make many events happen in recent years. Not least OggCamp which he has sponsored from its inception. He is always easy to deal with and Bytemark have paid us in good time. That doesn't always happen in any industry and I appreciate the professionalism and support :)",
+    "testimonial": "Tim has helped us to make many events happen in recent years. Not least OggCamp which he has sponsored from its inception. He is always easy to deal with ... and I appreciate the professionalism and support :)",
     "link": "https://www.danlynch.org/about"
   },
   {
     "name": "Ian Forrester",
     "image": "testimonials/ian.jpeg",
     "jobTitle": "Senior Firestarter at BBC R&D",
-    "testimonial": "Tim is a very reliable freelancer who although quite young has a wealth of knowledge under his belt. He's very reasonable and flexible when the job requires it. He also learns very quickly and uses the range of skills he naturally picks up on every job he takes on. Tim's an all round superstar.",
+    "testimonial": "Tim is a very reliable freelancer who ... has a wealth of knowledge under his belt. He's very reasonable and flexible when the job requires it. He also learns very quickly and uses the range of skills he naturally picks up on every job he takes on. Tim's an all round superstar.",
     "link": "https://www.cubicgarden.com"
-  },
-  {
-    "name": "Nish Doshi",
-    "image": "testimonials/nish.jpeg",
-    "jobTitle": "Community Manager at Open Rights Group",
-    "testimonial": "It was great working with Tim at the Open Rights Group's annual conference in 2012. He was friendly, flexible and extremely understanding - exactly what every non-profit would love as a sponsor. Without his support, ORGCon 2012 would have been impossible!",
-    "link": "https://www.linkedin.com/in/nishmadoshi/"
   },
   {
     "name": "Phil Hallows",
@@ -124,20 +117,6 @@
     "jobTitle": "Technical Manager at Globe Microsystems",
     "testimonial": "Tim is one of the smarter, easy going people who does the job well just because it's the right way of doing things. A pleasure to work with.",
     "link": "https://www.linkedin.com/in/phil-hallows-08698324/"
-  },
-  {
-    "name": "Hannah Greer",
-    "image": "testimonials/hannah.jpeg",
-    "jobTitle": "Organiser at BarCamp Canterbury",
-    "testimonial": "Tim kindly arranged sponsorship from Bytemark Hosting for BarCamp Canterbury 2012 and 2013. He was helpful and friendly, and provided fantastic freebies which are still talked about by attendees, to this day! He is efficient and flexible, and was a real pleasure to work with.",
-    "link": "https://www.linkedin.com/in/hannahgreer/"
-  },
-  {
-    "name": "Bradley Wyatt",
-    "image": "testimonials/brad.jpeg",
-    "jobTitle": "Product Owner at DSG Finance Group",
-    "testimonial": "Tim was one of the few technical and computer literate people in our class and it was refreshing to be able to share knowledge and opinions with another. No doubt he'll be a valuable technical asset in the companies he works for.",
-    "link": "https://www.linkedin.com/in/bradwyatt-uk/"
   },
   {
     "name": "Andrew Jancey",
@@ -152,12 +131,5 @@
     "jobTitle": "Sales Funnel Consultant",
     "testimonial": "I’ve been on Tim’s outer circle for a number of years, but met him properly when he was a team member of a client of mine when I worked on-site for 12 months. Tim’s role was 100% client-facing and he excelled at this. Extremely customer-focused, he was considerate and treated clients with the utmost integrity and professionalism. It’s pleasing to see Tim has gone freelance. Be aware that anybody who works with Tim will receive nothing but the best service and attentiveness. As freelancers, I look forward to seeing Him on the Manchester business circuit in addition to seeing his business flourish.",
     "link": "https://www.unacottrell.com/"
-  },
-  {
-    "name": "Paul Waring",
-    "image": "testimonials/paul.jpeg",
-    "jobTitle": "Director at Direct Fleet Insurance",
-    "testimonial": "Tim was one of the contact points for a managed hosting account provided to my employer. He was always quick to respond to support emails and follow up where necessary to make sure that issues had been resolved satisfactorily.",
-    "link": "https://www.pwaring.com/about/"
   }
 ]

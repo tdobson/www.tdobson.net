@@ -26,7 +26,7 @@
 
 .description {
   color: var(--mantine-color-blue-0);
-  max-width: rem(300px);
+  max-width: rem(600px);
   text-align: center;
 
   @media (max-width: $mantine-breakpoint-sm) {

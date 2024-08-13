@@ -4,35 +4,35 @@
     "shortDescription": "Membership check-in system for The Climbing Clan and The Caving Crew.",
     "screenshot": "/path/to/neoclan-screenshot.jpg",
     "shortScreencast": "/path/to/neoclan-screencast.mp4",
-    "longDescription": "Membership check-in system for The Climbing Clan and The Caving Crew, improving operational efficiency and user experience.",
-    "projectLink": "https://example.com/neoclan",
-    "githubLink": "https://github.com/username/neoclan",
-    "problem": "The problem description goes here.",
-    "approach": "The approach description goes here.",
-    "solution": "The solution description goes here."
+    "longDescription": "Membership check-in system for The Climbing Clan and The Caving Crew, improving operational efficiency and user experience by providing a modern multi-user mobile.",
+    "projectLink": "https://neoclan.climbingclan.com/",
+    "githubLink": "https://github.com/tdobson/neoclan",
+    "problem": "The Climbing Clan had a legacy check-in app based off Google Sheets working against a legacy API that was being used for check in purposes at events. Unfortunately this app wasn't mobile optimised, and required computer use to use the Google Apps Script extensions.",
+    "approach": "The Clan needed a mobile first application to integrate with WordPress and WooCommerce to allow users to check users in.",
+    "solution": "I selected React plus Mantine Framework with a custom built WordPress plugin to extend the existing WordPress API to provide an improved API."
   },
   {
-    "title": "Project 1",
-    "shortDescription": "Brief description of Project 1.",
-    "screenshot": "/path/to/project1-screenshot.jpg",
-    "shortScreencast": "/path/to/project1-screencast.mp4",
+    "title": "Materials Calculator",
+    "shortDescription": "A materials calculator for Solar PV",
+    "screenshot": "projects/bom.png",
+    "shortScreencast": "projects/bom.gif",
     "longDescription": "Detailed description of Project 1.",
-    "projectLink": "https://example.com/project1",
-    "githubLink": "https://github.com/username/project1",
-    "problem": "The problem description for Project 1.",
-    "approach": "The approach description for Project 1.",
-    "solution": "The solution description for Project 1."
+    "projectLink": "https://rastapopoulos.pages.dev/bom",
+    "githubLink": "https://github.com/tdobson/rastapopoulos",
+    "problem": "The client wanted a materials calculator to assit them in creating pick lists for their Solar PV builds. Their previous solution was a spreadsheet originall designed for Microsoft Excel and ported to Google Sheets which ran very very slowly. This meant it took around 5-10 minutes per plot for the list of materials to be calculated",
+    "approach": "This was a place where it made sense to largely keep the same interface and UI and to move things to a modern architecture in a custom web app.",
+    "solution": "The solution was a React plus Mantine Framework app which provided a familiar input for drawing designs. ."
   },
   {
-    "title": "Project 2",
-    "shortDescription": "Brief description of Project 2.",
+    "title": "Unified Membership and Event Signup System",
+    "shortDescription": "A membership and event sign up system with tight payment integration.",
     "screenshot": "/path/to/project2-screenshot.jpg",
     "shortScreencast": "/path/to/project2-screencast.mp4",
     "longDescription": "Detailed description of Project 2.",
     "projectLink": "https://example.com/project2",
     "githubLink": "https://github.com/username/project2",
-    "problem": "The problem description for Project 2.",
+    "problem": "As a club, money was very limited, but as the sports were",
     "approach": "The approach description for Project 2.",
-    "solution": "The solution description for Project 2."
+    "solution": "WordPress with WooCommerce with various plugins was chosen as the route to getting the "
   }
 ]
