@@ -1,5 +1,6 @@
 import { Container, Title, Text, Button, List, ThemeIcon } from "@mantine/core";
 import { IconCheck } from "@tabler/icons-react";
+import { Link as ScrollLink } from "react-scroll";
 import classes from "./AboutMe.module.css";
 
 export function AboutMe() {
@@ -35,17 +36,23 @@ export function AboutMe() {
               </List.Item>
 
             </List>
-            <Button
-              variant="gradient"
-              gradient={{ from: "blue", to: "green" }}
-              size="xl"
-              className={classes.control}
-              mt={40}
-              component="a"
-              href="#projects"
+            <ScrollLink
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
             >
-              Explore My Work
-            </Button>
+              <Button
+                variant="gradient"
+                gradient={{ from: "blue", to: "green" }}
+                size="xl"
+                className={classes.control}
+                mt={40}
+              >
+                Explore My Work
+              </Button>
+            </ScrollLink>
           </div>
         </div>
       </Container>
