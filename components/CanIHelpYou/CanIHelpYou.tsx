@@ -79,7 +79,7 @@ export function CanIHelpYou() {
             href="#contact"
             size="lg"
             variant="filled"
-            color="blue"
+            color="gray"
             className={styles.ctaButton}
             mt="xl"
           >
