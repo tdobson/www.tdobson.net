@@ -10,7 +10,7 @@ export function CanIHelpYou() {
         <Stack spacing="xl">
           <Title className={styles.title} order={2}>How Can I Help You?</Title>
           <Text className={styles.description}>
-            I offer a range of services to help your business succeed:
+            Things that might indicate it's worth us chatting:
           </Text>
 
           <List
@@ -19,8 +19,13 @@ export function CanIHelpYou() {
             center
             className={styles.list}
           >
-          <List.Item>
-            <Text fw={700}>Make Spreadsheets work for you</Text>
+          <List.Item             icon={
+            <ThemeIcon color="blue" size={24} radius="xl">
+              <IconBriefcase size="1rem" />
+            </ThemeIcon>
+          }
+          >
+            <Text fw={700}>Unruly Complex Spreadsheets</Text>
             <Text>
               If you have a complex Spreadsheets doing important, business critical things for your organisation and perhaps it feels like there's more going on than you can keep track of - then I can help.
             </Text>
@@ -46,9 +51,9 @@ export function CanIHelpYou() {
               </ThemeIcon>
             }
           >
-            <Text fw={700}>Project Management</Text>
+            <Text fw={700}>Lack of knowledge about tech</Text>
             <Text>
-              I can help streamline your development process, manage teams, and ensure your projects are delivered on time and within budget.
+              If you're keen for a pair of technical hands to help you make good decisions for your business that will support you in the long and short term, let's chat.
             </Text>
           </List.Item>
 
@@ -67,7 +72,10 @@ export function CanIHelpYou() {
         </List>
 
           <Text className={styles.description} mt="xl">
-            My approach is tailored to your specific needs, ensuring that you get the most value out of our collaboration. Whether you're a startup looking to establish your online presence or an established company aiming to optimize your digital strategy, I'm here to help you succeed.
+            The first step is always a no pressure, no jargon chat, to help me understand more about what you're up against.
+          </Text>
+          <Text className={styles.description} mt="xl">
+          I'll try to tell you quickly, and point you in the direction of people who can.
           </Text>
         </Stack>
       </Container>
