@@ -20,10 +20,8 @@ export function ContactUs() {
             <Paper shadow="md" radius="md" className={classes.imagePaper}>
               <Image
                 src="tim.jpg"
-                alt="Placeholder"
+                alt="Tim Dobson"
                 className={classes.image}
-                width={300}
-                height={300}
               />
             </Paper>
           </div>
