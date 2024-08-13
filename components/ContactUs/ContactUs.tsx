@@ -36,7 +36,7 @@ export function ContactUs() {
           component="a"
           href="mailto:work@tdobson.net"
         >
-          Send me a message
+          Send me an email
         </Button>
       </Container>
     </div>
