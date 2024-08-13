@@ -6,6 +6,9 @@
 .projectCard {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .projectCard:hover {
@@ -13,7 +16,8 @@
 }
 
 .projectImage {
-  height: 160px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .projectTitle {
