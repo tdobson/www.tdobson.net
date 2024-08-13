@@ -10,10 +10,22 @@
 
   @mixin hover {
     background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+
+    svg {
+      fill: violet;
+    }
   }
 
   &[data-active] {
     background-color: var(--mantine-color-blue-filled);
     color: var(--mantine-color-white);
+
+    svg {
+      fill: white;
+    }
+  }
+
+  svg {
+    transition: fill 0.2s ease;
   }
 }
