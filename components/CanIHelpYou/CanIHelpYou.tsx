@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Title, Container, List, ThemeIcon } from '@mantine/core';
+import { Text, Title, Container, List, ThemeIcon, Stack } from '@mantine/core';
 import { IconCode, IconBriefcase, IconTools, IconBusinessplan } from '@tabler/icons-react';
 import styles from './CanIHelpYou.module.css';
 
@@ -7,21 +7,18 @@ export function CanIHelpYou() {
   return (
     <div className={styles.wrapper}>
       <Container size="lg">
-        <Title className={styles.title}>How Can I Help You?</Title>
-        <Text className={styles.description} mt="xl" mb="xl">
-          If
-        </Text>
+        <Stack spacing="xl">
+          <Title className={styles.title} order={2}>How Can I Help You?</Title>
+          <Text className={styles.description}>
+            I offer a range of services to help your business succeed:
+          </Text>
 
-        <List
-          spacing="xl"
-          size="md"
-          center
-          icon={
-            <ThemeIcon color="teal" size={24} radius="xl">
-              <IconCode size="1rem" />
-            </ThemeIcon>
-          }
-        >
+          <List
+            spacing="xl"
+            size="md"
+            center
+            className={styles.list}
+          >
           <List.Item>
             <Text fw={700}>Make Spreadsheets work for you</Text>
             <Text>
@@ -69,9 +66,10 @@ export function CanIHelpYou() {
           </List.Item>
         </List>
 
-        <Text className={styles.description} mt="xl">
-          My approach is tailored to your specific needs, ensuring that you get the most value out of our collaboration. Whether you're a startup looking to establish your online presence or an established company aiming to optimize your digital strategy, I'm here to help you succeed.
-        </Text>
+          <Text className={styles.description} mt="xl">
+            My approach is tailored to your specific needs, ensuring that you get the most value out of our collaboration. Whether you're a startup looking to establish your online presence or an established company aiming to optimize your digital strategy, I'm here to help you succeed.
+          </Text>
+        </Stack>
       </Container>
     </div>
   );
