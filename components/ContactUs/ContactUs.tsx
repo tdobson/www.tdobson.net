@@ -22,8 +22,6 @@ export function ContactUs() {
                 src="tim.jpg"
                 alt="Tim Dobson"
                 className={classes.image}
-                fit="cover"
-                height={300}
               />
             </Paper>
           </div>
