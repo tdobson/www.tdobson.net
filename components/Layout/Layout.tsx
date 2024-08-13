@@ -37,7 +37,7 @@ export function Layout({ children }: LayoutProps) {
                 </AppShell.Main>
 
             </AppShell>
-            <FooterSimple />
+            <FooterSimple opened={opened} toggle={toggle} />
         </div>
     );
 }
