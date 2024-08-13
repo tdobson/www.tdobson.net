@@ -18,10 +18,12 @@ export function ContactUs() {
 
           <div className={classes.imageContainer}>
             <Image
-              src="tim.jpg"
+              src="/tim.jpg"
               alt="Tim Dobson"
               radius="md"
               className={classes.image}
+              width={300}
+              height={300}
             />
           </div>
         </SimpleGrid>
