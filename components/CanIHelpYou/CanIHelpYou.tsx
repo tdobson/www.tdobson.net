@@ -79,7 +79,6 @@ export function CanIHelpYou() {
             <Button
               size="lg"
               variant="filled"
-              color="orange"
               className={styles.ctaButton}
               mt="xl"
             >
