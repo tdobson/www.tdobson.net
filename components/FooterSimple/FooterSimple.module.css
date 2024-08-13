@@ -44,37 +44,14 @@
   }
 }
 
-.hidden {
-  display: none;
-}
-
-.burger {
-  display: none;
-}
-
 @media (max-width: 768px) {
-  .link {
-    display: block;
-    padding: 10px 0;
-  }
-
-  .inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .burger {
-    display: block;
-  }
-
   .links {
     display: none;
   }
 
-  .links.opened {
-    display: flex;
+  .inner {
     flex-direction: column;
-    width: 100%;
+    align-items: center;
   }
 }
 

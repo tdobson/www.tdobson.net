@@ -1,4 +1,4 @@
-import { Container, Group, Burger } from "@mantine/core";
+import { Container, Group } from "@mantine/core";
 import {
   Link as ScrollLink,
   Events,
@@ -11,12 +11,7 @@ import socialMedia from "../../config/socialmedia.json";
 import * as Icons from "@tabler/icons-react";
 import React, { useEffect } from "react";
 
-interface FooterSimpleProps {
-  opened: boolean;
-  toggle: () => void;
-}
-
-export function FooterSimple({ opened, toggle }: FooterSimpleProps) {
+export function FooterSimple() {
   useEffect(() => {
     Events.scrollEvent.register("begin", (to, element) => {
       console.log("begin", to, element);
@@ -83,15 +78,9 @@ export function FooterSimple({ opened, toggle }: FooterSimpleProps) {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <Group gap={5} className={`${classes.links} ${opened ? "opened" : ""}`}>
+        <Group gap={5} className={classes.links}>
           {items}
         </Group>
-        <Burger
-          opened={opened}
-          onClick={toggle}
-          size="sm"
-          className={classes.burger}
-        />
       </Container>
       <Container className={classes.inner}>
         <Group className={classes.socialLinks}>{socialItems}</Group>
