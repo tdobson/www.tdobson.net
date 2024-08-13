@@ -15,9 +15,9 @@ export function Skills() {
             <Title order={2} ta="center">Technologies</Title>
             <Space h="md" />
             <SimpleGrid
-                cols={{ base: 2, md: 4 }}
-                spacing={{ base: 'sm' }}
-                verticalSpacing={{ base: 'sm' }}
+                cols={{ base: 2, sm: 4 }}
+                spacing={{ base: 'sm', sm: 'md' }}
+                verticalSpacing={{ base: 'sm', sm: 'md' }}
                 className={styles.skillsGrid}
             >
                 {skills.map((skill, index) => (

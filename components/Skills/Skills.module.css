@@ -25,7 +25,7 @@
     height: 100%;
 }
 
-@media (max-width: 48em) {
+@media (max-width: 43.75em) { /* 700px / 16px = 43.75em */
     .skillCard {
         max-width: 100%;
     }
