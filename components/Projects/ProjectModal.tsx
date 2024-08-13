@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Modal, Text, Image, Space } from "@mantine/core";
+import { Button, Modal, Text, Image, Space, MantineTheme } from "@mantine/core";
 
 interface ProjectModalProps {
   opened: boolean;
@@ -27,11 +27,11 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
       onClose={onClose} 
       title={project.title} 
       size="100%"
-      styles={(theme) => ({
-        content: {
+      styles={{
+        content: (theme: MantineTheme) => ({
           padding: theme.spacing.xl,
-        },
-      })}
+        }),
+      }}
     >
       <Image
         src={project.shortScreencast}
