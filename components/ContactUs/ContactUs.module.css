@@ -40,6 +40,10 @@
 }
 
 @media (max-width: 700px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
   .imageContainer {
     display: none;
   }
