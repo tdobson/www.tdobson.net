@@ -22,7 +22,17 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
   project,
 }) => {
   return (
-    <Modal opened={opened} onClose={onClose} title={project.title} size="55%">
+    <Modal 
+      opened={opened} 
+      onClose={onClose} 
+      title={project.title} 
+      size="100%"
+      styles={(theme) => ({
+        content: {
+          padding: theme.spacing.xl,
+        },
+      })}
+    >
       <Image
         src={project.shortScreencast}
         alt={`${project.title} Screencast`}
