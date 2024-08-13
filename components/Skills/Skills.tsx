@@ -32,7 +32,7 @@ export function Skills() {
       </Title>
       <Space h="md" />
       <SimpleGrid
-        cols={{ base: 2, sm: 4 }}
+        cols={2}
         spacing={{ base: "sm", sm: "md" }}
         verticalSpacing={{ base: "sm", sm: "md" }}
         className={styles.skillsGrid}
