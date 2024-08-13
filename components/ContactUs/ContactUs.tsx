@@ -8,7 +8,7 @@ export function ContactUs() {
       <Container size="lg">
         <Title className={classes.title}>Arrange a call?</Title>
         <Text className={classes.description} mt="sm" mb={30}>
-          Let's have a chat and see if we can help each other?
+          Let's have a chat and see if we can help each other
         </Text>
 
         <SimpleGrid cols={{ base: 1, md: 2 }} spacing="md">
