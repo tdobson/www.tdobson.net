@@ -35,7 +35,8 @@ export default function Index() {
       </Head>
       <div id="about-me">
         <AboutMe />
-      </div>
+      </div>{" "}
+      <Space h="l" />
       <div id="skills">
         <Skills />
       </div>
@@ -43,7 +44,6 @@ export default function Index() {
       <div id="can-i-help">
         <CanIHelpYou />
       </div>
-
       <Space h="xl" />
       <div id="projects">
         <Projects />
@@ -53,7 +53,6 @@ export default function Index() {
         <TestimonialsCarousel />
       </div>
       <Space h="xl" />
-
       <Space h="xl" />
       <div id="rates">
         <Rates />

@@ -1,5 +1,15 @@
 import React, { useState } from "react";
-import {Modal, SimpleGrid, Card, Image, Text, Button, Title, Space, Group} from "@mantine/core";
+import {
+  Modal,
+  SimpleGrid,
+  Card,
+  Image,
+  Text,
+  Button,
+  Title,
+  Space,
+  Group,
+} from "@mantine/core";
 import styles from "./Projects.module.css";
 import projectsData from "../../config/projects.json";
 import { ProjectModal } from "./ProjectModal";
@@ -30,11 +40,9 @@ export const Projects = () => {
 
   return (
     <div className={styles.projectsContainer}>
-        <Title order={2}>
-        Projects
-      </Title>
+      <Title order={2}>Projects</Title>
       <Space h="md" />
-        <SimpleGrid
+      <SimpleGrid
         cols={{ base: 1, sm: 2, lg: 3 }}
         spacing={{ base: "sm", sm: "lg" }}
         verticalSpacing={{ base: "sm", sm: "lg" }}
@@ -60,7 +68,11 @@ export const Projects = () => {
             </Text>
             {isMobile && (
               <Group position="center" mt="md">
-                <Button onClick={() => openModal(project)} variant="light" color="blue">
+                <Button
+                  onClick={() => openModal(project)}
+                  variant="light"
+                  color="blue"
+                >
                   View Project
                 </Button>
               </Group>

@@ -24,17 +24,15 @@ export function AboutMe() {
               }
               mt={20}
             >
-
               <List.Item className={classes.listItem}>
-              I love reviving old, abandoned apps and spreadsheets
-            </List.Item>
+                I love reviving old, abandoned apps and spreadsheets
+              </List.Item>
               <List.Item className={classes.listItem}>
                 Keen to help you get things done.
               </List.Item>
               <List.Item className={classes.listItem}>
                 Focused, no jargon, no bullshit approach
               </List.Item>
-
             </List>
             <ScrollLink
               to="projects"
