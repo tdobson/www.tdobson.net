@@ -23,7 +23,7 @@ export function ContactUs() {
                 alt="Tim Dobson"
                 className={classes.image}
                 fit="cover"
-                height={500}
+                height={300}
               />
             </Paper>
           </div>
