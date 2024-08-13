@@ -16,7 +16,12 @@ const CONTACT_INFO = [
     icon: IconAt,
     link: "mailto:work@tdobson.net",
   },
-  { title: "Phone", description: "01457 597007", icon: IconPhone },
+  {
+    title: "Phone",
+    description: "01457 597007",
+    icon: IconPhone,
+    link: "tel:+441457597007",
+  },
   {
     title: "LinkedIn",
     description: "Connect on LinkedIn",
