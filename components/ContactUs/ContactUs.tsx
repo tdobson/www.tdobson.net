@@ -19,7 +19,7 @@ export function ContactUs() {
           <div className={classes.imageContainer}>
             <Paper shadow="md" radius="md" className={classes.imagePaper}>
               <Image
-                src="https://via.placeholder.com/300x300.png?text=Placeholder"
+                src="tim.jpg"
                 alt="Placeholder"
                 className={classes.image}
                 width={300}
