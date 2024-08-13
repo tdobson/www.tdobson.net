@@ -53,7 +53,7 @@ export const Projects = () => {
             shadow="sm"
             p="lg"
             className={styles.projectCard}
-            onClick={isMobile ? undefined : () => openModal(project)}
+            onClick={() => openModal(project)}
           >
             <Card.Section>
               <Image
@@ -69,7 +69,6 @@ export const Projects = () => {
             {isMobile && (
               <Group justify="center" mt="md">
                 <Button
-                  onClick={() => openModal(project)}
                   variant="light"
                   color="blue"
                 >
