@@ -25,9 +25,6 @@ export function CanIHelpYou() {
           <Title className={styles.title} order={2}>
             How Can I Help You?
           </Title>
-          <Text className={styles.description}>
-            Things that might indicate it's worth us chatting:
-          </Text>
 
           <List spacing="xl" size="md" center className={styles.list}>
             <List.Item
@@ -52,11 +49,10 @@ export function CanIHelpYou() {
                 </ThemeIcon>
               }
             >
-              <Text fw={700}>Technical Consulting</Text>
+              <Text fw={700}>Older Business Software</Text>
               <Text>
-                Need expert advice on your tech stack or architecture? I can
-                provide insights and recommendations to optimize your technical
-                solutions.
+                If you have an older piece of software that's important to your
+                business, but not doing all it could be doing now - let's chat.
               </Text>
             </List.Item>
 
@@ -67,7 +63,7 @@ export function CanIHelpYou() {
                 </ThemeIcon>
               }
             >
-              <Text fw={700}>Lack of knowledge about tech</Text>
+              <Text fw={700}>Helping you business with tech</Text>
               <Text>
                 If you're keen for a pair of technical hands to help you make
                 good decisions for your business that will support you in the
@@ -82,18 +78,18 @@ export function CanIHelpYou() {
                 </ThemeIcon>
               }
             >
-              <Text fw={700}>Business Development</Text>
+              <Text fw={700}>Something else?</Text>
               <Text>
-                From market analysis to growth strategies, I can help you
-                identify opportunities and develop plans to scale your business
-                effectively.
+                If you're thinking about Solar Installations, Linux
+                Administration, Software development, How to get customers,
+                Public Relations or something else - please get in touch.
               </Text>
             </List.Item>
           </List>
 
           <Text className={styles.description} mt="xl">
             The first step is always a no pressure, no jargon chat, to help me
-            understand more about what you're up against.
+            understand more about what you're working with.
           </Text>
           <Link to="contact" smooth={true} duration={500}>
             <Button
