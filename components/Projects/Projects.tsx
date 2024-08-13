@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import {Modal, SimpleGrid, Card, Image, Text, Button, Title, Space} from "@mantine/core";
+import {Modal, SimpleGrid, Card, Image, Text, Button, Title, Space, Group} from "@mantine/core";
 import styles from "./Projects.module.css";
 import projectsData from "../../config/projects.json";
 import { ProjectModal } from "./ProjectModal";
+import { useMediaQuery } from "@mantine/hooks";
 
 interface Project {
   title: string;
@@ -20,6 +21,7 @@ interface Project {
 export const Projects = () => {
   const [opened, setOpened] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const isMobile = useMediaQuery("(max-width: 768px)");
 
   const openModal = (project: Project) => {
     setSelectedProject(project);
@@ -39,10 +41,11 @@ export const Projects = () => {
       >
         {projectsData.map((project, index) => (
           <Card
+            key={index}
             shadow="sm"
             p="lg"
-            onClick={() => openModal(project)}
             className={styles.projectCard}
+            onClick={isMobile ? undefined : () => openModal(project)}
           >
             <Card.Section>
               <Image
@@ -55,6 +58,13 @@ export const Projects = () => {
             <Text className={styles.projectDescription}>
               {project.shortDescription}
             </Text>
+            {isMobile && (
+              <Group position="center" mt="md">
+                <Button onClick={() => openModal(project)} variant="light" color="blue">
+                  View Project
+                </Button>
+              </Group>
+            )}
           </Card>
         ))}
       </SimpleGrid>
