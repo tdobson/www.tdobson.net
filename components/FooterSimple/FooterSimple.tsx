@@ -1,4 +1,4 @@
-import { Container, Group } from "@mantine/core";
+import { Container, Group, Stack } from "@mantine/core";
 import {
   Link as ScrollLink,
   Events,
@@ -78,17 +78,15 @@ export function FooterSimple() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <Group gap={5} className={classes.links}>
-          {items}
-        </Group>
-      </Container>
-      <Container className={classes.inner}>
-        <Group className={classes.socialLinks}>{socialItems}</Group>
-      </Container>
-      <Container className={classes.inner}>
-        <div className={classes.copyright}>
-          © Tim Dobson {new Date().getFullYear()}
-        </div>
+        <Stack align="center" spacing="md">
+          <Group gap={5} className={classes.links}>
+            {items}
+          </Group>
+          <Group className={classes.socialLinks}>{socialItems}</Group>
+          <div className={classes.copyright}>
+            © Tim Dobson {new Date().getFullYear()}
+          </div>
+        </Stack>
       </Container>
     </div>
   );
