@@ -18,17 +18,17 @@ import {
 import styles from "./Skills.module.css";
 
 const skills = [
+  { icon: IconBrandGoogle, title: "Apps Script" },
+  { icon: IconBrandWordpress, title: "WordPress" },
   { icon: IconBrandJavascript, title: "JavaScript" },
   { icon: IconBrandReact, title: "React.js" },
-  { icon: IconBrandWordpress, title: "WordPress" },
-  { icon: IconBrandGoogle, title: "Apps Script" },
 ];
 
 export function Skills() {
   return (
     <Container size="lg" className={styles.skillsSection}>
       <Title order={2} ta="center">
-        Technologies
+        I often work with
       </Title>
       <Space h="md" />
       <SimpleGrid

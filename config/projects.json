@@ -2,8 +2,8 @@
   {
     "title": "neoClan",
     "shortDescription": "Membership check-in system for The Climbing Clan and The Caving Crew.",
-    "screenshot": "/path/to/neoclan-screenshot.jpg",
-    "shortScreencast": "/path/to/neoclan-screencast.mp4",
+    "screenshot": "projects/neoclan.png",
+    "shortScreencast": "projects/neoclan.gif",
     "longDescription": "Membership check-in system for The Climbing Clan and The Caving Crew, improving operational efficiency and user experience by providing a modern multi-user mobile.",
     "projectLink": "https://neoclan.climbingclan.com/",
     "githubLink": "https://github.com/tdobson/neoclan",
@@ -16,7 +16,7 @@
     "shortDescription": "A materials calculator for Solar PV",
     "screenshot": "projects/bom.png",
     "shortScreencast": "projects/bom.gif",
-    "longDescription": "Detailed description of Project 1.",
+    "longDescription": "",
     "projectLink": "https://rastapopoulos.pages.dev/bom",
     "githubLink": "https://github.com/tdobson/rastapopoulos",
     "problem": "The client wanted a materials calculator to assit them in creating pick lists for their Solar PV builds. Their previous solution was a spreadsheet originall designed for Microsoft Excel and ported to Google Sheets which ran very very slowly. This meant it took around 5-10 minutes per plot for the list of materials to be calculated",
@@ -26,13 +26,13 @@
   {
     "title": "Unified Membership and Event Signup System",
     "shortDescription": "A membership and event sign up system with tight payment integration.",
-    "screenshot": "/path/to/project2-screenshot.jpg",
-    "shortScreencast": "/path/to/project2-screencast.mp4",
-    "longDescription": "Detailed description of Project 2.",
-    "projectLink": "https://example.com/project2",
-    "githubLink": "https://github.com/username/project2",
-    "problem": "As a club, money was very limited, but as the sports were",
-    "approach": "The approach description for Project 2.",
-    "solution": "WordPress with WooCommerce with various plugins was chosen as the route to getting the "
+    "screenshot": "projects/crew.png",
+    "shortScreencast": "projects/crew.gif",
+    "longDescription": "",
+    "projectLink": "https://www.cavingcrew.com/",
+    "githubLink": "",
+    "problem": "A start up sports club, The Caving Crew, needed a unified membership and event signup system. There was a requirement that it could take payments for one off events, and for membership subscriptions, and that it could record skills and disclaimers onto member profiles. Lots of pieces of commercial software offer parts of this, but none off the unified experience and mean users have to re-enter details into long forms every time they want to do something.",
+    "approach": "The approach was to investigate off the shelf Free and Open Source Software that might be able to help the club manage its activities in a unified way, allowing for up to the minute revenue and importantly - insurance compliance reporting to take place, whilst also providing a single point of truth for all systems.",
+    "solution": "We chose WordPress with WooCommerce with various plugins to get the club up and running quickly, without a big development or maintenance burden. By integrating with Stripe, we allowed the club to take payments electronically and avoid bank account reconcillation. Integrations in Google Sheets allow club officials to manipulate and interact with data for reporting and logistics purposes."
   }
 ]

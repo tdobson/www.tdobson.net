@@ -59,3 +59,16 @@
   color: #f0f0f0;
   max-width: 400px;
 }
+
+.control {
+  margin-top: calc(var(--mantine-spacing-xl) * 1.5);
+  transition: transform 0.2s ease-in-out;
+
+  @media (max-width: $mantine-breakpoint-md) {
+    width: 100%;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
