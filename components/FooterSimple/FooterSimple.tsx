@@ -78,7 +78,7 @@ export function FooterSimple() {
   return (
     <div className={classes.footer}>
       <Container className={classes.inner}>
-        <Stack align="center" spacing="md">
+        <Stack align="center" gap="md">
           <Group gap={5} className={classes.links}>
             {items}
           </Group>
