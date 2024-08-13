@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Container, Title, Space, Box, Stack } from "@mantine/core";
+import { Text, Container, Title, Space, Grid, Box } from "@mantine/core";
 import classes from "./Rates.module.css";
 
 export function Rates() {
@@ -9,16 +9,27 @@ export function Rates() {
         <Title className={classes.title}>My usual* rates are:</Title>
 
         <Space h="md" />
-        <Box className={classes.ratesBox}>
-          <Stack gap="xs">
-            <Text>Remote work: £300/day</Text>
-            <Text>Onsite work within 20 miles of Stockport: £400/day</Text>
-          </Stack>
-        </Box>
+        <Grid className={classes.ratesGrid}>
+          <Grid.Col span={12} sm={6}>
+            <Box className={classes.rateItem}>
+              <Text weight={700}>Remote work:</Text>
+              <Text size="xl">£300/day</Text>
+            </Box>
+          </Grid.Col>
+          <Grid.Col span={12} sm={6}>
+            <Box className={classes.rateItem}>
+              <Text weight={700}>Onsite work:**</Text>
+              <Text size="xl">£400/day</Text>
+            </Box>
+          </Grid.Col>
+        </Grid>
 
         <Text className={classes.footnote}>
           * Discounts may be available for reduced payment terms, upfront
           payment and longer commitments.
+        </Text>
+        <Text className={classes.footnote}>
+          ** Within 20 miles of Stockport
         </Text>
       </Container>
     </div>
