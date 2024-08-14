@@ -31,7 +31,7 @@ export function CanIHelpYou() {
           <List spacing="xl" size="md" center className={styles.list}>
             <List.Item
               icon={
-                <ThemeIcon color="violet" size={32} radius="xl">
+                <ThemeIcon color="violet" size={48} radius="xl">
                   <IconBriefcase size="1.5rem" />
                 </ThemeIcon>
               }
@@ -46,7 +46,7 @@ export function CanIHelpYou() {
 
             <List.Item
               icon={
-                <ThemeIcon color="violet" size={32} radius="xl">
+                <ThemeIcon color="violet" size={48} radius="xl">
                   <IconRocket size="1.5rem" />
                 </ThemeIcon>
               }
@@ -60,7 +60,7 @@ export function CanIHelpYou() {
 
             <List.Item
               icon={
-                <ThemeIcon color="violet" size={32} radius="xl">
+                <ThemeIcon color="violet" size={48} radius="xl">
                   <IconTools size="1.5rem" />
                 </ThemeIcon>
               }
@@ -75,7 +75,7 @@ export function CanIHelpYou() {
 
             <List.Item
               icon={
-                <ThemeIcon color="violet" size={32} radius="xl">
+                <ThemeIcon color="violet" size={48} radius="xl">
                   <IconBusinessplan size="1.5rem" />
                 </ThemeIcon>
               }
