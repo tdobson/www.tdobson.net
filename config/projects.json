@@ -73,46 +73,46 @@
   },
   {
     "title": "Git Monorepo Restructuring & Cleanup",
-    "shortDescription": "Split a 600-branch Git monorepo, cleaned 3.7GB of historic bloat, and implemented Git LFS — reducing clone times from hours to seconds.",
+    "shortDescription": "Split a 600-branch Git monorepo, cleaned 3.7GB of historic bloat, and implemented Git LFS, reducing clone times from hours to seconds.",
     "screenshot": "",
     "shortScreencast": "",
     "longDescription": "A web agency stored ~600 client websites as branches in a single Bitbucket repo. Years of accumulated large files and cross-contamination had bloated it to 3.7GB. Clone times and deploy pipelines were painfully slow. The team knew they needed to restructure but didn't have the Git surgery skills to do it safely.",
     "projectLink": "",
     "githubLink": "",
-    "problem": "A web agency managing hundreds of client brochure sites used a branch-per-domain approach — one Git repo, each branch a different website. It worked for their workflow but the repo had grown to 3.7GB with accidentally-committed zip files bloating history. Clone times were crippling and the team lacked confidence to use tools like BFG on their live production repo.",
+    "problem": "A web agency managing hundreds of client brochure sites used a branch-per-domain approach: one Git repo, each branch a different website. It worked for their workflow but the repo had grown to 3.7GB with accidentally-committed zip files bloating history. Clone times were crippling and the team lacked confidence to use tools like BFG on their live production repo.",
     "approach": "Structured the work as a risk-free, three-phase process: (1) test migration on 10 sample branches with zero team disruption, (2) checkpoint and review with the client verifying everything before going live, (3) a coordinated migration window using the tested approach. Used `git filter-repo` (the modern replacement for BFG) throughout. Kept original repos untouched as rollback insurance.",
     "solution": "Split 107 parish/town council branches into a dedicated PTC repo, leaving ~370 business branches in a clean sites repo. Removed large committed files from history, scrubbed obsolete branches, eliminated cross-contamination between sectors, and implemented Git LFS to prevent future bloat. Results: PTC sites went from 3.7GB to ~10-50MB (99% reduction), business sites to ~500MB (85% reduction). Clone times dropped from hours to seconds. All existing Bitbucket Pipelines and team workflows preserved seamlessly."
   },
   {
-    "title": "Braveometer — Legacy PHP Rescue",
+    "title": "Legacy PHP Application Rescue",
     "shortDescription": "Brought a 2008 PHP self-assessment app back to life on modern hosting, then modernised it further in 2024.",
     "screenshot": "",
     "shortScreencast": "",
-    "longDescription": "A PHP questionnaire app built in 2008 by an unknown developer had stopped working entirely on modern hosting. The owner had no developer and no documentation — just the original files and a database backup. Tim got it running in 2019, and returned in 2024 to modernise the database layer.",
+    "longDescription": "A PHP questionnaire app built in 2008 by an unknown developer had stopped working entirely on modern hosting. The owner had no developer and no documentation, just the original files and a database backup. Tim got it running in 2019, and returned in 2024 to modernise the database layer.",
     "projectLink": "",
     "githubLink": "",
     "problem": "A multi-page \"bravery self-assessment\" tool built in 2008 used deprecated `mysql_*` functions that were removed in PHP 7. Sessions weren't persisting on modern hosting. Form validation was broken. The original developer was unknown and the owner had no way to recover it.",
     "approach": "Rather than rewriting from scratch (which would have lost the original scoring logic), Tim used a public-domain MySQL compatibility library as a bridge to get the app working against `mysqli` without changing every database call. Fixed session handling, form validation, navigation, and added semantic CSS hooks so the UI could be styled later.",
-    "solution": "Phase 1 (2019): Got the app fully operational on modern PHP 7+ hosting. Fixed all form pages, session persistence, error handling, and added a database backup. Phase 2 (2024): Replaced the compatibility library with direct `mysqli` usage — now that PHP 7+ was standard, the abstraction layer was no longer needed. Added an Upgrade.md document with recommendations for the client about how the app could evolve further. The scoring system (responses mapped to 6 dimensions simultaneously) was preserved intact throughout."
+    "solution": "Phase 1 (2019): Got the app fully operational on modern PHP 7+ hosting. Fixed all form pages, session persistence, error handling, and added a database backup. Phase 2 (2024): Replaced the compatibility library with direct `mysqli` usage. Now that PHP 7+ was standard, the abstraction layer was no longer needed. Added an Upgrade.md document with recommendations for the client about how the app could evolve further. The scoring system (responses mapped to 6 dimensions simultaneously) was preserved intact throughout."
   },
   {
     "title": "Shopify Hydrogen Storefront Turnaround",
     "shortDescription": "Took over and stabilised a broken Shopify Hydrogen/Oxygen headless storefront for a cosmetics brand's UK operation.",
     "screenshot": "",
     "shortScreencast": "",
-    "longDescription": "The UK arm of an international cosmetics brand had a headless Shopify storefront built by an external agency on the parent company's Hydrogen platform. By the time Tim was brought in, the agency relationship had broken down — tracking was broken, attribution was lost, and the site had multiple bugs that had gone unfixed for months. Tim cut over deployment to the client's own infrastructure, then systematically worked through a prioritised list of fixes alongside the client's digital marketing lead.",
+    "longDescription": "The UK arm of an international cosmetics brand had a headless Shopify storefront built by an external agency on the parent company's Hydrogen platform. By the time Tim was brought in, the agency relationship had broken down. Tracking was broken, attribution was lost, and the site had multiple bugs that had gone unfixed for months. Tim cut over deployment to the client's own infrastructure, then systematically worked through a prioritised list of fixes alongside the client's digital marketing lead.",
     "projectLink": "",
     "githubLink": "",
-    "problem": "The previous agency was a delivery layer for the parent company's engineering work and refused to speak directly to the UK team. Months of unresolved issues: Google Analytics attribution was broken (ad spend wasn't being tracked to orders), the site had hardcoded French strings visible to UK customers, navigation menus took 24 hours to update after changes, site search couldn't find products by shade name, SSR was failing silently in production, and the full-page cache was disabled. Paid ads were running but orders weren't being attributed — the site couldn't demonstrate return on ad spend.",
+    "problem": "The previous agency was a delivery layer for the parent company's engineering work and refused to speak directly to the UK team. Months of unresolved issues: Google Analytics attribution was broken (ad spend wasn't being tracked to orders), the site had hardcoded French strings visible to UK customers, navigation menus took 24 hours to update after changes, site search couldn't find products by shade name, SSR was failing silently in production, and the full-page cache was disabled. Paid ads were running but orders weren't being attributed. The site couldn't demonstrate return on ad spend.",
     "approach": "First priority: secure the infrastructure. Tim cut over deployment from the agency's GitHub to the client's own GitHub, rotated deployment tokens, and verified the pipeline end-to-end. Then partnered with the client's digital marketing lead in a two-person turnaround: they own Shopify admin and marketing, Tim owns Hydrogen and infrastructure, they collaborate on cross-cutting issues. Every fix is verified in production before being communicated to the client.",
-    "solution": "Diagnosed and fixed a critical Shopify attribution bug where Hydrogen's analytics provider queued all tracking events until a consent banner was clicked — customers who ignored the banner sent zero events, making all their orders self-report as 'direct traffic.' The fix was 5 lines of code and five independent boundary checks to confirm root cause before change. Also fixed: navigation menu caching (24-hour → 60-second), broken product search (resolved via Shopify admin tags, zero code), hardcoded French strings, missing alt text, and a logged-in state bug. Working through a prioritised backlog of 12+ items. Stack: Shopify Hydrogen 2025.5.0, React Router v7, TypeScript, Sanity CMS, deployed on Shopify Oxygen."
+    "solution": "Diagnosed and fixed a critical Shopify attribution bug where Hydrogen's analytics provider queued all tracking events until a consent banner was clicked. Customers who ignored the banner sent zero events, making all their orders self-report as 'direct traffic.' The fix was 5 lines of code and five independent boundary checks to confirm root cause before change. Also fixed: navigation menu caching (24-hour to 60-second), broken product search (resolved via Shopify admin tags, zero code), hardcoded French strings, missing alt text, and a logged-in state bug. Working through a prioritised backlog of 12+ items. Stack: Shopify Hydrogen 2025.5.0, React Router v7, TypeScript, Sanity CMS, deployed on Shopify Oxygen."
   },
   {
-    "title": "IoT EV Charger — Discovery & Security Audit",
+    "title": "IoT EV Charger Discovery and Security Audit",
     "shortDescription": "Full technical discovery and security audit for an IoT EV charger product: AWS infrastructure, BLE protocol reverse-engineering, and 30+ security findings.",
     "screenshot": "",
     "shortScreencast": "",
-    "longDescription": "A manufacturer had acquired an IoT EV charger product — hardware, mobile app, and AWS backend — but had no system documentation and a broken relationship with the original developer. The iPhone app had dropped off the App Store. Tim conducted a comprehensive discovery engagement covering cloud infrastructure, mobile app, firmware, and security posture.",
+    "longDescription": "A manufacturer had acquired an IoT EV charger product (hardware, mobile app, and AWS backend) but had no system documentation and a broken relationship with the original developer. The iPhone app had dropped off the App Store. Tim conducted a comprehensive discovery engagement covering cloud infrastructure, mobile app, firmware, and security posture.",
     "projectLink": "",
     "githubLink": "",
     "problem": "The client inherited a live IoT product with ~90 chargers in the field, 400+ registered users, and zero documentation. The original developer still had full AWS admin access. The iOS app was off the App Store and built on legacy Xamarin.iOS that couldn't target current iOS SDK requirements. The client didn't know what they owned, what was broken, or what remediation would cost.",
@@ -120,15 +120,15 @@
     "solution": "Delivered: full AWS architecture reconstruction (68 Lambda functions, Aurora MySQL, Cognito auth, OCPP 1.6 charger protocol), iPhone App Store diagnosis with MAUI vs React Native migration cost estimates, BLE protocol reversed and reimplemented in production-ready TypeScript (86 cross-verified assertions, drop-in ready for a new mobile app), and 30+ security findings including critical issues: developer backdoor in production code, weak RNG on all charger keys (empirically confirmed), over-privileged third-party access, unsigned firmware updates, and credential logging. The engagement gave the client a complete picture of their asset and a roadmap for remediation."
   },
   {
-    "title": "TimDo — Life Management App",
+    "title": "TimDo: Life Management App",
     "shortDescription": "Cloud-native project management board with AI voice commands, drag-and-drop, and SVG poster export.",
     "screenshot": "",
     "shortScreencast": "",
     "longDescription": "A personal project management app built around a simple philosophy: drag to prioritise, click to edit, speak to update, export to poster. No wikis, no Gantt charts, no feature bloat. Evolved from a static SVG poster into a full-stack serverless web app with AI-powered voice input.",
     "projectLink": "https://timdo.tdobson.net",
     "githubLink": "",
-    "problem": "Existing project management tools are either too complex (Jira, Notion) or too simplistic (paper lists). Tim wanted something that captured the right amount of structure without the overhead, and that he could interact with in multiple ways — typing, dragging, or speaking.",
-    "approach": "Built as a serverless-first application on Cloudflare's edge platform. Designed for multiple interaction modes: a traditional drag-and-drop board, browser-based voice recording with AI transcription and structured parsing, and a CLI for programmatic access. Voice-first onboarding captures 5 initial projects before granting board access — filtering for genuine users.",
+    "problem": "Existing project management tools are either too complex (Jira, Notion) or too simplistic (paper lists). Tim wanted something that captured the right amount of structure without the overhead, and that he could interact with in multiple ways: typing, dragging, or speaking.",
+    "approach": "Built as a serverless-first application on Cloudflare's edge platform. Designed for multiple interaction modes: a traditional drag-and-drop board, browser-based voice recording with AI transcription and structured parsing, and a CLI for programmatic access. Voice-first onboarding captures 5 initial projects before granting board access, filtering for genuine users.",
     "solution": "Full-stack Next.js 15 app with Mantine UI, deployed on Cloudflare Pages + Workers + D1. Features: drag-and-drop between five status columns with optimistic UI and smart priority recalculation, AI voice commands (Groq Whisper transcription + LangChain LLM for structured parsing with review-before-apply), awaiting status with cron auto-return, SVG poster export, CLI tool for human and AI agent use, Auth0 + NextAuth.js authentication. Comprehensive testing: Jest, React Testing Library, Vitest, Playwright, Storybook."
   }
 ]

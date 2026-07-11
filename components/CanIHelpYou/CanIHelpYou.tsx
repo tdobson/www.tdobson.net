@@ -43,7 +43,7 @@ export function CanIHelpYou() {
               <Text>
                 Inherited a piece of software with no documentation? Agency
                 relationship broken down and you need someone to take over the
-                code? I specialise in picking up the pieces — understanding
+                code? I specialise in picking up the pieces: understanding
                 what you've got, securing it, and getting it moving forward
                 again.
               </Text>
@@ -60,7 +60,7 @@ export function CanIHelpYou() {
               <Text>
                 Whether it's a headless Shopify Hydrogen storefront, a
                 WooCommerce membership system, or a WordPress site that needs
-                to be faster — I've built and rescued e-commerce platforms
+                to be faster. I've built and rescued e-commerce platforms
                 that actually earn.
               </Text>
             </List.Item>
@@ -90,7 +90,7 @@ export function CanIHelpYou() {
               <Text fw={700}>Energy &amp; Solar PV Software</Text>
               <Text>
                 I've spent 5+ years building software for the solar
-                installation industry — job management, compliance,
+                installation industry: job management, compliance,
                 materials calculators, and certification workflows. If
                 you're in solar, I already speak your language.
               </Text>
@@ -106,7 +106,7 @@ export function CanIHelpYou() {
               <Text fw={700}>Complex Spreadsheets → Proper Apps</Text>
               <Text>
                 If your business runs on a spreadsheet that's grown beyond
-                its limits — slow, fragile, impossible to share — I can turn
+                its limits. Slow, fragile, impossible to share. I can turn
                 it into a fast, mobile-friendly web app while keeping the
                 interface your team already knows.
               </Text>
@@ -123,7 +123,7 @@ export function CanIHelpYou() {
               <Text>
                 Linux administration, Git repository surgery, security
                 audits, public relations, or just a second opinion on a
-                tech decision — get in touch and we'll figure out if I can
+                tech decision, get in touch and we'll figure out if I can
                 help.
               </Text>
             </List.Item>

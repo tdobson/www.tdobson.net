@@ -18,7 +18,7 @@
     "test": "npm run prettier:check && npm run lint && npm run typecheck && npm run jest",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build",
-    "deploy": "next build && npx wrangler pages deploy build/"
+    "deploy": "next build && npx wrangler pages deploy build/ --project-name tdobsondotnet"
   },
   "dependencies": {
     "@mantine/carousel": "^7.12.0",

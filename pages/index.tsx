@@ -16,14 +16,14 @@ export default function Index() {
   return (
     <Layout>
       <Head>
-        <title>Tim Dobson — React, Shopify, WordPress &amp; Mobile Apps</title>
+        <title>Tim Dobson: React, Shopify, WordPress &amp; Mobile Apps</title>
         <meta
           name="description"
           content="Tim Dobson builds and rescues web and mobile apps. React, React Native, Shopify, WordPress, TypeScript, Debian. Legacy app revival, agency handover rescue, energy & solar PV software."
         />
         <meta
           property="og:title"
-          content="Tim Dobson — React, Shopify, WordPress & Mobile Apps"
+          content="Tim Dobson: React, Shopify, WordPress & Mobile Apps"
         />
         <meta
           property="og:description"

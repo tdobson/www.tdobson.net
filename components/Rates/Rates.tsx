@@ -12,11 +12,11 @@ export function Rates() {
         <div className={classes.ratesContainer}>
           <Box className={classes.rateItem}>
             <Text fw={700}>Remote work:</Text>
-            <Text size="xl">£300/day</Text>
+            <Text size="xl">£400/day</Text>
           </Box>
           <Box className={classes.rateItem}>
             <Text fw={700}>Onsite work:**</Text>
-            <Text size="xl">£400/day</Text>
+            <Text size="xl">£500/day</Text>
           </Box>
         </div>
 

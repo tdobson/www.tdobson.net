@@ -11,7 +11,7 @@ export function AboutMe() {
           <div className={classes.content}>
             <Title className={classes.title}>Hi 👋 I'm Tim</Title>
             <Text className={classes.description} mt={30}>
-              I help make technology work for your business — whether that's
+              I help make technology work for your business. Whether that's
               rescuing a broken Shopify store, turning a sprawling spreadsheet
               into a proper app, or building mobile software for field teams.
             </Text>
@@ -35,7 +35,7 @@ export function AboutMe() {
                 Git
               </List.Item>
               <List.Item className={classes.listItem}>
-                Focused, no jargon, no bullshit — I tell you what I can and
+                Focused, no jargon, no bullshit. I tell you what I can and
                 can't do
               </List.Item>
             </List>
