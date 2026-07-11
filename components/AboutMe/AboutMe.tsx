@@ -11,7 +11,9 @@ export function AboutMe() {
           <div className={classes.content}>
             <Title className={classes.title}>Hi 👋 I'm Tim</Title>
             <Text className={classes.description} mt={30}>
-              I help make technology work for your business.
+              I help make technology work for your business — whether that's
+              rescuing a broken Shopify store, turning a sprawling spreadsheet
+              into a proper app, or building mobile software for field teams.
             </Text>
             <List
               spacing="xs"
@@ -25,13 +27,16 @@ export function AboutMe() {
               mt={20}
             >
               <List.Item className={classes.listItem}>
-                I love reviving old, abandoned apps and spreadsheets
+                I specialise in reviving legacy apps and taking over from
+                agencies
               </List.Item>
               <List.Item className={classes.listItem}>
-                Keen to help you get things done.
+                React, React Native, Shopify, WordPress, TypeScript, Debian,
+                Git
               </List.Item>
               <List.Item className={classes.listItem}>
-                Focused, no jargon, no bullshit approach
+                Focused, no jargon, no bullshit — I tell you what I can and
+                can't do
               </List.Item>
             </List>
             <ScrollLink

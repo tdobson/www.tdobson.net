@@ -34,5 +34,101 @@
     "problem": "A start up sports club, The Caving Crew, needed a unified membership and event signup system. There was a requirement that it could take payments for one off events, and for membership subscriptions, and that it could record skills and disclaimers onto member profiles. Lots of pieces of commercial software offer parts of this, but none off the unified experience and mean users have to re-enter details into long forms every time they want to do something.",
     "approach": "The approach was to investigate off the shelf Free and Open Source Software that might be able to help the club manage its activities in a unified way, allowing for up to the minute revenue and importantly - insurance compliance reporting to take place, whilst also providing a single point of truth for all systems.",
     "solution": "We chose WordPress with WooCommerce with various plugins to get the club up and running quickly, without a big development or maintenance burden. By integrating with Stripe, we allowed the club to take payments electronically and avoid bank account reconcillation. Integrations in Google Sheets allow club officials to manipulate and interact with data for reporting and logistics purposes."
+  },
+  {
+    "title": "Bad Tips Community",
+    "shortDescription": "Safety education through satirical \"bad advice\" - 5K+ members across climbing, caving, and hiking groups.",
+    "screenshot": "",
+    "shortScreencast": "",
+    "longDescription": "A network of Facebook communities that use humour to teach safety in outdoor sports. Members post intentionally terrible advice, and the absurdity sparks genuine learning when newcomers ask \"wait, why is that bad?\" and receive helpful explanations.",
+    "projectLink": "https://www.facebook.com/groups/BadClimbingTips",
+    "githubLink": "",
+    "problem": "Traditional safety education in climbing, caving, and hiking often feels dry and preachy. People don't regularly read safety manuals, and important lessons get ignored or forgotten.",
+    "approach": "Flip the script - instead of telling people what to do, create a space where the community creatively explores what NOT to do. The satirical format makes safety memorable and shareable, while strict community rules ensure kindness and genuine education.",
+    "solution": "Founded and grew Bad Climbing Tips (3.2K members), Bad Caving Tips (1.5K members), and Bad Hiking Tips (200+ members). Each group follows the same formula: \"Be clever, be witty, be surprising, but above all... be kind.\" Newcomers who ask genuine questions are welcomed and educated, not mocked."
+  },
+  {
+    "title": "Caving Gear Exchange UK",
+    "shortDescription": "UK's community marketplace for buying, selling, and exchanging caving equipment.",
+    "screenshot": "",
+    "shortScreencast": "",
+    "longDescription": "A specialist marketplace connecting cavers across the UK to buy, sell, and exchange equipment - from undersuits and SRT kit to books and surveys.",
+    "projectLink": "https://www.facebook.com/groups/cavinggearexchangeuk",
+    "githubLink": "",
+    "problem": "Caving equipment is expensive and specialist. Gear often sits unused in garages after cavers upgrade or retire, while newcomers struggle to afford quality kit. There was no dedicated UK-wide platform for the caving community to trade equipment.",
+    "approach": "Create a trusted community space specifically for UK cavers, covering all regions (Yorkshire, Derbyshire, Mendip, South Wales, and beyond). Keep it simple - a place to list gear, request items, and ask for recommendations.",
+    "solution": "Built and grew Caving Gear Exchange UK to 2.2K members. The group now serves as both a marketplace and advice hub, helping newcomers find appropriate gear and experienced cavers pass on equipment to good homes."
+  },
+  {
+    "title": "Regional Climbing Communities",
+    "shortDescription": "Network of 12+ local climbing groups helping 3,500+ climbers find partners across the UK.",
+    "screenshot": "",
+    "shortScreencast": "",
+    "longDescription": "A federation of regional Facebook groups helping climbers find partners, share beta, and connect with their local climbing scene - from Manchester to Sheffield, Leeds to Liverpool.",
+    "projectLink": "https://www.facebook.com/groups/manchesterclimbingcommunity",
+    "githubLink": "",
+    "problem": "Climbers often struggle to find partners, especially when new to an area or transitioning from indoor to outdoor climbing. Generic \"UK climbing\" groups are too broad - people need local connections to actually meet up and climb together.",
+    "approach": "Create hyper-local communities tied to specific cities and their climbing walls/crags. Each group covers both indoor venues and nearby outdoor destinations, making it easy to find someone to climb with this weekend.",
+    "solution": "Founded and manage 12+ regional climbing communities under \"The Bad Climbing Community\" umbrella, including Manchester Climbing Community (2.4K members), North Wales Adventure Community (300+), Manchester Bouldering Community (270+), and groups for Sheffield, Leeds, Liverpool, Preston, and Loughborough. Each group helps members find climbing partners, share local beta, and build their climbing network."
+  },
+  {
+    "title": "Git Monorepo Restructuring & Cleanup",
+    "shortDescription": "Split a 600-branch Git monorepo, cleaned 3.7GB of historic bloat, and implemented Git LFS — reducing clone times from hours to seconds.",
+    "screenshot": "",
+    "shortScreencast": "",
+    "longDescription": "A web agency stored ~600 client websites as branches in a single Bitbucket repo. Years of accumulated large files and cross-contamination had bloated it to 3.7GB. Clone times and deploy pipelines were painfully slow. The team knew they needed to restructure but didn't have the Git surgery skills to do it safely.",
+    "projectLink": "",
+    "githubLink": "",
+    "problem": "A web agency managing hundreds of client brochure sites used a branch-per-domain approach — one Git repo, each branch a different website. It worked for their workflow but the repo had grown to 3.7GB with accidentally-committed zip files bloating history. Clone times were crippling and the team lacked confidence to use tools like BFG on their live production repo.",
+    "approach": "Structured the work as a risk-free, three-phase process: (1) test migration on 10 sample branches with zero team disruption, (2) checkpoint and review with the client verifying everything before going live, (3) a coordinated migration window using the tested approach. Used `git filter-repo` (the modern replacement for BFG) throughout. Kept original repos untouched as rollback insurance.",
+    "solution": "Split 107 parish/town council branches into a dedicated PTC repo, leaving ~370 business branches in a clean sites repo. Removed large committed files from history, scrubbed obsolete branches, eliminated cross-contamination between sectors, and implemented Git LFS to prevent future bloat. Results: PTC sites went from 3.7GB to ~10-50MB (99% reduction), business sites to ~500MB (85% reduction). Clone times dropped from hours to seconds. All existing Bitbucket Pipelines and team workflows preserved seamlessly."
+  },
+  {
+    "title": "Braveometer — Legacy PHP Rescue",
+    "shortDescription": "Brought a 2008 PHP self-assessment app back to life on modern hosting, then modernised it further in 2024.",
+    "screenshot": "",
+    "shortScreencast": "",
+    "longDescription": "A PHP questionnaire app built in 2008 by an unknown developer had stopped working entirely on modern hosting. The owner had no developer and no documentation — just the original files and a database backup. Tim got it running in 2019, and returned in 2024 to modernise the database layer.",
+    "projectLink": "",
+    "githubLink": "",
+    "problem": "A multi-page \"bravery self-assessment\" tool built in 2008 used deprecated `mysql_*` functions that were removed in PHP 7. Sessions weren't persisting on modern hosting. Form validation was broken. The original developer was unknown and the owner had no way to recover it.",
+    "approach": "Rather than rewriting from scratch (which would have lost the original scoring logic), Tim used a public-domain MySQL compatibility library as a bridge to get the app working against `mysqli` without changing every database call. Fixed session handling, form validation, navigation, and added semantic CSS hooks so the UI could be styled later.",
+    "solution": "Phase 1 (2019): Got the app fully operational on modern PHP 7+ hosting. Fixed all form pages, session persistence, error handling, and added a database backup. Phase 2 (2024): Replaced the compatibility library with direct `mysqli` usage — now that PHP 7+ was standard, the abstraction layer was no longer needed. Added an Upgrade.md document with recommendations for the client about how the app could evolve further. The scoring system (responses mapped to 6 dimensions simultaneously) was preserved intact throughout."
+  },
+  {
+    "title": "Shopify Hydrogen Storefront Turnaround",
+    "shortDescription": "Took over and stabilised a broken Shopify Hydrogen/Oxygen headless storefront for a cosmetics brand's UK operation.",
+    "screenshot": "",
+    "shortScreencast": "",
+    "longDescription": "The UK arm of an international cosmetics brand had a headless Shopify storefront built by an external agency on the parent company's Hydrogen platform. By the time Tim was brought in, the agency relationship had broken down — tracking was broken, attribution was lost, and the site had multiple bugs that had gone unfixed for months. Tim cut over deployment to the client's own infrastructure, then systematically worked through a prioritised list of fixes alongside the client's digital marketing lead.",
+    "projectLink": "",
+    "githubLink": "",
+    "problem": "The previous agency was a delivery layer for the parent company's engineering work and refused to speak directly to the UK team. Months of unresolved issues: Google Analytics attribution was broken (ad spend wasn't being tracked to orders), the site had hardcoded French strings visible to UK customers, navigation menus took 24 hours to update after changes, site search couldn't find products by shade name, SSR was failing silently in production, and the full-page cache was disabled. Paid ads were running but orders weren't being attributed — the site couldn't demonstrate return on ad spend.",
+    "approach": "First priority: secure the infrastructure. Tim cut over deployment from the agency's GitHub to the client's own GitHub, rotated deployment tokens, and verified the pipeline end-to-end. Then partnered with the client's digital marketing lead in a two-person turnaround: they own Shopify admin and marketing, Tim owns Hydrogen and infrastructure, they collaborate on cross-cutting issues. Every fix is verified in production before being communicated to the client.",
+    "solution": "Diagnosed and fixed a critical Shopify attribution bug where Hydrogen's analytics provider queued all tracking events until a consent banner was clicked — customers who ignored the banner sent zero events, making all their orders self-report as 'direct traffic.' The fix was 5 lines of code and five independent boundary checks to confirm root cause before change. Also fixed: navigation menu caching (24-hour → 60-second), broken product search (resolved via Shopify admin tags, zero code), hardcoded French strings, missing alt text, and a logged-in state bug. Working through a prioritised backlog of 12+ items. Stack: Shopify Hydrogen 2025.5.0, React Router v7, TypeScript, Sanity CMS, deployed on Shopify Oxygen."
+  },
+  {
+    "title": "IoT EV Charger — Discovery & Security Audit",
+    "shortDescription": "Full technical discovery and security audit for an IoT EV charger product: AWS infrastructure, BLE protocol reverse-engineering, and 30+ security findings.",
+    "screenshot": "",
+    "shortScreencast": "",
+    "longDescription": "A manufacturer had acquired an IoT EV charger product — hardware, mobile app, and AWS backend — but had no system documentation and a broken relationship with the original developer. The iPhone app had dropped off the App Store. Tim conducted a comprehensive discovery engagement covering cloud infrastructure, mobile app, firmware, and security posture.",
+    "projectLink": "",
+    "githubLink": "",
+    "problem": "The client inherited a live IoT product with ~90 chargers in the field, 400+ registered users, and zero documentation. The original developer still had full AWS admin access. The iOS app was off the App Store and built on legacy Xamarin.iOS that couldn't target current iOS SDK requirements. The client didn't know what they owned, what was broken, or what remediation would cost.",
+    "approach": "Deployed eight parallel agents against the AWS account to capture infrastructure, Lambda source, auth flows, data layer, networking, and security posture simultaneously. When source code wasn't available, decompiled .NET Lambda assemblies back to readable C#. Reverse-engineered the Bluetooth Low Energy provisioning protocol from decompiled DLLs and verified against ESP32 firmware. Produced a prioritised findings register with severity ratings and remediation guidance.",
+    "solution": "Delivered: full AWS architecture reconstruction (68 Lambda functions, Aurora MySQL, Cognito auth, OCPP 1.6 charger protocol), iPhone App Store diagnosis with MAUI vs React Native migration cost estimates, BLE protocol reversed and reimplemented in production-ready TypeScript (86 cross-verified assertions, drop-in ready for a new mobile app), and 30+ security findings including critical issues: developer backdoor in production code, weak RNG on all charger keys (empirically confirmed), over-privileged third-party access, unsigned firmware updates, and credential logging. The engagement gave the client a complete picture of their asset and a roadmap for remediation."
+  },
+  {
+    "title": "TimDo — Life Management App",
+    "shortDescription": "Cloud-native project management board with AI voice commands, drag-and-drop, and SVG poster export.",
+    "screenshot": "",
+    "shortScreencast": "",
+    "longDescription": "A personal project management app built around a simple philosophy: drag to prioritise, click to edit, speak to update, export to poster. No wikis, no Gantt charts, no feature bloat. Evolved from a static SVG poster into a full-stack serverless web app with AI-powered voice input.",
+    "projectLink": "https://timdo.tdobson.net",
+    "githubLink": "",
+    "problem": "Existing project management tools are either too complex (Jira, Notion) or too simplistic (paper lists). Tim wanted something that captured the right amount of structure without the overhead, and that he could interact with in multiple ways — typing, dragging, or speaking.",
+    "approach": "Built as a serverless-first application on Cloudflare's edge platform. Designed for multiple interaction modes: a traditional drag-and-drop board, browser-based voice recording with AI transcription and structured parsing, and a CLI for programmatic access. Voice-first onboarding captures 5 initial projects before granting board access — filtering for genuine users.",
+    "solution": "Full-stack Next.js 15 app with Mantine UI, deployed on Cloudflare Pages + Workers + D1. Features: drag-and-drop between five status columns with optimistic UI and smart priority recalculation, AI voice commands (Groq Whisper transcription + LangChain LLM for structured parsing with review-before-apply), awaiting status with cron auto-return, SVG poster export, CLI tool for human and AI agent use, Auth0 + NextAuth.js authentication. Comprehensive testing: Jest, React Testing Library, Vitest, Playwright, Storybook."
   }
 ]

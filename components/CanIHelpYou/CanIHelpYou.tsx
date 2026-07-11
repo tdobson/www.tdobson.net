@@ -14,6 +14,9 @@ import {
   IconTools,
   IconBusinessplan,
   IconRocket,
+  IconBuildingStore,
+  IconDeviceMobile,
+  IconSun,
 } from "@tabler/icons-react";
 import { Link } from "react-scroll";
 import styles from "./CanIHelpYou.module.css";
@@ -32,29 +35,80 @@ export function CanIHelpYou() {
             <List.Item
               icon={
                 <ThemeIcon color="violet" size={48} radius="xl">
-                  <IconBriefcase size="1.5rem" />
+                  <IconRocket size="1.5rem" />
                 </ThemeIcon>
               }
             >
-              <Text fw={700}>Unruly Complex Spreadsheets</Text>
+              <Text fw={700}>Legacy Applications &amp; Agency Rescue</Text>
               <Text>
-                If you have a complicated Spreadsheets doing business critical
-                operations for your organisation, it may feels like there's more
-                going on than you can keep track of.
+                Inherited a piece of software with no documentation? Agency
+                relationship broken down and you need someone to take over the
+                code? I specialise in picking up the pieces — understanding
+                what you've got, securing it, and getting it moving forward
+                again.
               </Text>
             </List.Item>
 
             <List.Item
               icon={
                 <ThemeIcon color="violet" size={48} radius="xl">
-                  <IconRocket size="1.5rem" />
+                  <IconBuildingStore size="1.5rem" />
                 </ThemeIcon>
               }
             >
-              <Text fw={700}>Older Business Software</Text>
+              <Text fw={700}>Shopify &amp; WordPress</Text>
               <Text>
-                If you have an older piece of software that's important to your
-                business, but not doing all it could be doing now - let's chat.
+                Whether it's a headless Shopify Hydrogen storefront, a
+                WooCommerce membership system, or a WordPress site that needs
+                to be faster — I've built and rescued e-commerce platforms
+                that actually earn.
+              </Text>
+            </List.Item>
+
+            <List.Item
+              icon={
+                <ThemeIcon color="violet" size={48} radius="xl">
+                  <IconDeviceMobile size="1.5rem" />
+                </ThemeIcon>
+              }
+            >
+              <Text fw={700}>Mobile Apps &amp; React Native</Text>
+              <Text>
+                From iOS and Android apps for field teams working offline
+                to migrating legacy Xamarin apps to modern frameworks. If it
+                needs to work on a phone, I can build it.
+              </Text>
+            </List.Item>
+
+            <List.Item
+              icon={
+                <ThemeIcon color="violet" size={48} radius="xl">
+                  <IconSun size="1.5rem" />
+                </ThemeIcon>
+              }
+            >
+              <Text fw={700}>Energy &amp; Solar PV Software</Text>
+              <Text>
+                I've spent 5+ years building software for the solar
+                installation industry — job management, compliance,
+                materials calculators, and certification workflows. If
+                you're in solar, I already speak your language.
+              </Text>
+            </List.Item>
+
+            <List.Item
+              icon={
+                <ThemeIcon color="violet" size={48} radius="xl">
+                  <IconBriefcase size="1.5rem" />
+                </ThemeIcon>
+              }
+            >
+              <Text fw={700}>Complex Spreadsheets → Proper Apps</Text>
+              <Text>
+                If your business runs on a spreadsheet that's grown beyond
+                its limits — slow, fragile, impossible to share — I can turn
+                it into a fast, mobile-friendly web app while keeping the
+                interface your team already knows.
               </Text>
             </List.Item>
 
@@ -65,26 +119,12 @@ export function CanIHelpYou() {
                 </ThemeIcon>
               }
             >
-              <Text fw={700}>Helping you business with tech</Text>
+              <Text fw={700}>Something Else?</Text>
               <Text>
-                If you're keen for a pair of technical hands to help you make
-                good decisions for your business that will support you in the
-                long and short term, let's chat.
-              </Text>
-            </List.Item>
-
-            <List.Item
-              icon={
-                <ThemeIcon color="violet" size={48} radius="xl">
-                  <IconBusinessplan size="1.5rem" />
-                </ThemeIcon>
-              }
-            >
-              <Text fw={700}>Something else?</Text>
-              <Text>
-                If you're thinking about Solar Installations, Linux
-                Administration, Software development, How to get customers,
-                Public Relations or something else - please get in touch.
+                Linux administration, Git repository surgery, security
+                audits, public relations, or just a second opinion on a
+                tech decision — get in touch and we'll figure out if I can
+                help.
               </Text>
             </List.Item>
           </List>

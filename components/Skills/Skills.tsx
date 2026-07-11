@@ -4,15 +4,26 @@ import {
   IconBrandWordpress,
   IconBrandJavascript,
   IconBrandReact,
+  IconBrandReactNative,
+  IconDeviceMobile,
+  IconGitBranch,
+  IconBuildingStore,
+  IconSun,
+  IconServer,
 } from "@tabler/icons-react";
 import { useMediaQuery } from "@mantine/hooks";
 import styles from "./Skills.module.css";
 
 const skills = [
-  { icon: IconBrandGoogle, title: "Apps Script" },
+  { icon: IconBrandReact, title: "React" },
+  { icon: IconBrandReactNative, title: "React Native" },
+  { icon: IconBuildingStore, title: "Shopify" },
   { icon: IconBrandWordpress, title: "WordPress" },
-  { icon: IconBrandJavascript, title: "JavaScript" },
-  { icon: IconBrandReact, title: "React.js" },
+  { icon: IconBrandJavascript, title: "TypeScript" },
+  { icon: IconDeviceMobile, title: "Mobile Apps" },
+  { icon: IconSun, title: "Energy & Solar" },
+  { icon: IconGitBranch, title: "Git" },
+  { icon: IconServer, title: "Debian Linux" },
 ];
 
 export function Skills() {
